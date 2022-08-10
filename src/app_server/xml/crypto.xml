@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+    <server>
+        <name>RMF-DDS-Server</name>
+        <version>ZOSV2R5</version>
+        <functionality>3500</functionality>
+        <platform>z/OS</platform>
+    </server>
+    <postprocessor>
+        <metric id="CRYPTO">
+            <description>Crypto Hardware Activity Report</description>
+            <type>Interval</type>
+        </metric>
+        <version>
+            <smf-data>z/OS V2R5</smf-data>
+            <rmf-report>z/OS V2R5</rmf-report>
+        </version>
+        <resource>
+            <resname>RPRT</resname>
+            <restype>SYSTEM</restype>
+        </resource>
+        <time-data>
+            <display-start locale="en-us">07/26/2022-00.00.00</display-start>
+            <display-end locale="en-us">07/26/2022-00.30.00</display-end>
+            <report-interval unit="minutes">29:59:998</report-interval>
+            <cycle unit="milliseconds">1000</cycle>
+        </time-data>
+        <segment id="1">
+            <name>Cryptographic CCA Coprocessor</name>
+            <part id="2">
+                <table id="3">
+                    <column-headers>
+                        <col type="T">Type</col>
+                        <col type="N">ID</col>
+                        <col type="N">Total Rate (LPAR)</col>
+                        <col type="N">Total Exec Time (LPAR)</col>
+                        <col type="N">Total Util % (LPAR)</col>
+                        <col type="N">Total Rate (CPC)</col>
+                        <col type="N">Total Exec Time (CPC)</col>
+                        <col type="N">Total Util % (CPC)</col>
+                        <col type="N">Key-Gen Rate (LPAR)</col>
+                        <col type="N">Key-Gen Rate (CPC)</col>
+                    </column-headers>
+                    <row refno="1">
+                        <col>CEX7C</col>
+                        <col>0</col>
+                        <col>0.00</col>
+                        <col>0.000</col>
+                        <col>0.0</col>
+                        <col>0.00</col>
+                        <col>0.000</col>
+                        <col>0.0</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="2">
+                        <col>CEX7C</col>
+                        <col>1</col>
+                        <col>0.00</col>
+                        <col>0.000</col>
+                        <col>0.0</col>
+                        <col>0.00</col>
+                        <col>0.000</col>
+                        <col>0.0</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                </table>
+            </part>
+        </segment>
+        <segment id="4">
+            <name>ICSF Services</name>
+            <part id="5">
+                <table id="6">
+                    <column-headers>
+                        <col type="T">ICSF Service</col>
+                        <col type="N">Rate</col>
+                        <col type="N">Size</col>
+                    </column-headers>
+                    <row refno="1">
+                        <col>Single DES Encryption</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="2">
+                        <col>Triple DES Encryption</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="3">
+                        <col>AES Encryption</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="4">
+                        <col>Single DES Decryption</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="5">
+                        <col>Triple DES Decryption</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="6">
+                        <col>AES Decryption</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="7">
+                        <col>SHA-1 Hash</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="8">
+                        <col>SHA-224/256 Hash</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="9">
+                        <col>SHA-384/512 Hash</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="10">
+                        <col>PIN Translate</col>
+                        <col>0.00</col>
+                        <col />
+                    </row>
+                    <row refno="11">
+                        <col>PIN Verify</col>
+                        <col>0.00</col>
+                        <col />
+                    </row>
+                    <row refno="12">
+                        <col>MAC Generate</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="13">
+                        <col>MAC Verify</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="14">
+                        <col>AES MAC Generate</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="15">
+                        <col>AES MAC Verify</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="16">
+                        <col>RSA Digital Signature Generate</col>
+                        <col>0.00</col>
+                        <col />
+                    </row>
+                    <row refno="17">
+                        <col>RSA Digital Signature Verify</col>
+                        <col>0.00</col>
+                        <col />
+                    </row>
+                    <row refno="18">
+                        <col>ECC Digital Signature Generate</col>
+                        <col>0.00</col>
+                        <col />
+                    </row>
+                    <row refno="19">
+                        <col>ECC Digital Signature Verify</col>
+                        <col>0.00</col>
+                        <col />
+                    </row>
+                    <row refno="20">
+                        <col>FPE Encipher</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="21">
+                        <col>FPE Decipher</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="22">
+                        <col>FPE Translate</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="23">
+                        <col>QSA Digital Signature Generate</col>
+                        <col>0.00</col>
+                        <col />
+                    </row>
+                    <row refno="24">
+                        <col>QSA Digital Signature Verify</col>
+                        <col>0.00</col>
+                        <col />
+                    </row>
+                    <row refno="25">
+                        <col>FFX Encipher</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="26">
+                        <col>FFX Decipher</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                    <row refno="27">
+                        <col>FFX Translate</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                    </row>
+                </table>
+            </part>
+        </segment>
+    </postprocessor>
+</ddsml>

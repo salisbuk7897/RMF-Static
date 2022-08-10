@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+    <server>
+        <name>RMF-DDS-Server</name>
+        <version>ZOSV2R5</version>
+        <functionality>3500</functionality>
+        <platform>z/OS</platform>
+    </server>
+    <postprocessor>
+        <metric id="EADM">
+            <description>Extended Asynchronous Data Mover</description>
+            <type>Interval</type>
+        </metric>
+        <version>
+            <smf-data>z/OS V2R5</smf-data>
+            <rmf-report>z/OS V2R5</rmf-report>
+        </version>
+        <resource>
+            <resname>RPRT</resname>
+            <restype>SYSTEM</restype>
+        </resource>
+        <time-data>
+            <display-start locale="en-us">07/26/2022-00.00.00</display-start>
+            <display-end locale="en-us">07/26/2022-00.30.00</display-end>
+            <report-interval unit="minutes">30:00:000</report-interval>
+        </time-data>
+        <segment id="1">
+            <name>Device/Subchannel Summary</name>
+            <part id="2">
+                <var-list id="3">
+                    <var>
+                        <name>Total Number of SSCH</name>
+                        <value>0</value>
+                    </var>
+                    <var>
+                        <name>SSCH Rate</name>
+                        <value>0.00</value>
+                    </var>
+                    <var>
+                        <name>Avg Function Pending Time</name>
+                        <value>0.000</value>
+                    </var>
+                    <var>
+                        <name>Avg IOP Queue Time</name>
+                        <value>0.000</value>
+                    </var>
+                    <var>
+                        <name>Avg Initial Cmd Response Time</name>
+                        <value>0.000</value>
+                    </var>
+                </var-list>
+            </part>
+        </segment>
+        <segment id="4">
+            <name>Compression Activity</name>
+            <part id="5">
+                <var-list id="6">
+                    <var>
+                        <name>Compression Request Rate</name>
+                        <value>0.00</value>
+                    </var>
+                    <var>
+                        <name>Compression Throughput</name>
+                        <value>0</value>
+                    </var>
+                    <var>
+                        <name>Compression Ratio</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Decompression Request Rate</name>
+                        <value>0.00</value>
+                    </var>
+                    <var>
+                        <name>Decompression Throughput</name>
+                        <value>0</value>
+                    </var>
+                    <var>
+                        <name>Decompression Ratio</name>
+                        <value />
+                    </var>
+                </var-list>
+            </part>
+        </segment>
+        <segment id="7">
+            <name>Storage Class Memory Activity</name>
+            <part id="8">
+                <table id="9">
+                    <column-headers>
+                        <col type="T">Card ID</col>
+                        <col type="N">Util% (LPAR)</col>
+                        <col type="N">Util% (Total)</col>
+                        <col type="S">Read B/Sec (LPAR)</col>
+                        <col type="S">Read B/Sec (Total)</col>
+                        <col type="S">Write B/Sec (LPAR)</col>
+                        <col type="S">Write B/Sec (Total)</col>
+                        <col type="N">Request Rate (LPAR)</col>
+                        <col type="N">Request Rate (Total)</col>
+                        <col type="N">Avg Response Time (LPAR)</col>
+                        <col type="N">Avg Response Time (Total)</col>
+                        <col type="N">Avg IOP Queue Time (Total)</col>
+                        <col type="S">Requests (LPAR)</col>
+                        <col type="S">Requests (Total)</col>
+                    </column-headers>
+                    <row refno="1">
+                        <col>VFM</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.000</col>
+                        <col>0.000</col>
+                        <col>0.000</col>
+                        <col>0</col>
+                        <col>0</col>
+                    </row>
+                </table>
+            </part>
+        </segment>
+    </postprocessor>
+</ddsml>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+<server>
+<name>RMF-DDS-Server</name>
+<version>ZOSV2R5</version>
+<functionality>3500</functionality>
+<platform>z/OS</platform>
+</server>
+<postprocessor>
+<message id="GPM0745E">
+<description>No reportable data found for specified options (Reason: RMF Postprocessor job ended with RC=0C)</description>
+<severity>3</severity>
+</message>
+</postprocessor>
+<rmf-mfpmsg><mfpmsg id="ERB103I"> PPS: OPTIONS IN EFFECT</mfpmsg>
+<mfpmsg id="ERB103I"> PPS:   NODELTA  -- DEFAULT</mfpmsg>
+<mfpmsg id="ERB103I"> PPS:   NOEXITS  -- DEFAULT</mfpmsg>
+<mfpmsg id="ERB103I"> PPS:   ETOD(0000,2400)  -- DEFAULT</mfpmsg>
+<mfpmsg id="ERB103I"> PPS:   STOD(0000,2400)  -- DEFAULT</mfpmsg>
+<mfpmsg id="ERB103I"> PPS:   RTOD(0000,2400)  -- DEFAULT</mfpmsg>
+<mfpmsg id="ERB103I"> PPS:   SYSOUT(A)  -- DEFAULT</mfpmsg>
+<mfpmsg id="ERB103I"> PPS:   NOSUMMARY  -- SYSIN</mfpmsg>
+<mfpmsg id="ERB103I"> PPS:   REPORTS(FCD)  -- SYSIN</mfpmsg>
+<mfpmsg id="ERB103I">  PPS:   DATE(08022022,08022022) -- SYSIN</mfpmsg>
+<mfpmsg id="ERB488I"> PPS: SYSPLEX DATA SERVER OPERATION FAILURE (NO SMF DATA)</mfpmsg>
+<mfpmsg id="ERB106I"> PPS: NO SMF RECORDS FOUND FOR FOLLOWING OPTION(S)</mfpmsg>
+<mfpmsg id="ERB106I"> PPS:   REPORTS(FCD), SMF RECORD 74 - SUBTYPE 7</mfpmsg>
+</rmf-mfpmsg>
+</ddsml>

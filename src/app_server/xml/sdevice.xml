@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+<server>
+<name>RMF-DDS-Server</name>
+<version>ZOSV2R5</version>
+<functionality>3500</functionality>
+<platform>z/OS</platform>
+</server>
+<postprocessor>
+<message id="GPM0745E">
+<description>No reportable data found for specified options (Reason: RMF Postprocessor job ended with RC=08)</description>
+<severity>3</severity>
+</message>
+</postprocessor>
+<rmf-mfpmsg><mfpmsg id="ERB487I"> PPS: SYNTAX ERROR IN CONTROL STATEMENT, LINE 1: '(' EXPECTED</mfpmsg>
+<mfpmsg id="ERB487I"> PPS: SYSRPTS(SDEVICE)</mfpmsg>
+<mfpmsg id="ERB487I"> PPS: ===============|</mfpmsg>
+</rmf-mfpmsg>
+</ddsml>

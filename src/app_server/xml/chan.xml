@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+    <server>
+        <name>RMF-DDS-Server</name>
+        <version>ZOSV2R5</version>
+        <functionality>3500</functionality>
+        <platform>z/OS</platform>
+    </server>
+    <postprocessor>
+        <metric id="CHAN">
+            <description>Channel Path Activity Report</description>
+            <type>Interval</type>
+        </metric>
+        <version>
+            <smf-data>z/OS V2R5</smf-data>
+            <rmf-report>z/OS V2R5</rmf-report>
+        </version>
+        <resource>
+            <resname>RPRT</resname>
+            <restype>SYSTEM</restype>
+        </resource>
+        <time-data>
+            <display-start locale="en-us">07/26/2022-00.00.00</display-start>
+            <display-end locale="en-us">07/26/2022-00.30.00</display-end>
+            <report-interval unit="minutes">29:59:998</report-interval>
+            <cycle unit="milliseconds">1000</cycle>
+        </time-data>
+        <segment id="1">
+            <name>System Information</name>
+            <part id="2">
+                <var-list id="3">
+                    <var>
+                        <name>IODF Name Suffix</name>
+                        <value>A3</value>
+                    </var>
+                    <var>
+                        <name>IODF Creation Date</name>
+                        <value>02/10/2022</value>
+                    </var>
+                    <var>
+                        <name>IODF Creation Time</name>
+                        <value>12.45.21</value>
+                    </var>
+                    <var>
+                        <name>Configuration State</name>
+                        <value>Activate</value>
+                    </var>
+                    <var>
+                        <name>CPC Mode</name>
+                        <value>LPAR</value>
+                    </var>
+                    <var>
+                        <name>CPMF Mode</name>
+                        <value>Extended</value>
+                    </var>
+                    <var>
+                        <name>CSSID</name>
+                        <value>0</value>
+                    </var>
+                </var-list>
+            </part>
+        </segment>
+        <segment id="4">
+            <name>Details for all Channels</name>
+            <part id="5">
+                <table id="6">
+                    <column-headers>
+                        <col type="T">Channel Path ID</col>
+                        <col type="T">Type</col>
+                        <col type="T">Generation</col>
+                        <col type="S">Speed</col>
+                        <col type="T">Shared</col>
+                        <col type="T">Status</col>
+                        <col type="N">Util% (LPAR)</col>
+                        <col type="N">Util% (Total)</col>
+                        <col type="N">Util% (Bus)</col>
+                        <col type="N">Read MB/Sec (LPAR)</col>
+                        <col type="N">Read MB/Sec (Total)</col>
+                        <col type="N">Write MB/Sec (LPAR)</col>
+                        <col type="N">Write MB/Sec (Total)</col>
+                        <col type="S">FICON Ops Rate</col>
+                        <col type="S">FICON Ops Active</col>
+                        <col type="S">FICON Ops Deferred</col>
+                        <col type="S">zHPF Ops Rate</col>
+                        <col type="S">zHPF Ops Active</col>
+                        <col type="S">zHPF Ops Deferred</col>
+                        <col type="T">Physical Network ID Port 1</col>
+                        <col type="T">Physical Network ID Port 2</col>
+                    </column-headers>
+                    <row refno="1">
+                        <col>00</col>
+                        <col>OSC</col>
+                        <col />
+                        <col />
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="2">
+                        <col>01</col>
+                        <col>OSD</col>
+                        <col />
+                        <col>100M</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.02</col>
+                        <col>0.02</col>
+                        <col>0.02</col>
+                        <col>0.02</col>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="3">
+                        <col>02</col>
+                        <col>OSD</col>
+                        <col />
+                        <col>1G</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.06</col>
+                        <col>0.23</col>
+                        <col>0.02</col>
+                        <col>0.09</col>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="4">
+                        <col>07</col>
+                        <col>FC_?</col>
+                        <col />
+                        <col />
+                        <col />
+                        <col>Offline</col>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="5">
+                        <col>08</col>
+                        <col>FC</col>
+                        <col>22</col>
+                        <col>16G</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.0</col>
+                        <col>1.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="6">
+                        <col>10</col>
+                        <col>FC</col>
+                        <col>22</col>
+                        <col>16G</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.01</col>
+                        <col>0.21</col>
+                        <col>0.01</col>
+                        <col>0.01</col>
+                        <col>0.09</col>
+                        <col>0.00</col>
+                        <col>0.14</col>
+                        <col>28.5</col>
+                        <col>1.0</col>
+                        <col>0.0</col>
+                        <col>2.2</col>
+                        <col>1.1</col>
+                        <col>0.0</col>
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="7">
+                        <col>11</col>
+                        <col>FC</col>
+                        <col>20</col>
+                        <col>8G</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.0</col>
+                        <col>1.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="8">
+                        <col>12</col>
+                        <col>FC</col>
+                        <col>22</col>
+                        <col>16G</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.00</col>
+                        <col>0.0</col>
+                        <col>1.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col>0.0</col>
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="9">
+                        <col>14</col>
+                        <col>FC</col>
+                        <col>22</col>
+                        <col>16G</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.01</col>
+                        <col>0.21</col>
+                        <col>0.01</col>
+                        <col>0.01</col>
+                        <col>0.09</col>
+                        <col>0.01</col>
+                        <col>0.15</col>
+                        <col>28.5</col>
+                        <col>1.0</col>
+                        <col>0.0</col>
+                        <col>2.2</col>
+                        <col>1.1</col>
+                        <col>0.0</col>
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="10">
+                        <col>40</col>
+                        <col>FC</col>
+                        <col>22</col>
+                        <col>16G</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.01</col>
+                        <col>0.21</col>
+                        <col>0.01</col>
+                        <col>0.01</col>
+                        <col>0.08</col>
+                        <col>0.01</col>
+                        <col>0.15</col>
+                        <col>28.5</col>
+                        <col>1.0</col>
+                        <col>0.0</col>
+                        <col>2.2</col>
+                        <col>1.1</col>
+                        <col>0.0</col>
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="11">
+                        <col>41</col>
+                        <col>FC</col>
+                        <col>22</col>
+                        <col>16G</col>
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0.01</col>
+                        <col>0.22</col>
+                        <col>0.01</col>
+                        <col>0.01</col>
+                        <col>0.09</col>
+                        <col>0.00</col>
+                        <col>0.14</col>
+                        <col>28.5</col>
+                        <col>1.0</col>
+                        <col>0.0</col>
+                        <col>2.2</col>
+                        <col>1.1</col>
+                        <col>0.0</col>
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="12">
+                        <col>FC</col>
+                        <col>ICP</col>
+                        <col />
+                        <col />
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                    </row>
+                    <row refno="13">
+                        <col>FD</col>
+                        <col>ICP</col>
+                        <col />
+                        <col />
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                    </row>
+                </table>
+            </part>
+        </segment>
+        <segment id="7">
+            <name>Details for HiperSockets</name>
+            <part id="8">
+                <table id="9">
+                    <column-headers>
+                        <col type="T">Channel Path ID</col>
+                        <col type="T">Type</col>
+                        <col type="T">Generation</col>
+                        <col type="T">Shared</col>
+                        <col type="T">Status</col>
+                        <col type="S">Write B/Sec (LPAR)</col>
+                        <col type="S">Write B/Sec (Total)</col>
+                        <col type="S">Message Rate (LPAR)</col>
+                        <col type="S">Message Rate (Total)</col>
+                        <col type="S">Message Size (LPAR)</col>
+                        <col type="S">Message Size (Total)</col>
+                        <col type="S">Send Failed (LPAR)</col>
+                        <col type="S">Receive Failed (LPAR)</col>
+                        <col type="S">Receive Failed (Total)</col>
+                        <col type="T">Physical Network ID</col>
+                    </column-headers>
+                    <row refno="1">
+                        <col>ED</col>
+                        <col>IQD</col>
+                        <col />
+                        <col>Yes</col>
+                        <col>Online</col>
+                        <col>0</col>
+                        <col>0</col>
+                        <col>0</col>
+                        <col>0</col>
+                        <col />
+                        <col />
+                        <col>0</col>
+                        <col>0</col>
+                        <col>0</col>
+                        <col />
+                    </row>
+                </table>
+            </part>
+        </segment>
+    </postprocessor>
+</ddsml>

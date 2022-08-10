@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="PAGESP">
+			<description>
+				Page Data Set Activity Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/02/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/02/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				29:59:995
+			</report-interval>
+			<cycle unit="milliseconds">
+				1000
+			</cycle>
+		</time-data>
+		<segment id="1">
+			<name>
+				Page Data Set and SCM Usage
+			</name>
+			<part id="2">
+				<var-list id="3">
+					<var>
+						<name>
+							Samples
+						</name>
+						<value>
+							1800
+						</value>
+					</var>
+				</var-list>
+				<table id="4">
+					<column-headers>
+						<col type="T">
+							Page Space Type
+						</col>
+						<col type="T">
+							Volume Serial
+						</col>
+						<col type="T">
+							Device Number
+						</col>
+						<col type="T">
+							Device Type
+						</col>
+						<col type="N">
+							Slots Allocated
+						</col>
+						<col type="N">
+							Slots Used Min
+						</col>
+						<col type="N">
+							Slots Used Max
+						</col>
+						<col type="N">
+							Slots Used Avg
+						</col>
+						<col type="N">
+							Bad Slots
+						</col>
+						<col type="N">
+							% In Use
+						</col>
+						<col type="N">
+							Page Transfer Time
+						</col>
+						<col type="N">
+							Number IO Requests
+						</col>
+						<col type="N">
+							Pages Transferred
+						</col>
+						<col type="T">
+							VIO
+						</col>
+						<col type="T">
+							Data Set Name
+						</col>
+						<col type="T">
+							Message
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							PLPA
+						</col>
+						<col>
+							Z22IPL
+						</col>
+						<col>
+							0511C
+						</col>
+						<col>
+							33909
+						</col>
+						<col>
+							179
+						</col>
+						<col>
+							179
+						</col>
+						<col>
+							179
+						</col>
+						<col>
+							179
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							SYS1.RPRT.PLPA
+						</col>
+						<col />
+					</row>
+					<row refno="2">
+						<col>
+							COMMON
+						</col>
+						<col>
+							Z22IPL
+						</col>
+						<col>
+							0511C
+						</col>
+						<col>
+							33909
+						</col>
+						<col>
+							161999
+						</col>
+						<col>
+							19436
+						</col>
+						<col>
+							19436
+						</col>
+						<col>
+							19436
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							SYS1.RPRT.COMMON
+						</col>
+						<col />
+					</row>
+					<row refno="3">
+						<col>
+							LOCAL
+						</col>
+						<col>
+							Z2PAG1
+						</col>
+						<col>
+							05119
+						</col>
+						<col>
+							33909
+						</col>
+						<col>
+							899999
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							Y
+						</col>
+						<col>
+							SYS1.RPRT.LOCAL
+						</col>
+						<col />
+					</row>
+					<row refno="4">
+						<col>
+							SCM
+						</col>
+						<col>
+							N/A
+						</col>
+						<col>
+							N/A
+						</col>
+						<col>
+							N/A
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							N/A
+						</col>
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>

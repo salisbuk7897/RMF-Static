@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="VSTOR">
+			<description>
+				Virtual Storage Activity Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/09/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/09/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				29:59:997
+			</report-interval>
+			<cycle unit="milliseconds">
+				1000
+			</cycle>
+		</time-data>
+		<segment id="1">
+			<name>
+				Common Storage Summary
+			</name>
+			<part id="2">
+				<var-list id="3">
+					<var>
+						<name>
+							Samples
+						</name>
+						<value>
+							180
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="4">
+				<name>
+					Static Storage Map
+				</name>
+				<table id="5">
+					<column-headers>
+						<col type="T">
+							Area
+						</col>
+						<col type="T">
+							Address
+						</col>
+						<col type="S">
+							Size
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							EPVT
+						</col>
+						<col>
+							CE00000
+						</col>
+						<col>
+							1842M
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							ECSA
+						</col>
+						<col>
+							7F0B000
+						</col>
+						<col>
+							79.0M
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							EMLPA
+						</col>
+						<col>
+							7F09000
+						</col>
+						<col>
+							8K
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							EFLPA
+						</col>
+						<col>
+							7EC3000
+						</col>
+						<col>
+							280K
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							EPLPA
+						</col>
+						<col>
+							3431000
+						</col>
+						<col>
+							74.6M
+						</col>
+					</row>
+					<row refno="6">
+						<col>
+							ESQA
+						</col>
+						<col>
+							1DF4000
+						</col>
+						<col>
+							22.2M
+						</col>
+					</row>
+					<row refno="7">
+						<col>
+							ENUC
+						</col>
+						<col>
+							1000000
+						</col>
+						<col>
+							14.0M
+						</col>
+					</row>
+					<row refno="8" type="SUM">
+						<col>
+							--- 16M Boundary ---
+						</col>
+						<col />
+						<col />
+					</row>
+					<row refno="9">
+						<col>
+							NUCLEUS
+						</col>
+						<col>
+							FD4000
+						</col>
+						<col>
+							176K
+						</col>
+					</row>
+					<row refno="10">
+						<col>
+							SQA
+						</col>
+						<col>
+							E31000
+						</col>
+						<col>
+							1676K
+						</col>
+					</row>
+					<row refno="11">
+						<col>
+							PLPA
+						</col>
+						<col>
+							C6D000
+						</col>
+						<col>
+							1808K
+						</col>
+					</row>
+					<row refno="12">
+						<col>
+							FLPA
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0K
+						</col>
+					</row>
+					<row refno="13">
+						<col>
+							MLPA
+						</col>
+						<col>
+							C6C000
+						</col>
+						<col>
+							4K
+						</col>
+					</row>
+					<row refno="14">
+						<col>
+							CSA
+						</col>
+						<col>
+							B00000
+						</col>
+						<col>
+							1456K
+						</col>
+					</row>
+					<row refno="15">
+						<col>
+							PRIVATE
+						</col>
+						<col>
+							2000
+						</col>
+						<col>
+							11.0M
+						</col>
+					</row>
+					<row refno="16">
+						<col>
+							PSA
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							8K
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="6">
+				<name>
+					Allocated CSA by Key
+				</name>
+				<table id="7">
+					<column-headers>
+						<col type="T">
+							Key
+						</col>
+						<col type="S">
+							Below 16M Min
+						</col>
+						<col type="T">
+							Below 16M Min Time
+						</col>
+						<col type="S">
+							Below 16M Max
+						</col>
+						<col type="T">
+							Below 16M Max Time
+						</col>
+						<col type="S">
+							Below 16M Avg
+						</col>
+						<col type="S">
+							Above 16M Min
+						</col>
+						<col type="T">
+							Above 16M Min Time
+						</col>
+						<col type="S">
+							Above 16M Max
+						</col>
+						<col type="T">
+							Above 16M Max Time
+						</col>
+						<col type="S">
+							Above 16M Avg
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							0
+						</col>
+						<col>
+							100K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							100K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							100K
+						</col>
+						<col>
+							19.2M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							19.2M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							19.2M
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							1
+						</col>
+						<col>
+							52K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							52K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							52K
+						</col>
+						<col>
+							1672K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1672K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1672K
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							2
+						</col>
+						<col>
+							40K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							40K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							40K
+						</col>
+						<col>
+							232K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							232K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							232K
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							3
+						</col>
+						<col>
+							0K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							0K
+						</col>
+						<col />
+						<col>
+							0K
+						</col>
+						<col>
+							0K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							0K
+						</col>
+						<col />
+						<col>
+							0K
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							4
+						</col>
+						<col>
+							0K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							0K
+						</col>
+						<col />
+						<col>
+							0K
+						</col>
+						<col>
+							708K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							708K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							708K
+						</col>
+					</row>
+					<row refno="6">
+						<col>
+							5
+						</col>
+						<col>
+							4K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							4K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							4K
+						</col>
+						<col>
+							544K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							544K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							544K
+						</col>
+					</row>
+					<row refno="7">
+						<col>
+							6
+						</col>
+						<col>
+							96K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							96K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							96K
+						</col>
+						<col>
+							7436K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							7436K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							7436K
+						</col>
+					</row>
+					<row refno="8">
+						<col>
+							7
+						</col>
+						<col>
+							0K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							0K
+						</col>
+						<col />
+						<col>
+							0K
+						</col>
+						<col>
+							56K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							56K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							56K
+						</col>
+					</row>
+					<row refno="9">
+						<col>
+							8-F
+						</col>
+						<col>
+							0K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							0K
+						</col>
+						<col />
+						<col>
+							0K
+						</col>
+						<col>
+							0K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							0K
+						</col>
+						<col />
+						<col>
+							0K
+						</col>
+					</row>
+					<row refno="10" type="SUM">
+						<col>
+							ALL
+						</col>
+						<col>
+							292K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							292K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							292K
+						</col>
+						<col>
+							29.6M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							29.6M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							29.6M
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="8">
+				<name>
+					Allocated SQA
+				</name>
+				<table id="9">
+					<column-headers>
+						<col type="T">
+							Area
+						</col>
+						<col type="S">
+							Below 16M Min
+						</col>
+						<col type="T">
+							Below 16M Min Time
+						</col>
+						<col type="S">
+							Below 16M Max
+						</col>
+						<col type="T">
+							Below 16M Max Time
+						</col>
+						<col type="S">
+							Below 16M Avg
+						</col>
+						<col type="S">
+							Above 16M Min
+						</col>
+						<col type="T">
+							Above 16M Min Time
+						</col>
+						<col type="S">
+							Above 16M Max
+						</col>
+						<col type="T">
+							Above 16M Max Time
+						</col>
+						<col type="S">
+							Above 16M Avg
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Allocated SQA Total
+						</col>
+						<col>
+							216K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							216K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							216K
+						</col>
+						<col>
+							13.5M
+						</col>
+						<col>
+							00.14.11
+						</col>
+						<col>
+							13.6M
+						</col>
+						<col>
+							00.00.31
+						</col>
+						<col>
+							13.6M
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							SQA Expansion into CSA
+						</col>
+						<col>
+							0K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							0K
+						</col>
+						<col />
+						<col>
+							0K
+						</col>
+						<col>
+							0K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							0K
+						</col>
+						<col />
+						<col>
+							0K
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="10">
+				<name>
+					CSA/SQA Free Space
+				</name>
+				<var-list id="11">
+					<var>
+						<name>
+							Maximum possible user region below 16M
+						</name>
+						<value>
+							1256K
+						</value>
+					</var>
+					<var>
+						<name>
+							Maximum possible user region above 16M
+						</name>
+						<value>
+							1831M
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="12">
+				<name />
+				<table id="13">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="S">
+							Below 16M Min
+						</col>
+						<col type="T">
+							Below 16M Min Time
+						</col>
+						<col type="S">
+							Below 16M Max
+						</col>
+						<col type="T">
+							Below 16M Max Time
+						</col>
+						<col type="S">
+							Below 16M Avg
+						</col>
+						<col type="S">
+							Above 16M Min
+						</col>
+						<col type="T">
+							Above 16M Min Time
+						</col>
+						<col type="S">
+							Above 16M Max
+						</col>
+						<col type="T">
+							Above 16M Max Time
+						</col>
+						<col type="S">
+							Above 16M Avg
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							CSA Free Pages
+						</col>
+						<col>
+							1164K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1164K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1164K
+						</col>
+						<col>
+							49.3M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							49.3M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							49.3M
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							CSA Largest Free Block
+						</col>
+						<col>
+							1164K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1164K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1164K
+						</col>
+						<col>
+							49.3M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							49.3M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							49.3M
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CSA Allocated Area Size
+						</col>
+						<col>
+							292K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							292K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							292K
+						</col>
+						<col>
+							29.6M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							29.6M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							29.6M
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							SQA Free Pages
+						</col>
+						<col>
+							1460K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1460K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1460K
+						</col>
+						<col>
+							8876K
+						</col>
+						<col>
+							00.00.31
+						</col>
+						<col>
+							8920K
+						</col>
+						<col>
+							00.14.11
+						</col>
+						<col>
+							8895K
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							SQA Largest Free Block
+						</col>
+						<col>
+							752K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							752K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							752K
+						</col>
+						<col>
+							7368K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							7368K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							7368K
+						</col>
+					</row>
+					<row refno="6">
+						<col>
+							SQA Allocated Area Size
+						</col>
+						<col>
+							1580K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1580K
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							1580K
+						</col>
+						<col>
+							22.2M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							22.2M
+						</col>
+						<col>
+							00.00.01
+						</col>
+						<col>
+							22.2M
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="14">
+				<name>
+					PLPA
+				</name>
+				<var-list id="15">
+					<var>
+						<name>
+							PLPA intermodule space in PLPA
+						</name>
+						<value>
+							3K
+						</value>
+					</var>
+					<var>
+						<name>
+							PLPA intermodule space in EPLPA
+						</name>
+						<value>
+							358K
+						</value>
+					</var>
+					<var>
+						<name>
+							PLPA space redundant with MLPA/FLPA in PLPA
+						</name>
+						<value>
+							0K
+						</value>
+					</var>
+					<var>
+						<name>
+							PLPA space redundant with MLPA/FLPA in EPLPA
+						</name>
+						<value>
+							276K
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>

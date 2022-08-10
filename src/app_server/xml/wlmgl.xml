@@ -1,0 +1,9171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="WLMGL" option="WGPER">
+			<description>
+				Workload Activity Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				VIPLEX
+			</resname>
+			<restype>
+				SYSPLEX
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/09/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/09/2022-00.29.59
+			</display-end>
+			<report-interval unit="minutes">
+				29:59:997
+			</report-interval>
+		</time-data>
+		<segment id="1">
+			<name>
+				Policy Activation
+			</name>
+			<part id="2">
+				<var-list id="3">
+					<var>
+						<name>
+							Date
+						</name>
+						<value>
+							03/20/2020
+						</value>
+					</var>
+					<var>
+						<name>
+							Time
+						</name>
+						<value>
+							15.26.19
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="4">
+			<name>
+				Service Class BATCH
+			</name>
+			<part id="5">
+				<var-list id="6">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							BATCH
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							BATCH
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Batch Jobs Service CLass
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="7">
+			<name>
+				Workload BATCH
+			</name>
+			<part id="8">
+				<var-list id="9">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							BATCH
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Batch Jobs
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="10">
+			<name>
+				Service Class STCHIGH
+			</name>
+			<part id="11">
+				<var-list id="12">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							STCHIGH
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							STCHIGH
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							High Priority Started Tasks
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="13">
+				<name>
+					Transactions
+				</name>
+				<var-list id="14">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							4.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							4.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="15">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="16">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="17">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="18">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.06
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="19">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="20">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="21">
+				<name>
+					Service
+				</name>
+				<var-list id="22">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							74018
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							24575
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							98593
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							55
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							14
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							14
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="23">
+				<name>
+					Service Time
+				</name>
+				<var-list id="24">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0.870
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.289
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.005
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="25">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="26">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.06
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="27">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="28">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.007
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="29">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="30">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="31">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="32">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							14681.01
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							58724.07
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							2.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="33">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="34">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="35">
+				<name>
+					Goals/Actuals Summary
+				</name>
+				<table id="36">
+					<column-headers>
+						<col type="N">
+							Period
+						</col>
+						<col type="M">
+							Importance
+						</col>
+						<col type="M">
+							Performance Index
+						</col>
+						<col type="N">
+							# of Transactions
+						</col>
+						<col type="N">
+							% of Transactions
+						</col>
+						<col type="T">
+							Response Time Goal
+						</col>
+						<col type="M">
+							Response Time Actual
+						</col>
+						<col type="N">
+							Response Time Total
+						</col>
+						<col type="N">
+							Execution Velocity % Goal
+						</col>
+						<col type="M">
+							Execution Velocity % Actual
+						</col>
+						<col type="N">
+							Total Using %
+						</col>
+						<col type="N">
+							Execution Delay %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							1
+						</col>
+						<col>
+							2
+						</col>
+						<col>
+							1.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							50
+						</col>
+						<col>
+							50.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="37">
+			<name>
+				Workload STCHIGH
+			</name>
+			<part id="38">
+				<var-list id="39">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							STCHIGH
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							High Priority Started Tasks
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="40">
+				<name>
+					Transactions
+				</name>
+				<var-list id="41">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							4.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							4.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="42">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="43">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="44">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="45">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.06
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="46">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="47">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="48">
+				<name>
+					Service
+				</name>
+				<var-list id="49">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							74018
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							24575
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							98593
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							55
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							14
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							14
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="50">
+				<name>
+					Service Time
+				</name>
+				<var-list id="51">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0.870
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.289
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.005
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="52">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="53">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.06
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="54">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="55">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.007
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="56">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="57">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="58">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="59">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							14681.01
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							58724.07
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							2.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="60">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="61">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="62">
+			<name>
+				Service Class STCLOW
+			</name>
+			<part id="63">
+				<var-list id="64">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							STCLOW
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							STCLOW
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Low Priority Started Tasks
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="65">
+				<name>
+					Transactions
+				</name>
+				<var-list id="66">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							13.44
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							13.44
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							3
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							274
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="67">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="68">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.08.944393
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.08.411890
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.532502
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.13.388099
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="69">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="70">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.16
+						</col>
+						<col>
+							0.05
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="71">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="72">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="73">
+				<name>
+					Service
+				</name>
+				<var-list id="74">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							227192
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							15378
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							242570
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							135
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							10
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							10
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="75">
+				<name>
+					Service Time
+				</name>
+				<var-list id="76">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							2.670
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.181
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.021
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.004
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="77">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="78">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.16
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.05
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="79">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="80">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.040
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="81">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="82">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							3.1
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="83">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="84">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							9686.07
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							130175.7
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							765.20
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="85">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="86">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="87">
+				<name>
+					Goals/Actuals Summary
+				</name>
+				<table id="88">
+					<column-headers>
+						<col type="N">
+							Period
+						</col>
+						<col type="M">
+							Importance
+						</col>
+						<col type="M">
+							Performance Index
+						</col>
+						<col type="N">
+							# of Transactions
+						</col>
+						<col type="N">
+							% of Transactions
+						</col>
+						<col type="T">
+							Response Time Goal
+						</col>
+						<col type="M">
+							Response Time Actual
+						</col>
+						<col type="N">
+							Response Time Total
+						</col>
+						<col type="N">
+							Execution Velocity % Goal
+						</col>
+						<col type="M">
+							Execution Velocity % Actual
+						</col>
+						<col type="N">
+							Total Using %
+						</col>
+						<col type="N">
+							Execution Delay %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							1
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							100
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							20
+						</col>
+						<col>
+							67.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col>
+							3
+						</col>
+						<col>
+							100
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="89">
+			<name>
+				Workload STCLOW
+			</name>
+			<part id="90">
+				<var-list id="91">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							STCLOW
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Low Priority Started Tasks
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="92">
+				<name>
+					Transactions
+				</name>
+				<var-list id="93">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							13.44
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							13.44
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							3
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							274
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="94">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="95">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.08.944393
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.08.411890
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.532502
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.13.388099
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="96">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="97">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.16
+						</col>
+						<col>
+							0.05
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="98">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="99">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="100">
+				<name>
+					Service
+				</name>
+				<var-list id="101">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							227192
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							15378
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							242570
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							135
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							10
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							10
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="102">
+				<name>
+					Service Time
+				</name>
+				<var-list id="103">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							2.670
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.181
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.021
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.004
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="104">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="105">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.16
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.05
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="106">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="107">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.040
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="108">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="109">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							3.1
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="110">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="111">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							9686.07
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							130175.7
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							765.20
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="112">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="113">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="114">
+			<name>
+				Service Class STCMED
+			</name>
+			<part id="115">
+				<var-list id="116">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							STCMED
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							STCMED
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Medium Priority Started Tasks
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="117">
+				<name>
+					Transactions
+				</name>
+				<var-list id="118">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							1.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							1.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="119">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="120">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="121">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="122">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="123">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="124">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="125">
+				<name>
+					Service
+				</name>
+				<var-list id="126">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							6843
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							507
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							7350
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							4
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							4
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							4
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="127">
+				<name>
+					Service Time
+				</name>
+				<var-list id="128">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0.080
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.006
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="129">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="130">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="131">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="132">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="133">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="134">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="135">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="136">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							10479.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							10479.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="137">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="138">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="139">
+				<name>
+					Goals/Actuals Summary
+				</name>
+				<table id="140">
+					<column-headers>
+						<col type="N">
+							Period
+						</col>
+						<col type="M">
+							Importance
+						</col>
+						<col type="M">
+							Performance Index
+						</col>
+						<col type="N">
+							# of Transactions
+						</col>
+						<col type="N">
+							% of Transactions
+						</col>
+						<col type="T">
+							Response Time Goal
+						</col>
+						<col type="M">
+							Response Time Actual
+						</col>
+						<col type="N">
+							Response Time Total
+						</col>
+						<col type="N">
+							Execution Velocity % Goal
+						</col>
+						<col type="M">
+							Execution Velocity % Actual
+						</col>
+						<col type="N">
+							Total Using %
+						</col>
+						<col type="N">
+							Execution Delay %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							1
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							N/A
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							40
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="141">
+			<name>
+				Workload STCMED
+			</name>
+			<part id="142">
+				<var-list id="143">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							STCMED
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Medium Priority Started Tasks
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="144">
+				<name>
+					Transactions
+				</name>
+				<var-list id="145">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							1.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							1.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="146">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="147">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="148">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="149">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="150">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="151">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="152">
+				<name>
+					Service
+				</name>
+				<var-list id="153">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							6843
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							507
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							7350
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							4
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							4
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							4
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="154">
+				<name>
+					Service Time
+				</name>
+				<var-list id="155">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0.080
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.006
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="156">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="157">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="158">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="159">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="160">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="161">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="162">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="163">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							10479.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							10479.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="164">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="165">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="166">
+			<name>
+				Service Class SYSOTHER
+			</name>
+			<part id="167">
+				<var-list id="168">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							SYSOTHER
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							UNCLASSIFIED WORK
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="169">
+				<name>
+					Transactions
+				</name>
+				<var-list id="170">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							1.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							1.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="171">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="172">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="173">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="174">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="175">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="176">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							1.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="177">
+				<name>
+					Service
+				</name>
+				<var-list id="178">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="179">
+				<name>
+					Service Time
+				</name>
+				<var-list id="180">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="181">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="182">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="183">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="184">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="185">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="186">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="187">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="188">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="189">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="190">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="191">
+				<name>
+					Goals/Actuals Summary
+				</name>
+				<table id="192">
+					<column-headers>
+						<col type="N">
+							Period
+						</col>
+						<col type="M">
+							Importance
+						</col>
+						<col type="M">
+							Performance Index
+						</col>
+						<col type="N">
+							# of Transactions
+						</col>
+						<col type="N">
+							% of Transactions
+						</col>
+						<col type="T">
+							Response Time Goal
+						</col>
+						<col type="M">
+							Response Time Actual
+						</col>
+						<col type="N">
+							Response Time Total
+						</col>
+						<col type="N">
+							Execution Velocity % Goal
+						</col>
+						<col type="M">
+							Execution Velocity % Actual
+						</col>
+						<col type="N">
+							Total Using %
+						</col>
+						<col type="N">
+							Execution Delay %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							1
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="193">
+			<name>
+				Service Class SYSSTC
+			</name>
+			<part id="194">
+				<var-list id="195">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							SYSSTC
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							STARTED TASK DEFAULT
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="196">
+				<name>
+					Transactions
+				</name>
+				<var-list id="197">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							15.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							15.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="198">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="199">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="200">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="201">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.13
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="202">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="203">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="204">
+				<name>
+					Service
+				</name>
+				<var-list id="205">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							183385
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							9727
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							193112
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							107
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							7
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							7
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="206">
+				<name>
+					Service Time
+				</name>
+				<var-list id="207">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							2.155
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.114
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.009
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="208">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="209">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.13
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="210">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="211">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.020
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="212">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="213">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							2.1
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="214">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="215">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							12361.81
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							185427.2
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							1590.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="216">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="217">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="218">
+				<name>
+					Goals/Actuals Summary
+				</name>
+				<table id="219">
+					<column-headers>
+						<col type="N">
+							Period
+						</col>
+						<col type="M">
+							Importance
+						</col>
+						<col type="M">
+							Performance Index
+						</col>
+						<col type="N">
+							# of Transactions
+						</col>
+						<col type="N">
+							% of Transactions
+						</col>
+						<col type="T">
+							Response Time Goal
+						</col>
+						<col type="M">
+							Response Time Actual
+						</col>
+						<col type="N">
+							Response Time Total
+						</col>
+						<col type="N">
+							Execution Velocity % Goal
+						</col>
+						<col type="M">
+							Execution Velocity % Actual
+						</col>
+						<col type="N">
+							Total Using %
+						</col>
+						<col type="N">
+							Execution Delay %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							1
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							92.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="220">
+			<name>
+				Service Class SYSSTC1
+			</name>
+			<part id="221">
+				<var-list id="222">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							SYSSTC1
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							STARTED TASK DEFAULT 1
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="223">
+			<name>
+				Service Class SYSSTC2
+			</name>
+			<part id="224">
+				<var-list id="225">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							SYSSTC2
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							STARTED TASK DEFAULT 2
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="226">
+			<name>
+				Service Class SYSSTC3
+			</name>
+			<part id="227">
+				<var-list id="228">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							SYSSTC3
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							STARTED TASK DEFAULT 3
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="229">
+			<name>
+				Service Class SYSSTC4
+			</name>
+			<part id="230">
+				<var-list id="231">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							SYSSTC4
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							STARTED TASK DEFAULT 4
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="232">
+			<name>
+				Service Class SYSSTC5
+			</name>
+			<part id="233">
+				<var-list id="234">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							SYSSTC5
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							STARTED TASK DEFAULT 5
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="235">
+			<name>
+				Service Class SYSTEM
+			</name>
+			<part id="236">
+				<var-list id="237">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							HIGH PRIORITY SYSTEM WORK
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="238">
+				<name>
+					Transactions
+				</name>
+				<var-list id="239">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							24.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							24.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="240">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="241">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="242">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="243">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.08
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="244">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="245">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="246">
+				<name>
+					Service
+				</name>
+				<var-list id="247">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							76493
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							44408
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							120901
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							67
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							3
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							3
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="248">
+				<name>
+					Service Time
+				</name>
+				<var-list id="249">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0.899
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.522
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.016
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="250">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="251">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.08
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="252">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="253">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="254">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="255">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							2.6
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.3
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.1
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="256">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="257">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							2347.83
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							56347.97
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							4.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="258">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="259">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="260">
+				<name>
+					Goals/Actuals Summary
+				</name>
+				<table id="261">
+					<column-headers>
+						<col type="N">
+							Period
+						</col>
+						<col type="M">
+							Importance
+						</col>
+						<col type="M">
+							Performance Index
+						</col>
+						<col type="N">
+							# of Transactions
+						</col>
+						<col type="N">
+							% of Transactions
+						</col>
+						<col type="T">
+							Response Time Goal
+						</col>
+						<col type="M">
+							Response Time Actual
+						</col>
+						<col type="N">
+							Response Time Total
+						</col>
+						<col type="N">
+							Execution Velocity % Goal
+						</col>
+						<col type="M">
+							Execution Velocity % Actual
+						</col>
+						<col type="N">
+							Total Using %
+						</col>
+						<col type="N">
+							Execution Delay %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							1
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							71.9
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="262">
+			<name>
+				Workload SYSTEM
+			</name>
+			<part id="263">
+				<var-list id="264">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							SYSTEM
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							THE SYSTEM WORKLOAD
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="265">
+				<name>
+					Transactions
+				</name>
+				<var-list id="266">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							40.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							40.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="267">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="268">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="269">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="270">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.20
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="271">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="272">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							1.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="273">
+				<name>
+					Service
+				</name>
+				<var-list id="274">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							259878
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							54135
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							314013
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							174
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							4
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							4
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="275">
+				<name>
+					Service Time
+				</name>
+				<var-list id="276">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							3.054
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.636
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.025
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="277">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="278">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.21
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="279">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="280">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.020
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="281">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="282">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							4.7
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.3
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="283">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="284">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							6199.36
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							241775.2
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							1594.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="285">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="286">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="287">
+			<name>
+				Service Class TSO
+			</name>
+			<part id="288">
+				<var-list id="289">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							TSO
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							TSO
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							TSO service class
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="290">
+			<name>
+				Workload TSO
+			</name>
+			<part id="291">
+				<var-list id="292">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							TSO
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							TSO Users
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<message>
+				<description>
+					All data zero
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+		<segment id="293">
+			<name>
+				Service Class UNIX
+			</name>
+			<part id="294">
+				<var-list id="295">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							UNIX
+						</value>
+					</var>
+					<var>
+						<name>
+							Service Class
+						</name>
+						<value>
+							UNIX
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Unix System Services
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource Group
+						</name>
+						<value>
+							*NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Critical
+						</name>
+						<value>
+							NONE
+						</value>
+					</var>
+					<var>
+						<name>
+							Honor Priority
+						</name>
+						<value>
+							DEFAULT
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="296">
+				<name>
+					Transactions
+				</name>
+				<var-list id="297">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							6.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							6.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							1
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							1
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="298">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="299">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.093091
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.092637
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000454
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="300">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="301">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.04
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="302">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="303">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="304">
+				<name>
+					Service
+				</name>
+				<var-list id="305">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							50816
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							5705
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							56521
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							31
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							5
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							5
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="306">
+				<name>
+					Service Time
+				</name>
+				<var-list id="307">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0.597
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.067
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="308">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="309">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.04
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="310">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="311">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="312">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="313">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="314">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="315">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							5352.41
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							32123.67
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="316">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="317">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="318">
+				<name>
+					Goals/Actuals Summary
+				</name>
+				<table id="319">
+					<column-headers>
+						<col type="N">
+							Period
+						</col>
+						<col type="M">
+							Importance
+						</col>
+						<col type="M">
+							Performance Index
+						</col>
+						<col type="N">
+							# of Transactions
+						</col>
+						<col type="N">
+							% of Transactions
+						</col>
+						<col type="T">
+							Response Time Goal
+						</col>
+						<col type="M">
+							Response Time Actual
+						</col>
+						<col type="N">
+							Response Time Total
+						</col>
+						<col type="N">
+							Execution Velocity % Goal
+						</col>
+						<col type="M">
+							Execution Velocity % Actual
+						</col>
+						<col type="N">
+							Total Using %
+						</col>
+						<col type="N">
+							Execution Delay %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							1
+						</col>
+						<col>
+							2
+						</col>
+						<col>
+							N/A
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							100
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							60
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							2
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							N/A
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							50
+						</col>
+						<col>
+							N/A
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							3
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							40
+						</col>
+						<col>
+							100
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="4" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							100
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="320">
+			<name>
+				Workload UNIX
+			</name>
+			<part id="321">
+				<var-list id="322">
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Workload
+						</name>
+						<value>
+							UNIX
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Unix System Services
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="323">
+				<name>
+					Transactions
+				</name>
+				<var-list id="324">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							6.00
+						</value>
+					</var>
+					<var>
+						<name>
+							MPL
+						</name>
+						<value>
+							6.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended
+						</name>
+						<value>
+							1
+						</value>
+					</var>
+					<var>
+						<name>
+							Ended/sec
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							# of Swaps
+						</name>
+						<value>
+							1
+						</value>
+					</var>
+					<var>
+						<name>
+							Executed
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="325">
+				<name>
+					Transaction Time (HHH.MM.SS.FFFFFF)
+				</name>
+				<var-list id="326">
+					<var>
+						<name>
+							Actual
+						</name>
+						<value>
+							000.00.00.093091
+						</value>
+					</var>
+					<var>
+						<name>
+							Execution
+						</name>
+						<value>
+							000.00.00.092637
+						</value>
+					</var>
+					<var>
+						<name>
+							Queued
+						</name>
+						<value>
+							000.00.00.000454
+						</value>
+					</var>
+					<var>
+						<name>
+							Resource/System Affinity
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Ineligible
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Conversion
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+					<var>
+						<name>
+							Standard Deviation
+						</name>
+						<value>
+							000.00.00.000000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="327">
+				<name>
+					Transaction Application Time %
+				</name>
+				<table id="328">
+					<column-headers>
+						<col type="T">
+							Reporting Category
+						</col>
+						<col type="M">
+							CP
+						</col>
+						<col type="M">
+							zIIP/zAAP on CP
+						</col>
+						<col type="M">
+							zIIP/zAAP
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Total
+						</col>
+						<col>
+							0.04
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Mobile
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CategoryA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CategoryB
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							N/A
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="329">
+				<name>
+					Enclaves
+				</name>
+				<var-list id="330">
+					<var>
+						<name>
+							Average Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Remote Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Multi-System Enclaves
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="331">
+				<name>
+					Service
+				</name>
+				<var-list id="332">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							50816
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							5705
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							56521
+						</value>
+					</var>
+					<var>
+						<name>
+							Per Second
+						</name>
+						<value>
+							31
+						</value>
+					</var>
+					<var>
+						<name>
+							Absorption Rate
+						</name>
+						<value>
+							5
+						</value>
+					</var>
+					<var>
+						<name>
+							Transaction Service Rate
+						</name>
+						<value>
+							5
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="333">
+				<name>
+					Service Time
+				</name>
+				<var-list id="334">
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							0.597
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							0.067
+						</value>
+					</var>
+					<var>
+						<name>
+							RCT
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Interrupt
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="335">
+				<name>
+					Application Time %
+				</name>
+				<var-list id="336">
+					<var>
+						<name>
+							CP
+						</name>
+						<value>
+							0.04
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP on CP
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							zAAP
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="337">
+				<name>
+					Promoted Transactions
+				</name>
+				<var-list id="338">
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Enqueue
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							CRM
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Lock
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							SUP
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="339">
+				<name>
+					DASD I/O
+				</name>
+				<var-list id="340">
+					<var>
+						<name>
+							SSCH/sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Response Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Connect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Disconnect Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Queue+Pending Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							IOS Queue Time
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="341">
+				<name>
+					Storage Frames
+				</name>
+				<var-list id="342">
+					<var>
+						<name>
+							Average
+						</name>
+						<value>
+							5352.41
+						</value>
+					</var>
+					<var>
+						<name>
+							Total
+						</name>
+						<value>
+							32123.67
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="343">
+				<name>
+					Page-In Rates
+				</name>
+				<var-list id="344">
+					<var>
+						<name>
+							Single
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocked
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Shared
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Hiperspace
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="345">
+			<name>
+				Service Policy Section
+			</name>
+			<part id="346">
+				<name>
+					Service Definition
+				</name>
+				<var-list id="347">
+					<var>
+						<name>
+							Name
+						</name>
+						<value>
+							QS390DEF
+						</value>
+					</var>
+					<var>
+						<name>
+							Description
+						</name>
+						<value>
+							Quick Load - WLM Definition
+						</value>
+					</var>
+					<var>
+						<name>
+							Install Date
+						</name>
+						<value>
+							03/20/2020
+						</value>
+					</var>
+					<var>
+						<name>
+							Install Time
+						</name>
+						<value>
+							15.25.17
+						</value>
+					</var>
+					<var>
+						<name>
+							Installed By
+						</name>
+						<value>
+							QLUSER1
+						</value>
+					</var>
+					<var>
+						<name>
+							Policy
+						</name>
+						<value>
+							QS390POL
+						</value>
+					</var>
+					<var>
+						<name>
+							Policy Description
+						</name>
+						<value>
+							Quick Load 390 Policy
+						</value>
+					</var>
+					<var>
+						<name>
+							Discretionary Goal Management
+						</name>
+						<value>
+							YES
+						</value>
+					</var>
+					<var>
+						<name>
+							Dynamic Alias Management
+						</name>
+						<value>
+							NO
+						</value>
+					</var>
+					<var>
+						<name>
+							I/O Priority Management
+						</name>
+						<value>
+							YES
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="348">
+				<name>
+					Service Definition Coefficients
+				</name>
+				<var-list id="349">
+					<var>
+						<name>
+							IOC
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							CPU
+						</name>
+						<value>
+							1.0
+						</value>
+					</var>
+					<var>
+						<name>
+							SRB
+						</name>
+						<value>
+							1.0
+						</value>
+					</var>
+					<var>
+						<name>
+							MSO
+						</name>
+						<value>
+							0.0000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="350">
+				<name>
+					Normalization Factors
+				</name>
+				<var-list id="351">
+					<var>
+						<name>
+							zAAP Normalization Factor
+						</name>
+						<value>
+							1.0000
+						</value>
+					</var>
+					<var>
+						<name>
+							zIIP Normalization Factor
+						</name>
+						<value>
+							1.0000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="352">
+				<name>
+					Systems
+				</name>
+				<table id="353">
+					<column-headers>
+						<col type="T">
+							System ID
+						</col>
+						<col type="T">
+							IEAOPTxx Member
+						</col>
+						<col type="N">
+							SU/sec
+						</col>
+						<col type="M">
+							Capacity %
+						</col>
+						<col type="T">
+							Time
+						</col>
+						<col type="T">
+							Interval
+						</col>
+						<col type="T">
+							Boost
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							RPRT
+						</col>
+						<col>
+							00
+						</col>
+						<col>
+							85106.4
+						</col>
+						<col>
+							100
+						</col>
+						<col>
+							00.00.00
+						</col>
+						<col>
+							00.29.59
+						</col>
+						<col>
+							Inactive
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>

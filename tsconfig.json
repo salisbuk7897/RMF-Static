@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "allowJs": true,
+    "outDir": "dist",
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.ts"
+, "src/app_server/Controller/RMFPPController.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

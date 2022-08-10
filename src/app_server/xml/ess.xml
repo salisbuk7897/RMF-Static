@@ -1,0 +1,465 @@
+<xml>
+    <segment id="32">
+        <name>
+            Memory Objects and High Virtual Storage Frames
+        </name>
+        <part id="33">
+            <var-list id="34">
+                <var>
+                    <name>
+                        OPT
+                    </name>
+                    <value>
+                        IEAOPT00
+                    </value>
+                </var>
+            </var-list>
+        </part>
+        <part id="35">
+            <name>
+                LFAREA Maximum
+            </name>
+            <var-list id="36">
+                <var>
+                    <name>
+                        1 MB Frames
+                    </name>
+                    <value>
+                        200M
+                    </value>
+                </var>
+                <var>
+                    <name>
+                        2 GB Frames
+                    </name>
+                    <value>
+                        0
+                    </value>
+                </var>
+            </var-list>
+        </part>
+        <part id="37">
+            <name>
+                Memory Objects
+            </name>
+            <table id="38">
+                <column-headers>
+                    <col type="T">
+                        Category
+                    </col>
+                    <col type="N">
+                        Fixed 1M
+                    </col>
+                    <col type="N">
+                        Fixed 2G
+                    </col>
+                    <col type="N">
+                        Common
+                    </col>
+                    <col type="N">
+                        Shared
+                    </col>
+                    <col type="N">
+                        Shared 1M
+                    </col>
+                </column-headers>
+                <row refno="1">
+                    <col>
+                        Min
+                    </col>
+                    <col>
+                        4
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        131
+                    </col>
+                    <col>
+                        20
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="2">
+                    <col>
+                        Max
+                    </col>
+                    <col>
+                        4
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        131
+                    </col>
+                    <col>
+                        20
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="3">
+                    <col>
+                        Avg
+                    </col>
+                    <col>
+                        4
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        131
+                    </col>
+                    <col>
+                        20
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+            </table>
+        </part>
+        <part id="39">
+            <name>
+                1 MB Frames
+            </name>
+            <table id="40">
+                <column-headers>
+                    <col type="T">
+                        Category
+                    </col>
+                    <col type="N">
+                        Fixed Maximum
+                    </col>
+                    <col type="N">
+                        Fixed Available
+                    </col>
+                    <col type="N">
+                        Fixed In-Use
+                    </col>
+                    <col type="N">
+                        Pageable
+                    </col>
+                    <col type="N">
+                        Available
+                    </col>
+                    <col type="N">
+                        Total
+                    </col>
+                </column-headers>
+                <row refno="1">
+                    <col>
+                        Min
+                    </col>
+                    <col>
+                        200
+                    </col>
+                    <col>
+                        192
+                    </col>
+                    <col>
+                        8
+                    </col>
+                    <col>
+                        163
+                    </col>
+                    <col>
+                        27647
+                    </col>
+                    <col>
+                        29029
+                    </col>
+                </row>
+                <row refno="2">
+                    <col>
+                        Max
+                    </col>
+                    <col>
+                        200
+                    </col>
+                    <col>
+                        192
+                    </col>
+                    <col>
+                        8
+                    </col>
+                    <col>
+                        163
+                    </col>
+                    <col>
+                        27647
+                    </col>
+                    <col>
+                        29029
+                    </col>
+                </row>
+                <row refno="3">
+                    <col>
+                        Avg
+                    </col>
+                    <col>
+                        200
+                    </col>
+                    <col>
+                        192
+                    </col>
+                    <col>
+                        8
+                    </col>
+                    <col>
+                        163
+                    </col>
+                    <col>
+                        27647
+                    </col>
+                    <col>
+                        29029
+                    </col>
+                </row>
+            </table>
+        </part>
+        <part id="41">
+            <name>
+                2 GB Frames
+            </name>
+            <table id="42">
+                <column-headers>
+                    <col type="T">
+                        Category
+                    </col>
+                    <col type="N">
+                        Fixed Maximum
+                    </col>
+                    <col type="N">
+                        Fixed Available
+                    </col>
+                    <col type="N">
+                        Fixed In-Use
+                    </col>
+                </column-headers>
+                <row refno="1">
+                    <col>
+                        Min
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="2">
+                    <col>
+                        Max
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="3">
+                    <col>
+                        Avg
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+            </table>
+        </part>
+        <part id="43">
+            <name>
+                High Shared Frames
+            </name>
+            <table id="44">
+                <column-headers>
+                    <col type="T">
+                        Category
+                    </col>
+                    <col type="S">
+                        Total
+                    </col>
+                    <col type="S">
+                        Central Storage
+                    </col>
+                    <col type="N">
+                        Backed 1M
+                    </col>
+                    <col type="N">
+                        Auxiliary DASD
+                    </col>
+                </column-headers>
+                <row refno="1">
+                    <col>
+                        Min
+                    </col>
+                    <col>
+                        136902.1M
+                    </col>
+                    <col>
+                        13352
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="2">
+                    <col>
+                        Max
+                    </col>
+                    <col>
+                        136902.1M
+                    </col>
+                    <col>
+                        13352
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="3">
+                    <col>
+                        Avg
+                    </col>
+                    <col>
+                        136902.1M
+                    </col>
+                    <col>
+                        13352
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+            </table>
+        </part>
+        <part id="45">
+            <name>
+                High Common Frames
+            </name>
+            <table id="46">
+                <column-headers>
+                    <col type="T">
+                        Category
+                    </col>
+                    <col type="S">
+                        Total
+                    </col>
+                    <col type="S">
+                        Central Storage
+                    </col>
+                    <col type="N">
+                        Backed 1M
+                    </col>
+                    <col type="N">
+                        Fixed
+                    </col>
+                    <col type="N">
+                        Fixed 1M
+                    </col>
+                    <col type="N">
+                        Auxiliary DASD
+                    </col>
+                </column-headers>
+                <row refno="1">
+                    <col>
+                        Min
+                    </col>
+                    <col>
+                        17301504
+                    </col>
+                    <col>
+                        67818
+                    </col>
+                    <col>
+                        181
+                    </col>
+                    <col>
+                        9393
+                    </col>
+                    <col>
+                        8
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="2">
+                    <col>
+                        Max
+                    </col>
+                    <col>
+                        17301504
+                    </col>
+                    <col>
+                        67819
+                    </col>
+                    <col>
+                        181
+                    </col>
+                    <col>
+                        9393
+                    </col>
+                    <col>
+                        8
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="3">
+                    <col>
+                        Avg
+                    </col>
+                    <col>
+                        17301504
+                    </col>
+                    <col>
+                        67819
+                    </col>
+                    <col>
+                        181
+                    </col>
+                    <col>
+                        9393
+                    </col>
+                    <col>
+                        8
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+            </table>
+        </part>
+    </segment>
+</xml>

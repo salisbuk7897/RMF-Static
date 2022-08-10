@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="HFS">
+			<description>
+				Hierarchical File System Statistics Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/02/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/02/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				30:00:000
+			</report-interval>
+			<cycle unit="milliseconds">
+				1000
+			</cycle>
+		</time-data>
+		<segment id="1">
+			<name>
+				HFS Global Statistics
+			</name>
+			<part id="2">
+				<name>
+					Storage Limits (MB)
+				</name>
+				<var-list id="3">
+					<var>
+						<name>
+							Virtual Max
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							Virtual Use
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							Fixed Min
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+					<var>
+						<name>
+							Fixed Use
+						</name>
+						<value>
+							N/A
+						</value>
+					</var>
+				</var-list>
+				<message>
+					<description>
+						Buffer limit data is not available. BPX1PCT rc= 79, rs= 05A.
+					</description>
+					<severity>
+						1
+					</severity>
+				</message>
+			</part>
+			<message>
+				<description>
+					Global HFS data is not available. BPX1PCT rc= 79, rs= 05A.
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+		</segment>
+	</postprocessor>
+</ddsml>

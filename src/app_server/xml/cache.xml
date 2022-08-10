@@ -1,0 +1,7834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="CACHE" option="SUBSYS">
+			<description>
+				Cache Subsystem Activity Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				07/27/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				07/27/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				30:00:000
+			</report-interval>
+		</time-data>
+		<segment id="1">
+			<name>
+				Cache Interval
+			</name>
+			<part id="2">
+				<var-list id="3">
+					<var>
+						<name>
+							Start
+						</name>
+						<value>
+							07/27/2022-00.00.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Interval (mm.ss)
+						</name>
+						<value>
+							30.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="4">
+			<name>
+				Cache Subsystem Activity for SSID 5000
+			</name>
+			<part id="5">
+				<name>
+					Storage Subsystem Descriptor
+				</name>
+				<var-list id="6">
+					<var>
+						<name>
+							Subsystem
+						</name>
+						<value>
+							2107-01
+						</value>
+					</var>
+					<var>
+						<name>
+							Physical CU-ID
+						</name>
+						<value>
+							5008
+						</value>
+					</var>
+					<var>
+						<name>
+							Subsystem ID
+						</name>
+						<value>
+							5000
+						</value>
+					</var>
+					<var>
+						<name>
+							Type-Model
+						</name>
+						<value>
+							2107-983
+						</value>
+					</var>
+					<var>
+						<name>
+							Manufacturer
+						</name>
+						<value>
+							IBM
+						</value>
+					</var>
+					<var>
+						<name>
+							Plant
+						</name>
+						<value>
+							75
+						</value>
+					</var>
+					<var>
+						<name>
+							Serial number
+						</name>
+						<value>
+							0000000KCG11
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="7">
+				<name>
+					Subsystem Storage and Status
+				</name>
+				<var-list id="8">
+					<var>
+						<name>
+							Storage Configured
+						</name>
+						<value>
+							25152M
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Available
+						</name>
+						<value>
+							17956M
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Pinned
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Offline
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							NVS Configured
+						</name>
+						<value>
+							2048.0M
+						</value>
+					</var>
+					<var>
+						<name>
+							NVS Pinned
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Non-Volatile Storage
+						</name>
+						<value>
+							Active
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache Fast Write
+						</name>
+						<value>
+							Active
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="9">
+				<name>
+					Cache Subsystem Overview
+				</name>
+				<var-list id="10">
+					<var>
+						<name>
+							Total I/O Count
+						</name>
+						<value>
+							59756
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Hit Ratio
+						</name>
+						<value>
+							0.996
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache I/O Count
+						</name>
+						<value>
+							59756
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache Hit Ratio
+						</name>
+						<value>
+							0.996
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Cache Misses
+						</name>
+						<value>
+							263
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Cache Miss Rate
+						</name>
+						<value>
+							0.1
+						</value>
+					</var>
+				</var-list>
+				<table id="11">
+					<column-headers>
+						<col type="T">
+							Cache I/O Request Category
+						</col>
+						<col type="S">
+							Read Count
+						</col>
+						<col type="S">
+							Read Rate
+						</col>
+						<col type="S">
+							Read Hits
+						</col>
+						<col type="S">
+							Read Hits Rate
+						</col>
+						<col type="N">
+							Read Hit Ratio
+						</col>
+						<col type="S">
+							Write Count
+						</col>
+						<col type="S">
+							Write Rate
+						</col>
+						<col type="S">
+							Fast Write
+						</col>
+						<col type="S">
+							Fast Write Rate
+						</col>
+						<col type="S">
+							Write Hits
+						</col>
+						<col type="S">
+							Write Hits Rate
+						</col>
+						<col type="N">
+							Write Hit Ratio
+						</col>
+						<col type="N">
+							%Read of Read+Write
+						</col>
+						<col type="S">
+							Read Misses
+						</col>
+						<col type="S">
+							Read Miss Rate
+						</col>
+						<col type="S">
+							Write Misses
+						</col>
+						<col type="S">
+							Write Miss Rate
+						</col>
+						<col type="S">
+							Cache Misses Tracks
+						</col>
+						<col type="S">
+							Cache Misses Tracks Rate
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Normal
+						</col>
+						<col>
+							37024
+						</col>
+						<col>
+							20.6
+						</col>
+						<col>
+							36761
+						</col>
+						<col>
+							20.4
+						</col>
+						<col>
+							0.993
+						</col>
+						<col>
+							9218
+						</col>
+						<col>
+							5.1
+						</col>
+						<col>
+							9218
+						</col>
+						<col>
+							5.1
+						</col>
+						<col>
+							9218
+						</col>
+						<col>
+							5.1
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							80.1
+						</col>
+						<col>
+							263
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							266
+						</col>
+						<col>
+							0.1
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Sequential
+						</col>
+						<col>
+							13092
+						</col>
+						<col>
+							7.3
+						</col>
+						<col>
+							13092
+						</col>
+						<col>
+							7.3
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							422
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							422
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							422
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							96.9
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CFW Data
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+					</row>
+					<row refno="4" type="SUM">
+						<col>
+							Total
+						</col>
+						<col>
+							50116
+						</col>
+						<col>
+							27.8
+						</col>
+						<col>
+							49853
+						</col>
+						<col>
+							27.7
+						</col>
+						<col>
+							0.995
+						</col>
+						<col>
+							9640
+						</col>
+						<col>
+							5.4
+						</col>
+						<col>
+							9640
+						</col>
+						<col>
+							5.4
+						</col>
+						<col>
+							9640
+						</col>
+						<col>
+							5.4
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							83.9
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+			<part id="12">
+				<name>
+					Miscellaneous Cache Activities
+				</name>
+				<var-list id="13">
+					<var>
+						<name>
+							Delayed Operations NVS Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations NVS Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations Cache Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations Cache Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							DFW Inhibit Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							DFW Inhibit Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Async I/O Count
+						</name>
+						<value>
+							446
+						</value>
+					</var>
+					<var>
+						<name>
+							Async I/O Rate
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							CKD Writes
+						</name>
+						<value>
+							20376
+						</value>
+					</var>
+					<var>
+						<name>
+							CKD Write Hits
+						</name>
+						<value>
+							20376
+						</value>
+					</var>
+					<var>
+						<name>
+							Record Caching Read Misses
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Record Caching Write Promotes
+						</name>
+						<value>
+							8744
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="14">
+				<name>
+					Synchronous I/O Activity
+				</name>
+				<var-list id="15">
+					<var>
+						<name>
+							Read Requests/Sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Read Hits/Request
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Requests/Sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Hits/Request
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="16">
+				<name>
+					Host Adapter Activity
+				</name>
+				<var-list id="17">
+					<var>
+						<name>
+							Bytes/Req Read
+						</name>
+						<value>
+							7.0K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Read
+						</name>
+						<value>
+							194.9K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Write
+						</name>
+						<value>
+							3.8K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Write
+						</name>
+						<value>
+							20.5K
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="18">
+				<name>
+					Disk Activity
+				</name>
+				<var-list id="19">
+					<var>
+						<name>
+							Read Response Time
+						</name>
+						<value>
+							0.419
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Response Time
+						</name>
+						<value>
+							1.846
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Read
+						</name>
+						<value>
+							48.6K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Read
+						</name>
+						<value>
+							7.2K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Write
+						</name>
+						<value>
+							35.6K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Write
+						</name>
+						<value>
+							7.2K
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="20">
+				<name>
+					Cache Subsystem Device Overview
+				</name>
+				<table id="21">
+					<column-headers>
+						<col type="T">
+							Volume Serial
+						</col>
+						<col type="T">
+							Device Number
+						</col>
+						<col type="T">
+							Extent Pool ID
+						</col>
+						<col type="N">
+							%I/O of Total
+						</col>
+						<col type="S">
+							I/O Rate
+						</col>
+						<col type="S">
+							Cache Hit Read Rate
+						</col>
+						<col type="S">
+							Cache Hit DFW Rate
+						</col>
+						<col type="S">
+							Cache Hit CFW Rate
+						</col>
+						<col type="S">
+							DASD I/O Stage Rate
+						</col>
+						<col type="S">
+							DASD I/O Operations Delayed by NVS Rate
+						</col>
+						<col type="S">
+							DASD I/O Operations Delayed by Cache and DFW Inhibit Rate
+						</col>
+						<col type="S">
+							Async Rate
+						</col>
+						<col type="N">
+							Total Hit Ratio
+						</col>
+						<col type="N">
+							Read Hit Ratio
+						</col>
+						<col type="N">
+							Write Hit Ratio
+						</col>
+						<col type="N">
+							%Read of Read+Write
+						</col>
+					</column-headers>
+					<row refno="1" type="SUM">
+						<col>
+							*ALL
+						</col>
+						<col />
+						<col />
+						<col>
+							100.0
+						</col>
+						<col>
+							33.2
+						</col>
+						<col>
+							27.7
+						</col>
+						<col>
+							5.4
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.996
+						</col>
+						<col>
+							0.995
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							83.9
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							ZCAT25
+						</col>
+						<col>
+							05000
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="3">
+						<col>
+							DVMC00
+						</col>
+						<col>
+							05001
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="4">
+						<col>
+							QLAPPL
+						</col>
+						<col>
+							05002
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							CBT001
+						</col>
+						<col>
+							05003
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							14.1
+						</col>
+						<col>
+							4.7
+						</col>
+						<col>
+							4.6
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							99.5
+						</col>
+					</row>
+					<row refno="6">
+						<col>
+							CBT002
+						</col>
+						<col>
+							05004
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							87.6
+						</col>
+					</row>
+					<row refno="7">
+						<col>
+							CBT003
+						</col>
+						<col>
+							05005
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							1.5
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							85.8
+						</col>
+					</row>
+					<row refno="8">
+						<col>
+							VISHR1
+						</col>
+						<col>
+							05006
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							8.3
+						</col>
+						<col>
+							2.8
+						</col>
+						<col>
+							2.3
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							84.8
+						</col>
+					</row>
+					<row refno="9">
+						<col>
+							CBT004
+						</col>
+						<col>
+							05007
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							84.8
+						</col>
+					</row>
+					<row refno="10">
+						<col>
+							DVM000
+						</col>
+						<col>
+							05008
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="11">
+						<col>
+							Z24CAT
+						</col>
+						<col>
+							05009
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="12">
+						<col>
+							HFS100
+						</col>
+						<col>
+							0500A
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="13">
+						<col>
+							Z25VIR
+						</col>
+						<col>
+							0500B
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							1.0
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							32.2
+						</col>
+					</row>
+					<row refno="14">
+						<col>
+							DS500C
+						</col>
+						<col>
+							0500C
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="15">
+						<col>
+							PUBLC1
+						</col>
+						<col>
+							0500D
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="16">
+						<col>
+							WORK01
+						</col>
+						<col>
+							0500E
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							3.1
+						</col>
+						<col>
+							1.0
+						</col>
+						<col>
+							0.7
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							73.2
+						</col>
+					</row>
+					<row refno="17">
+						<col>
+							0X500F
+						</col>
+						<col>
+							0500F
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="18">
+						<col>
+							CICS56
+						</col>
+						<col>
+							05010
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							9.1
+						</col>
+					</row>
+					<row refno="19">
+						<col>
+							WORK02
+						</col>
+						<col>
+							05011
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							1.3
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							62.2
+						</col>
+					</row>
+					<row refno="20">
+						<col>
+							LOGR01
+						</col>
+						<col>
+							05012
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="21">
+						<col>
+							DB2V12
+						</col>
+						<col>
+							05013
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							14.3
+						</col>
+					</row>
+					<row refno="22">
+						<col>
+							WORK03
+						</col>
+						<col>
+							05014
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.9
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							51.6
+						</col>
+					</row>
+					<row refno="23">
+						<col>
+							TSO001
+						</col>
+						<col>
+							05015
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							75.0
+						</col>
+					</row>
+					<row refno="24">
+						<col>
+							TSO002
+						</col>
+						<col>
+							05016
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="25">
+						<col>
+							WORK04
+						</col>
+						<col>
+							05017
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							2.1
+						</col>
+						<col>
+							0.7
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							64.5
+						</col>
+					</row>
+					<row refno="26">
+						<col>
+							WORK05
+						</col>
+						<col>
+							05018
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							1.5
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							50.6
+						</col>
+					</row>
+					<row refno="27">
+						<col>
+							WORK06
+						</col>
+						<col>
+							05019
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="28">
+						<col>
+							DB2C02
+						</col>
+						<col>
+							0501A
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="29">
+						<col>
+							HDW001
+						</col>
+						<col>
+							0501B
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							3.7
+						</col>
+						<col>
+							1.2
+						</col>
+						<col>
+							1.0
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							80.5
+						</col>
+					</row>
+					<row refno="30">
+						<col>
+							JES001
+						</col>
+						<col>
+							0501C
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							2.2
+						</col>
+						<col>
+							0.7
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							56.0
+						</col>
+					</row>
+					<row refno="31">
+						<col>
+							Z25CAT
+						</col>
+						<col>
+							0501D
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							14.3
+						</col>
+						<col>
+							4.7
+						</col>
+						<col>
+							2.4
+						</col>
+						<col>
+							2.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							51.4
+						</col>
+					</row>
+					<row refno="32">
+						<col>
+							Z25RES
+						</col>
+						<col>
+							0501E
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="33">
+						<col>
+							Z25DLB
+						</col>
+						<col>
+							0501F
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="34">
+						<col>
+							ZDLB25
+						</col>
+						<col>
+							05020
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="35">
+						<col>
+							ZRES25
+						</col>
+						<col>
+							05021
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="36">
+						<col>
+							MAINT0
+						</col>
+						<col>
+							05022
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="37">
+						<col>
+							Z24VI1
+						</col>
+						<col>
+							05023
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="38">
+						<col>
+							ZOS23E
+						</col>
+						<col>
+							05024
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="39">
+						<col>
+							SMF000
+						</col>
+						<col>
+							05025
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="40">
+						<col>
+							DVLPRS
+						</col>
+						<col>
+							05026
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							43.6
+						</col>
+						<col>
+							14.5
+						</col>
+						<col>
+							14.3
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							98.4
+						</col>
+					</row>
+					<row refno="41">
+						<col>
+							ZOWE00
+						</col>
+						<col>
+							05027
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="42">
+						<col>
+							SMF001
+						</col>
+						<col>
+							05028
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="43">
+						<col>
+							Z22JS1
+						</col>
+						<col>
+							0502B
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							1.5
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.711
+						</col>
+						<col>
+							0.160
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							34.4
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="22">
+			<name>
+				Cache Subsystem Activity for SSID 5001
+			</name>
+			<part id="23">
+				<name>
+					Storage Subsystem Descriptor
+				</name>
+				<var-list id="24">
+					<var>
+						<name>
+							Subsystem
+						</name>
+						<value>
+							2107-01
+						</value>
+					</var>
+					<var>
+						<name>
+							Physical CU-ID
+						</name>
+						<value>
+							511C
+						</value>
+					</var>
+					<var>
+						<name>
+							Subsystem ID
+						</name>
+						<value>
+							5001
+						</value>
+					</var>
+					<var>
+						<name>
+							Type-Model
+						</name>
+						<value>
+							2107-983
+						</value>
+					</var>
+					<var>
+						<name>
+							Manufacturer
+						</name>
+						<value>
+							IBM
+						</value>
+					</var>
+					<var>
+						<name>
+							Plant
+						</name>
+						<value>
+							75
+						</value>
+					</var>
+					<var>
+						<name>
+							Serial number
+						</name>
+						<value>
+							0000000KCG11
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="25">
+				<name>
+					Subsystem Storage and Status
+				</name>
+				<var-list id="26">
+					<var>
+						<name>
+							Storage Configured
+						</name>
+						<value>
+							25152M
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Available
+						</name>
+						<value>
+							17956M
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Pinned
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Offline
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							NVS Configured
+						</name>
+						<value>
+							2048.0M
+						</value>
+					</var>
+					<var>
+						<name>
+							NVS Pinned
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Non-Volatile Storage
+						</name>
+						<value>
+							Active
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache Fast Write
+						</name>
+						<value>
+							Active
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="27">
+				<name>
+					Cache Subsystem Overview
+				</name>
+				<var-list id="28">
+					<var>
+						<name>
+							Total I/O Count
+						</name>
+						<value>
+							121621
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Hit Ratio
+						</name>
+						<value>
+							1.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache I/O Count
+						</name>
+						<value>
+							121621
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache Hit Ratio
+						</name>
+						<value>
+							1.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Cache Misses
+						</name>
+						<value>
+							2
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Cache Miss Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+				<table id="29">
+					<column-headers>
+						<col type="T">
+							Cache I/O Request Category
+						</col>
+						<col type="S">
+							Read Count
+						</col>
+						<col type="S">
+							Read Rate
+						</col>
+						<col type="S">
+							Read Hits
+						</col>
+						<col type="S">
+							Read Hits Rate
+						</col>
+						<col type="N">
+							Read Hit Ratio
+						</col>
+						<col type="S">
+							Write Count
+						</col>
+						<col type="S">
+							Write Rate
+						</col>
+						<col type="S">
+							Fast Write
+						</col>
+						<col type="S">
+							Fast Write Rate
+						</col>
+						<col type="S">
+							Write Hits
+						</col>
+						<col type="S">
+							Write Hits Rate
+						</col>
+						<col type="N">
+							Write Hit Ratio
+						</col>
+						<col type="N">
+							%Read of Read+Write
+						</col>
+						<col type="S">
+							Read Misses
+						</col>
+						<col type="S">
+							Read Miss Rate
+						</col>
+						<col type="S">
+							Write Misses
+						</col>
+						<col type="S">
+							Write Miss Rate
+						</col>
+						<col type="S">
+							Cache Misses Tracks
+						</col>
+						<col type="S">
+							Cache Misses Tracks Rate
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Normal
+						</col>
+						<col>
+							26325
+						</col>
+						<col>
+							14.6
+						</col>
+						<col>
+							26323
+						</col>
+						<col>
+							14.6
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							14342
+						</col>
+						<col>
+							8.0
+						</col>
+						<col>
+							14342
+						</col>
+						<col>
+							8.0
+						</col>
+						<col>
+							14342
+						</col>
+						<col>
+							8.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							64.7
+						</col>
+						<col>
+							2
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Sequential
+						</col>
+						<col>
+							1893
+						</col>
+						<col>
+							1.1
+						</col>
+						<col>
+							1893
+						</col>
+						<col>
+							1.1
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							79061
+						</col>
+						<col>
+							43.9
+						</col>
+						<col>
+							79061
+						</col>
+						<col>
+							43.9
+						</col>
+						<col>
+							79061
+						</col>
+						<col>
+							43.9
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							2.3
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CFW Data
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+					</row>
+					<row refno="4" type="SUM">
+						<col>
+							Total
+						</col>
+						<col>
+							28218
+						</col>
+						<col>
+							15.7
+						</col>
+						<col>
+							28216
+						</col>
+						<col>
+							15.7
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							93403
+						</col>
+						<col>
+							51.9
+						</col>
+						<col>
+							93403
+						</col>
+						<col>
+							51.9
+						</col>
+						<col>
+							93403
+						</col>
+						<col>
+							51.9
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							23.2
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+			<part id="30">
+				<name>
+					Miscellaneous Cache Activities
+				</name>
+				<var-list id="31">
+					<var>
+						<name>
+							Delayed Operations NVS Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations NVS Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations Cache Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations Cache Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							DFW Inhibit Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							DFW Inhibit Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Async I/O Count
+						</name>
+						<value>
+							7564
+						</value>
+					</var>
+					<var>
+						<name>
+							Async I/O Rate
+						</name>
+						<value>
+							4.2
+						</value>
+					</var>
+					<var>
+						<name>
+							CKD Writes
+						</name>
+						<value>
+							21455
+						</value>
+					</var>
+					<var>
+						<name>
+							CKD Write Hits
+						</name>
+						<value>
+							21454
+						</value>
+					</var>
+					<var>
+						<name>
+							Record Caching Read Misses
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Record Caching Write Promotes
+						</name>
+						<value>
+							40459
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="32">
+				<name>
+					Synchronous I/O Activity
+				</name>
+				<var-list id="33">
+					<var>
+						<name>
+							Read Requests/Sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Read Hits/Request
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Requests/Sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Hits/Request
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="34">
+				<name>
+					Host Adapter Activity
+				</name>
+				<var-list id="35">
+					<var>
+						<name>
+							Bytes/Req Read
+						</name>
+						<value>
+							5.2K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Read
+						</name>
+						<value>
+							82.3K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Write
+						</name>
+						<value>
+							7.4K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Write
+						</name>
+						<value>
+							381.4K
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="36">
+				<name>
+					Disk Activity
+				</name>
+				<var-list id="37">
+					<var>
+						<name>
+							Read Response Time
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Response Time
+						</name>
+						<value>
+							2.147
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Read
+						</name>
+						<value>
+							32.8K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Read
+						</name>
+						<value>
+							73
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Write
+						</name>
+						<value>
+							256.9K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Write
+						</name>
+						<value>
+							216.9K
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="38">
+				<name>
+					Cache Subsystem Device Overview
+				</name>
+				<table id="39">
+					<column-headers>
+						<col type="T">
+							Volume Serial
+						</col>
+						<col type="T">
+							Device Number
+						</col>
+						<col type="T">
+							Extent Pool ID
+						</col>
+						<col type="N">
+							%I/O of Total
+						</col>
+						<col type="S">
+							I/O Rate
+						</col>
+						<col type="S">
+							Cache Hit Read Rate
+						</col>
+						<col type="S">
+							Cache Hit DFW Rate
+						</col>
+						<col type="S">
+							Cache Hit CFW Rate
+						</col>
+						<col type="S">
+							DASD I/O Stage Rate
+						</col>
+						<col type="S">
+							DASD I/O Operations Delayed by NVS Rate
+						</col>
+						<col type="S">
+							DASD I/O Operations Delayed by Cache and DFW Inhibit Rate
+						</col>
+						<col type="S">
+							Async Rate
+						</col>
+						<col type="N">
+							Total Hit Ratio
+						</col>
+						<col type="N">
+							Read Hit Ratio
+						</col>
+						<col type="N">
+							Write Hit Ratio
+						</col>
+						<col type="N">
+							%Read of Read+Write
+						</col>
+					</column-headers>
+					<row refno="1" type="SUM">
+						<col>
+							*ALL
+						</col>
+						<col />
+						<col />
+						<col>
+							100.0
+						</col>
+						<col>
+							67.6
+						</col>
+						<col>
+							15.7
+						</col>
+						<col>
+							51.9
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							4.2
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							23.2
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							DB2C04
+						</col>
+						<col>
+							05100
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="3">
+						<col>
+							DB2C05
+						</col>
+						<col>
+							05101
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="4">
+						<col>
+							DB2C06
+						</col>
+						<col>
+							05102
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="5">
+						<col>
+							DUMP00
+						</col>
+						<col>
+							05103
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="6">
+						<col>
+							DS5105
+						</col>
+						<col>
+							05105
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="7">
+						<col>
+							CBT005
+						</col>
+						<col>
+							05106
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							92.2
+						</col>
+					</row>
+					<row refno="8">
+						<col>
+							CBT006
+						</col>
+						<col>
+							05107
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							1.1
+						</col>
+						<col>
+							0.7
+						</col>
+						<col>
+							0.6
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.999
+						</col>
+						<col>
+							0.999
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							89.9
+						</col>
+					</row>
+					<row refno="9">
+						<col>
+							CBTREF
+						</col>
+						<col>
+							05108
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							98.7
+						</col>
+					</row>
+					<row refno="10">
+						<col>
+							XX5109
+						</col>
+						<col>
+							05109
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="11">
+						<col>
+							XX510A
+						</col>
+						<col>
+							0510A
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="12">
+						<col>
+							DS510B
+						</col>
+						<col>
+							0510B
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="13">
+						<col>
+							ML1001
+						</col>
+						<col>
+							0510C
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="14">
+						<col>
+							DB2C01
+						</col>
+						<col>
+							0510D
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="15">
+						<col>
+							CBTRES
+						</col>
+						<col>
+							05114
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							1.7
+						</col>
+						<col>
+							1.2
+						</col>
+						<col>
+							1.0
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							82.7
+						</col>
+					</row>
+					<row refno="16">
+						<col>
+							CBTCAT
+						</col>
+						<col>
+							05115
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							72.1
+						</col>
+						<col>
+							48.7
+						</col>
+						<col>
+							2.6
+						</col>
+						<col>
+							46.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							3.5
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							5.4
+						</col>
+					</row>
+					<row refno="17">
+						<col>
+							PROD01
+						</col>
+						<col>
+							05116
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="18">
+						<col>
+							CBTSTG
+						</col>
+						<col>
+							05117
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							6.8
+						</col>
+						<col>
+							4.6
+						</col>
+						<col>
+							3.4
+						</col>
+						<col>
+							1.2
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							73.0
+						</col>
+					</row>
+					<row refno="19">
+						<col>
+							DB2C03
+						</col>
+						<col>
+							05118
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="20">
+						<col>
+							Z2PAG1
+						</col>
+						<col>
+							05119
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							66.7
+						</col>
+					</row>
+					<row refno="21">
+						<col>
+							DVLPCT
+						</col>
+						<col>
+							0511A
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							12.4
+						</col>
+						<col>
+							8.4
+						</col>
+						<col>
+							6.4
+						</col>
+						<col>
+							1.9
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							76.9
+						</col>
+					</row>
+					<row refno="22">
+						<col>
+							Z24DLB
+						</col>
+						<col>
+							0511B
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="23">
+						<col>
+							Z22IPL
+						</col>
+						<col>
+							0511C
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							4.5
+						</col>
+						<col>
+							3.1
+						</col>
+						<col>
+							1.2
+						</col>
+						<col>
+							1.9
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							39.2
+						</col>
+					</row>
+					<row refno="24">
+						<col>
+							SMF002
+						</col>
+						<col>
+							0511E
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="25">
+						<col>
+							SMFMAN
+						</col>
+						<col>
+							05120
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							1.000
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="26">
+						<col>
+							SMF003
+						</col>
+						<col>
+							05122
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="27">
+						<col>
+							SMF004
+						</col>
+						<col>
+							05123
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="28">
+						<col>
+							SMF005
+						</col>
+						<col>
+							05124
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="29">
+						<col>
+							ZOWE01
+						</col>
+						<col>
+							05125
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							1.000
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="30">
+						<col>
+							Z24RES
+						</col>
+						<col>
+							05127
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="31">
+						<col>
+							SMF006
+						</col>
+						<col>
+							05129
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="32">
+						<col>
+							SMF007
+						</col>
+						<col>
+							0512B
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="33">
+						<col>
+							SMF008
+						</col>
+						<col>
+							0512C
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="34">
+						<col>
+							HFS001
+						</col>
+						<col>
+							0512D
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							9.5
+						</col>
+					</row>
+					<row refno="35">
+						<col>
+							ZOSMF1
+						</col>
+						<col>
+							0512E
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="36">
+						<col>
+							ZOS25X
+						</col>
+						<col>
+							05130
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col />
+						<col>
+							100.0
+						</col>
+					</row>
+					<row refno="37">
+						<col>
+							DS5131
+						</col>
+						<col>
+							05131
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="40">
+			<name>
+				Cache Subsystem Activity for SSID 5002
+			</name>
+			<part id="41">
+				<name>
+					Storage Subsystem Descriptor
+				</name>
+				<var-list id="42">
+					<var>
+						<name>
+							Subsystem
+						</name>
+						<value>
+							2107-01
+						</value>
+					</var>
+					<var>
+						<name>
+							Physical CU-ID
+						</name>
+						<value>
+							5218
+						</value>
+					</var>
+					<var>
+						<name>
+							Subsystem ID
+						</name>
+						<value>
+							5002
+						</value>
+					</var>
+					<var>
+						<name>
+							Type-Model
+						</name>
+						<value>
+							2107-983
+						</value>
+					</var>
+					<var>
+						<name>
+							Manufacturer
+						</name>
+						<value>
+							IBM
+						</value>
+					</var>
+					<var>
+						<name>
+							Plant
+						</name>
+						<value>
+							75
+						</value>
+					</var>
+					<var>
+						<name>
+							Serial number
+						</name>
+						<value>
+							0000000KCG11
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="43">
+				<name>
+					Subsystem Storage and Status
+				</name>
+				<var-list id="44">
+					<var>
+						<name>
+							Storage Configured
+						</name>
+						<value>
+							25152M
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Available
+						</name>
+						<value>
+							17956M
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Pinned
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Offline
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							NVS Configured
+						</name>
+						<value>
+							2048.0M
+						</value>
+					</var>
+					<var>
+						<name>
+							NVS Pinned
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Non-Volatile Storage
+						</name>
+						<value>
+							Active
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache Fast Write
+						</name>
+						<value>
+							Active
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="45">
+				<name>
+					Cache Subsystem Overview
+				</name>
+				<var-list id="46">
+					<var>
+						<name>
+							Total I/O Count
+						</name>
+						<value>
+							998
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Hit Ratio
+						</name>
+						<value>
+							1.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache I/O Count
+						</name>
+						<value>
+							998
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache Hit Ratio
+						</name>
+						<value>
+							1.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Cache Misses
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Cache Miss Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+				<table id="47">
+					<column-headers>
+						<col type="T">
+							Cache I/O Request Category
+						</col>
+						<col type="S">
+							Read Count
+						</col>
+						<col type="S">
+							Read Rate
+						</col>
+						<col type="S">
+							Read Hits
+						</col>
+						<col type="S">
+							Read Hits Rate
+						</col>
+						<col type="N">
+							Read Hit Ratio
+						</col>
+						<col type="S">
+							Write Count
+						</col>
+						<col type="S">
+							Write Rate
+						</col>
+						<col type="S">
+							Fast Write
+						</col>
+						<col type="S">
+							Fast Write Rate
+						</col>
+						<col type="S">
+							Write Hits
+						</col>
+						<col type="S">
+							Write Hits Rate
+						</col>
+						<col type="N">
+							Write Hit Ratio
+						</col>
+						<col type="N">
+							%Read of Read+Write
+						</col>
+						<col type="S">
+							Read Misses
+						</col>
+						<col type="S">
+							Read Miss Rate
+						</col>
+						<col type="S">
+							Write Misses
+						</col>
+						<col type="S">
+							Write Miss Rate
+						</col>
+						<col type="S">
+							Cache Misses Tracks
+						</col>
+						<col type="S">
+							Cache Misses Tracks Rate
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Normal
+						</col>
+						<col>
+							23
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							23
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							833
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							833
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							833
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							2.7
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Sequential
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							132
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							132
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							132
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							7.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CFW Data
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+					</row>
+					<row refno="4" type="SUM">
+						<col>
+							Total
+						</col>
+						<col>
+							33
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							33
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							965
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							965
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							965
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							3.3
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+			<part id="48">
+				<name>
+					Miscellaneous Cache Activities
+				</name>
+				<var-list id="49">
+					<var>
+						<name>
+							Delayed Operations NVS Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations NVS Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations Cache Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations Cache Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							DFW Inhibit Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							DFW Inhibit Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Async I/O Count
+						</name>
+						<value>
+							80
+						</value>
+					</var>
+					<var>
+						<name>
+							Async I/O Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							CKD Writes
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CKD Write Hits
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Record Caching Read Misses
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Record Caching Write Promotes
+						</name>
+						<value>
+							319
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="50">
+				<name>
+					Synchronous I/O Activity
+				</name>
+				<var-list id="51">
+					<var>
+						<name>
+							Read Requests/Sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Read Hits/Request
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Requests/Sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Hits/Request
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="52">
+				<name>
+					Host Adapter Activity
+				</name>
+				<var-list id="53">
+					<var>
+						<name>
+							Bytes/Req Read
+						</name>
+						<value>
+							15.9K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Read
+						</name>
+						<value>
+							291
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Write
+						</name>
+						<value>
+							4.1K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Write
+						</name>
+						<value>
+							2.2K
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="54">
+				<name>
+					Disk Activity
+				</name>
+				<var-list id="55">
+					<var>
+						<name>
+							Read Response Time
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Response Time
+						</name>
+						<value>
+							2.353
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Read
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Read
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Write
+						</name>
+						<value>
+							38.6K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Write
+						</name>
+						<value>
+							1.5K
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="56">
+				<name>
+					Cache Subsystem Device Overview
+				</name>
+				<table id="57">
+					<column-headers>
+						<col type="T">
+							Volume Serial
+						</col>
+						<col type="T">
+							Device Number
+						</col>
+						<col type="T">
+							Extent Pool ID
+						</col>
+						<col type="N">
+							%I/O of Total
+						</col>
+						<col type="S">
+							I/O Rate
+						</col>
+						<col type="S">
+							Cache Hit Read Rate
+						</col>
+						<col type="S">
+							Cache Hit DFW Rate
+						</col>
+						<col type="S">
+							Cache Hit CFW Rate
+						</col>
+						<col type="S">
+							DASD I/O Stage Rate
+						</col>
+						<col type="S">
+							DASD I/O Operations Delayed by NVS Rate
+						</col>
+						<col type="S">
+							DASD I/O Operations Delayed by Cache and DFW Inhibit Rate
+						</col>
+						<col type="S">
+							Async Rate
+						</col>
+						<col type="N">
+							Total Hit Ratio
+						</col>
+						<col type="N">
+							Read Hit Ratio
+						</col>
+						<col type="N">
+							Write Hit Ratio
+						</col>
+						<col type="N">
+							%Read of Read+Write
+						</col>
+					</column-headers>
+					<row refno="1" type="SUM">
+						<col>
+							*ALL
+						</col>
+						<col />
+						<col />
+						<col>
+							100.0
+						</col>
+						<col>
+							0.6
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							3.3
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							LL5201
+						</col>
+						<col>
+							05201
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="3">
+						<col>
+							LL5202
+						</col>
+						<col>
+							05202
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="4">
+						<col>
+							LL5203
+						</col>
+						<col>
+							05203
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="5">
+						<col>
+							LL5212
+						</col>
+						<col>
+							05212
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="6">
+						<col>
+							LL5213
+						</col>
+						<col>
+							05213
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="7">
+						<col>
+							LL5214
+						</col>
+						<col>
+							05214
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="8">
+						<col>
+							LL5215
+						</col>
+						<col>
+							05215
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="9">
+						<col>
+							LL5216
+						</col>
+						<col>
+							05216
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="10">
+						<col>
+							LL5217
+						</col>
+						<col>
+							05217
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="11">
+						<col>
+							VMCOP1
+						</col>
+						<col>
+							05218
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							66.3
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.4
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.4
+						</col>
+					</row>
+					<row refno="12">
+						<col>
+							71PRL1
+						</col>
+						<col>
+							05219
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="13">
+						<col>
+							MP1RES
+						</col>
+						<col>
+							0521A
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							18.6
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							2.2
+						</col>
+					</row>
+					<row refno="14">
+						<col>
+							MP1S01
+						</col>
+						<col>
+							0521B
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							15.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							13.3
+						</col>
+					</row>
+					<row refno="15">
+						<col>
+							LL5220
+						</col>
+						<col>
+							05220
+						</col>
+						<col>
+							0000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="58">
+			<name>
+				Cache Subsystem Activity for SSID 5003
+			</name>
+			<part id="59">
+				<name>
+					Storage Subsystem Descriptor
+				</name>
+				<var-list id="60">
+					<var>
+						<name>
+							Subsystem
+						</name>
+						<value>
+							2107-01
+						</value>
+					</var>
+					<var>
+						<name>
+							Physical CU-ID
+						</name>
+						<value>
+							5316
+						</value>
+					</var>
+					<var>
+						<name>
+							Subsystem ID
+						</name>
+						<value>
+							5003
+						</value>
+					</var>
+					<var>
+						<name>
+							Type-Model
+						</name>
+						<value>
+							2107-983
+						</value>
+					</var>
+					<var>
+						<name>
+							Manufacturer
+						</name>
+						<value>
+							IBM
+						</value>
+					</var>
+					<var>
+						<name>
+							Plant
+						</name>
+						<value>
+							75
+						</value>
+					</var>
+					<var>
+						<name>
+							Serial number
+						</name>
+						<value>
+							0000000KCG11
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="61">
+				<name>
+					Subsystem Storage and Status
+				</name>
+				<var-list id="62">
+					<var>
+						<name>
+							Storage Configured
+						</name>
+						<value>
+							25152M
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Available
+						</name>
+						<value>
+							17956M
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Pinned
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Storage Offline
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							NVS Configured
+						</name>
+						<value>
+							2048.0M
+						</value>
+					</var>
+					<var>
+						<name>
+							NVS Pinned
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Non-Volatile Storage
+						</name>
+						<value>
+							Active
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache Fast Write
+						</name>
+						<value>
+							Active
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="63">
+				<name>
+					Cache Subsystem Overview
+				</name>
+				<var-list id="64">
+					<var>
+						<name>
+							Total I/O Count
+						</name>
+						<value>
+							1354
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Hit Ratio
+						</name>
+						<value>
+							1.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache I/O Count
+						</name>
+						<value>
+							1354
+						</value>
+					</var>
+					<var>
+						<name>
+							Cache Hit Ratio
+						</name>
+						<value>
+							1.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Cache Misses
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Total Cache Miss Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+				</var-list>
+				<table id="65">
+					<column-headers>
+						<col type="T">
+							Cache I/O Request Category
+						</col>
+						<col type="S">
+							Read Count
+						</col>
+						<col type="S">
+							Read Rate
+						</col>
+						<col type="S">
+							Read Hits
+						</col>
+						<col type="S">
+							Read Hits Rate
+						</col>
+						<col type="N">
+							Read Hit Ratio
+						</col>
+						<col type="S">
+							Write Count
+						</col>
+						<col type="S">
+							Write Rate
+						</col>
+						<col type="S">
+							Fast Write
+						</col>
+						<col type="S">
+							Fast Write Rate
+						</col>
+						<col type="S">
+							Write Hits
+						</col>
+						<col type="S">
+							Write Hits Rate
+						</col>
+						<col type="N">
+							Write Hit Ratio
+						</col>
+						<col type="N">
+							%Read of Read+Write
+						</col>
+						<col type="S">
+							Read Misses
+						</col>
+						<col type="S">
+							Read Miss Rate
+						</col>
+						<col type="S">
+							Write Misses
+						</col>
+						<col type="S">
+							Write Miss Rate
+						</col>
+						<col type="S">
+							Cache Misses Tracks
+						</col>
+						<col type="S">
+							Cache Misses Tracks Rate
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Normal
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col>
+							437
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							437
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							437
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Sequential
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							914
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							914
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							914
+						</col>
+						<col>
+							0.5
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CFW Data
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+					</row>
+					<row refno="4" type="SUM">
+						<col>
+							Total
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1351
+						</col>
+						<col>
+							0.8
+						</col>
+						<col>
+							1351
+						</col>
+						<col>
+							0.8
+						</col>
+						<col>
+							1351
+						</col>
+						<col>
+							0.8
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							0.2
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+			<part id="66">
+				<name>
+					Miscellaneous Cache Activities
+				</name>
+				<var-list id="67">
+					<var>
+						<name>
+							Delayed Operations NVS Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations NVS Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations Cache Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Delayed Operations Cache Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							DFW Inhibit Count
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							DFW Inhibit Rate
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Async I/O Count
+						</name>
+						<value>
+							407
+						</value>
+					</var>
+					<var>
+						<name>
+							Async I/O Rate
+						</name>
+						<value>
+							0.2
+						</value>
+					</var>
+					<var>
+						<name>
+							CKD Writes
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							CKD Write Hits
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Record Caching Read Misses
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Record Caching Write Promotes
+						</name>
+						<value>
+							1031
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="68">
+				<name>
+					Synchronous I/O Activity
+				</name>
+				<var-list id="69">
+					<var>
+						<name>
+							Read Requests/Sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Read Hits/Request
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Requests/Sec
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Hits/Request
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="70">
+				<name>
+					Host Adapter Activity
+				</name>
+				<var-list id="71">
+					<var>
+						<name>
+							Bytes/Req Read
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Read
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Write
+						</name>
+						<value>
+							12.1K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Write
+						</name>
+						<value>
+							9.1K
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="72">
+				<name>
+					Disk Activity
+				</name>
+				<var-list id="73">
+					<var>
+						<name>
+							Read Response Time
+						</name>
+						<value>
+							0.000
+						</value>
+					</var>
+					<var>
+						<name>
+							Write Response Time
+						</name>
+						<value>
+							2.077
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Read
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Read
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Req Write
+						</name>
+						<value>
+							80.0K
+						</value>
+					</var>
+					<var>
+						<name>
+							Bytes/Sec Write
+						</name>
+						<value>
+							9.2K
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="74">
+				<name>
+					Cache Subsystem Device Overview
+				</name>
+				<table id="75">
+					<column-headers>
+						<col type="T">
+							Volume Serial
+						</col>
+						<col type="T">
+							Device Number
+						</col>
+						<col type="T">
+							Extent Pool ID
+						</col>
+						<col type="N">
+							%I/O of Total
+						</col>
+						<col type="S">
+							I/O Rate
+						</col>
+						<col type="S">
+							Cache Hit Read Rate
+						</col>
+						<col type="S">
+							Cache Hit DFW Rate
+						</col>
+						<col type="S">
+							Cache Hit CFW Rate
+						</col>
+						<col type="S">
+							DASD I/O Stage Rate
+						</col>
+						<col type="S">
+							DASD I/O Operations Delayed by NVS Rate
+						</col>
+						<col type="S">
+							DASD I/O Operations Delayed by Cache and DFW Inhibit Rate
+						</col>
+						<col type="S">
+							Async Rate
+						</col>
+						<col type="N">
+							Total Hit Ratio
+						</col>
+						<col type="N">
+							Read Hit Ratio
+						</col>
+						<col type="N">
+							Write Hit Ratio
+						</col>
+						<col type="N">
+							%Read of Read+Write
+						</col>
+					</column-headers>
+					<row refno="1" type="SUM">
+						<col>
+							*ALL
+						</col>
+						<col />
+						<col />
+						<col>
+							100.0
+						</col>
+						<col>
+							0.8
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.8
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							0.2
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							LL5300
+						</col>
+						<col>
+							05300
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="3">
+						<col>
+							LL5301
+						</col>
+						<col>
+							05301
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="4">
+						<col>
+							LL5316
+						</col>
+						<col>
+							05316
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							100.0
+						</col>
+						<col>
+							0.8
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.8
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.2
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							1.000
+						</col>
+						<col>
+							0.2
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							LL532A
+						</col>
+						<col>
+							0532A
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="6">
+						<col>
+							LL532B
+						</col>
+						<col>
+							0532B
+						</col>
+						<col>
+							0001
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+				</table>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>

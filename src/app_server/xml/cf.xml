@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+    <server>
+        <name>RMF-DDS-Server</name>
+        <version>ZOSV2R5</version>
+        <functionality>3500</functionality>
+        <platform>z/OS</platform>
+    </server>
+    <postprocessor>
+        <metric id="CF">
+            <description>Coupling Facility Activity Report</description>
+            <type>Interval</type>
+        </metric>
+        <version>
+            <smf-data>z/OS V2R5</smf-data>
+            <rmf-report>z/OS V2R5</rmf-report>
+        </version>
+        <resource>
+            <resname>VIPLEX</resname>
+            <restype>SYSPLEX</restype>
+        </resource>
+        <time-data>
+            <display-start locale="en-us">07/26/2022-00.00.00</display-start>
+            <display-end locale="en-us">07/26/2022-00.30.00</display-end>
+            <report-interval unit="minutes">30:00:000</report-interval>
+            <cycle unit="milliseconds">1000</cycle>
+        </time-data>
+        <segment id="1">
+            <name>Usage Summary for Coupling Facility ICF7</name>
+            <part id="2">
+                <name>Total Samples</name>
+                <var-list id="3">
+                    <var>
+                        <name>Average</name>
+                        <value>1800</value>
+                    </var>
+                    <var>
+                        <name>Maximum</name>
+                        <value>1800</value>
+                    </var>
+                    <var>
+                        <name>Minimum</name>
+                        <value>1800</value>
+                    </var>
+                </var-list>
+            </part>
+            <part id="4"></part>
+            <part id="5">
+                <name>Coupling Facility</name>
+                <var-list id="6">
+                    <var>
+                        <name>Type</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Model</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Level</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Dynamic Dispatch Status</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Avg CF Utilization %Busy</name>
+                        <value>65.2</value>
+                    </var>
+                </var-list>
+            </part>
+            <part id="7">
+                <name>Logical Processors</name>
+                <var-list id="8">
+                    <var>
+                        <name>Defined</name>
+                        <value>1</value>
+                    </var>
+                    <var>
+                        <name>Effective</name>
+                        <value>0.000</value>
+                    </var>
+                </var-list>
+            </part>
+        </segment>
+        <segment id="9">
+            <name>Usage Summary for Coupling Facility ICF8</name>
+            <part id="10">
+                <name>Total Samples</name>
+                <var-list id="11">
+                    <var>
+                        <name>Average</name>
+                        <value>1800</value>
+                    </var>
+                    <var>
+                        <name>Maximum</name>
+                        <value>1800</value>
+                    </var>
+                    <var>
+                        <name>Minimum</name>
+                        <value>1800</value>
+                    </var>
+                </var-list>
+            </part>
+            <part id="12"></part>
+            <part id="13">
+                <name>Coupling Facility</name>
+                <var-list id="14">
+                    <var>
+                        <name>Type</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Model</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Level</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Dynamic Dispatch Status</name>
+                        <value />
+                    </var>
+                    <var>
+                        <name>Avg CF Utilization %Busy</name>
+                        <value>65.4</value>
+                    </var>
+                </var-list>
+            </part>
+            <part id="15">
+                <name>Logical Processors</name>
+                <var-list id="16">
+                    <var>
+                        <name>Defined</name>
+                        <value>1</value>
+                    </var>
+                    <var>
+                        <name>Effective</name>
+                        <value>0.000</value>
+                    </var>
+                </var-list>
+            </part>
+        </segment>
+    </postprocessor>
+</ddsml>

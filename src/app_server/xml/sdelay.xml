@@ -1,0 +1,2562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="SDELAY">
+			<description>
+				Serialization Delay Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/09/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/09/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				30:00:000
+			</report-interval>
+			<cycle unit="milliseconds">
+				1000
+			</cycle>
+		</time-data>
+		<segment id="1">
+			<name>
+				Serialization Delay Summary
+			</name>
+			<part id="2">
+				<var-list id="3">
+					<var>
+						<name>
+							GRS Mode
+						</name>
+						<value>
+							RING
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="4">
+				<name>
+					System Locks
+				</name>
+				<table id="5">
+					<column-headers>
+						<col type="T">
+							Lock Type
+						</col>
+						<col type="N">
+							Total Contention Time
+						</col>
+						<col type="N">
+							Avg Contention Time
+						</col>
+						<col type="N">
+							Total Contention Count
+						</col>
+						<col type="N">
+							Contention Count with QLen>1
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							CMS
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							CMSEQDQ
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							CMSLatch
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							CMSSMF
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							Local
+						</col>
+						<col>
+							60
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							7041
+						</col>
+						<col>
+							14
+						</col>
+					</row>
+					<row refno="6">
+						<col>
+							CML Owner
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							24
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="6">
+				<name>
+					GRS Latch Set Creator
+				</name>
+				<table id="7">
+					<column-headers>
+						<col type="N">
+							Total Contention Time
+						</col>
+						<col type="N">
+							Avg Contention Time
+						</col>
+						<col type="N">
+							Std Dev of Contention Time
+						</col>
+						<col type="N">
+							Total Contention Count
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							1
+						</col>
+						<col>
+							0.02
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							40
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="8">
+				<name>
+					GRS Enqueue
+				</name>
+				<table id="9">
+					<column-headers>
+						<col type="T">
+							Scope
+						</col>
+						<col type="N">
+							Total Contention Time
+						</col>
+						<col type="N">
+							Avg Contention Time
+						</col>
+						<col type="N">
+							Std Dev of Contention Time
+						</col>
+						<col type="N">
+							Total Request Count
+						</col>
+						<col type="N">
+							Total Contention Count
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Step
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							4236
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							System
+						</col>
+						<col>
+							205
+						</col>
+						<col>
+							102
+						</col>
+						<col>
+							126
+						</col>
+						<col>
+							9455
+						</col>
+						<col>
+							2
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Systems
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							970
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="10">
+			<name>
+				Serialization Delay Details
+			</name>
+			<message>
+				<description>
+					No CMS Lock Details data available
+				</description>
+				<severity>
+					1
+				</severity>
+			</message>
+			<part id="11">
+				<name>
+					CML and Local Lock Details
+				</name>
+				<table id="12">
+					<column-headers>
+						<col type="T">
+							Address Space ID
+						</col>
+						<col type="T">
+							Job Name
+						</col>
+						<col type="T">
+							Service Class Name
+						</col>
+						<col type="N">
+							Service Class Period
+						</col>
+						<col type="N">
+							CML Lock Owner Total Contention Time
+						</col>
+						<col type="N">
+							CML Lock Owner Avg Contention Time
+						</col>
+						<col type="N">
+							CML Lock Owner Total Contention Count
+						</col>
+						<col type="N">
+							CML Lock Owner Contention Count with QLen>1
+						</col>
+						<col type="N">
+							Local Lock Total Contention Time
+						</col>
+						<col type="N">
+							Local Lock Avg Contention Time
+						</col>
+						<col type="N">
+							Local Lock Total Contention Count
+						</col>
+						<col type="N">
+							Local Lock Contention Count with QLen>1
+						</col>
+						<col type="N">
+							CML Lock Requestor Total Contention Time
+						</col>
+						<col type="N">
+							CML Lock Requestor Avg Contention Time
+						</col>
+						<col type="N">
+							CML Lock Requestor Total Contention Count
+						</col>
+						<col type="N">
+							CML Lock Requestor Contention Count with QLen>1
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							004F
+						</col>
+						<col>
+							RMFGAT
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							49
+						</col>
+						<col>
+							0.08
+						</col>
+						<col>
+							561
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							001E
+						</col>
+						<col>
+							JES2
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							2
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							5612
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							003A
+						</col>
+						<col>
+							TCPIP
+						</col>
+						<col>
+							STCHIGH
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							2
+						</col>
+						<col>
+							0.01
+						</col>
+						<col>
+							146
+						</col>
+						<col>
+							8
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="4">
+						<col>
+							0057
+						</col>
+						<col>
+							CICSTS56
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							195
+						</col>
+						<col>
+							2
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="5">
+						<col>
+							0011
+						</col>
+						<col>
+							HZSPROC
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							0.01
+						</col>
+						<col>
+							57
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="6">
+						<col>
+							0012
+						</col>
+						<col>
+							SDSFAUX
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							306
+						</col>
+						<col>
+							2
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="7">
+						<col>
+							004C
+						</col>
+						<col>
+							RMF
+						</col>
+						<col>
+							STCHIGH
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0.04
+						</col>
+						<col>
+							22
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="8">
+						<col>
+							0006
+						</col>
+						<col>
+							XCFAS
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							7
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							111
+						</col>
+						<col>
+							2
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="9">
+						<col>
+							0009
+						</col>
+						<col>
+							CONSOLE
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							14
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							15
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="10">
+						<col>
+							005A
+						</col>
+						<col>
+							RMMHSKP
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							8
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="11">
+						<col>
+							0046
+						</col>
+						<col>
+							DFRMM
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="12">
+						<col>
+							0014
+						</col>
+						<col>
+							JESXCF
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="13">
+						<col>
+							005A
+						</col>
+						<col>
+							EDGBKUP
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							2
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="14">
+						<col>
+							0001
+						</col>
+						<col>
+							*MASTER*
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="15">
+						<col>
+							000F
+						</col>
+						<col>
+							OMVS
+						</col>
+						<col>
+							STCHIGH
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="16">
+						<col>
+							001F
+						</col>
+						<col>
+							LLA
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="17">
+						<col>
+							0039
+						</col>
+						<col>
+							RRS
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							7
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="18">
+						<col>
+							0022
+						</col>
+						<col>
+							BPXOINIT
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="19">
+						<col>
+							0049
+						</col>
+						<col>
+							GPMSERVE
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="13">
+				<name>
+					GRS Latch Details
+				</name>
+				<table id="14">
+					<column-headers>
+						<col type="T">
+							Address Space ID
+						</col>
+						<col type="T">
+							Job Name
+						</col>
+						<col type="T">
+							Service Class Name
+						</col>
+						<col type="N">
+							Service Class Period
+						</col>
+						<col type="N">
+							Latch Set Creator Total Contention Time
+						</col>
+						<col type="N">
+							Latch Set Creator Avg Contention Time
+						</col>
+						<col type="N">
+							Latch Set Creator Std Dev Contention Time
+						</col>
+						<col type="N">
+							Latch Set Creator Total Contention Count
+						</col>
+						<col type="N">
+							Latch Requestor Total Contention Time
+						</col>
+						<col type="N">
+							Latch Requestor Avg Contention Time
+						</col>
+						<col type="N">
+							Latch Requestor Std Dev Contention Time
+						</col>
+						<col type="N">
+							Latch Requestor Total Contention Count
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							000F
+						</col>
+						<col>
+							OMVS
+						</col>
+						<col>
+							STCHIGH
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0.02
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							40
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="2">
+						<col>
+							0033
+						</col>
+						<col>
+							SYSLOGD
+						</col>
+						<col>
+							UNIX
+						</col>
+						<col>
+							3
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							16
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							0022
+						</col>
+						<col>
+							BPXOINIT
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							7
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							003A
+						</col>
+						<col>
+							TCPIP
+						</col>
+						<col>
+							STCHIGH
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							7
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							0031
+						</col>
+						<col>
+							FTPD21
+						</col>
+						<col>
+							UNIX
+						</col>
+						<col>
+							3
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							4
+						</col>
+					</row>
+					<row refno="6">
+						<col>
+							004F
+						</col>
+						<col>
+							RMFGAT
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col />
+						<col>
+							1
+						</col>
+					</row>
+					<row refno="7">
+						<col>
+							0059
+						</col>
+						<col>
+							BPXAS
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							5
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="15">
+				<name>
+					GRS Enqueue Details
+				</name>
+				<table id="16">
+					<column-headers>
+						<col type="T">
+							Address Space ID
+						</col>
+						<col type="T">
+							Job Name
+						</col>
+						<col type="T">
+							Service Class Name
+						</col>
+						<col type="N">
+							Service Class Period
+						</col>
+						<col type="N">
+							ENQ STEP Total Contention Time
+						</col>
+						<col type="N">
+							ENQ STEP Avg Contention Time
+						</col>
+						<col type="N">
+							ENQ STEP Std Dev Contention Time
+						</col>
+						<col type="N">
+							ENQ STEP Request Count
+						</col>
+						<col type="N">
+							ENQ STEP Contention Count
+						</col>
+						<col type="N">
+							ENQ SYSTEM Total Contention Time
+						</col>
+						<col type="N">
+							ENQ SYSTEM Avg Contention Time
+						</col>
+						<col type="N">
+							ENQ SYSTEM Std Dev Contention Time
+						</col>
+						<col type="N">
+							ENQ SYSTEM Request Count
+						</col>
+						<col type="N">
+							ENQ SYSTEM Contention Count
+						</col>
+						<col type="N">
+							ENQ SYSTEMS Total Contention Time
+						</col>
+						<col type="N">
+							ENQ SYSTEMS Avg Contention Time
+						</col>
+						<col type="N">
+							ENQ SYSTEMS Std Dev Contention Time
+						</col>
+						<col type="N">
+							ENQ SYSTEMS Request Count
+						</col>
+						<col type="N">
+							ENQ SYSTEMS Contention Count
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							005A
+						</col>
+						<col>
+							RMMHSKP
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							1371
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							340
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							005A
+						</col>
+						<col>
+							RMMHSKP
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							51
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							18
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							005A
+						</col>
+						<col>
+							EDGBKUP
+						</col>
+						<col />
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							62
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							14
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							0059
+						</col>
+						<col>
+							BPXAS
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							8
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="5">
+						<col>
+							0057
+						</col>
+						<col>
+							CICSTS56
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							3
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							2
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="6">
+						<col>
+							0053
+						</col>
+						<col>
+							AZFSTC
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							61
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="7">
+						<col>
+							0051
+						</col>
+						<col>
+							RESETFTP
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							7
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							4
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="8">
+						<col>
+							0050
+						</col>
+						<col>
+							VMLXBKUP
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							6
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							4
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="9">
+						<col>
+							004F
+						</col>
+						<col>
+							RMFGAT
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							54
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							1818
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="10">
+						<col>
+							0049
+						</col>
+						<col>
+							GPMSERVE
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							144
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							182
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="11">
+						<col>
+							0047
+						</col>
+						<col>
+							CFZCIM
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							94
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="12">
+						<col>
+							0046
+						</col>
+						<col>
+							DFRMM
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							641
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							980
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							196
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="13">
+						<col>
+							0045
+						</col>
+						<col>
+							DFHSM
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							520
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							399
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							161
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="14">
+						<col>
+							003F
+						</col>
+						<col>
+							PAGENT
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							32
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="15">
+						<col>
+							003A
+						</col>
+						<col>
+							TCPIP
+						</col>
+						<col>
+							STCHIGH
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							444
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							12
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="16">
+						<col>
+							0031
+						</col>
+						<col>
+							FTPD21
+						</col>
+						<col>
+							UNIX
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="17">
+						<col>
+							0029
+						</col>
+						<col>
+							CATALOG
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							228
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							432
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="18">
+						<col>
+							0028
+						</col>
+						<col>
+							RACF
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="19">
+						<col>
+							001E
+						</col>
+						<col>
+							JES2
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							259
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							191
+						</col>
+						<col>
+							191
+						</col>
+						<col />
+						<col>
+							1755
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="20">
+						<col>
+							000A
+						</col>
+						<col>
+							WLM
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							218
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="21">
+						<col>
+							0016
+						</col>
+						<col>
+							SMS
+						</col>
+						<col>
+							SYSSTC
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							13
+						</col>
+						<col>
+							13
+						</col>
+						<col />
+						<col>
+							362
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							120
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="22">
+						<col>
+							0012
+						</col>
+						<col>
+							SDSFAUX
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							232
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="23">
+						<col>
+							0011
+						</col>
+						<col>
+							HZSPROC
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="24">
+						<col>
+							000F
+						</col>
+						<col>
+							OMVS
+						</col>
+						<col>
+							STCHIGH
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							15
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="25">
+						<col>
+							0009
+						</col>
+						<col>
+							CONSOLE
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							75
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="26">
+						<col>
+							0008
+						</col>
+						<col>
+							SMSPDSE
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							30
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="27">
+						<col>
+							0001
+						</col>
+						<col>
+							*MASTER*
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							36
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="28">
+						<col>
+							001A
+						</col>
+						<col>
+							CEA
+						</col>
+						<col>
+							SYSTEM
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							12
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="29">
+						<col>
+							004C
+						</col>
+						<col>
+							RMF
+						</col>
+						<col>
+							STCHIGH
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							146
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="30">
+						<col>
+							0039
+						</col>
+						<col>
+							RRS
+						</col>
+						<col>
+							STCLOW
+						</col>
+						<col>
+							1
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col>
+							120
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>

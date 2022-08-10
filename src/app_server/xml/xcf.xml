@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="XCF">
+			<description>
+				XCF Activity Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/09/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/09/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				30:00:000
+			</report-interval>
+			<cycle unit="milliseconds">
+				1000
+			</cycle>
+		</time-data>
+		<segment id="1">
+			<name>
+				XCF Usage by System
+			</name>
+			<part id="2">
+				<name>
+					Local within System RPRT
+				</name>
+				<table id="3">
+					<column-headers>
+						<col type="T">
+							Transport Class
+						</col>
+						<col type="T">
+							Status
+						</col>
+						<col type="S">
+							Requests Rejected
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							_XCFMGD
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							DEFAULT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="4">
+			<name>
+				XCF Usage by Member
+			</name>
+			<part id="5">
+				<name>
+					Members on System RPRT
+				</name>
+				<table id="6">
+					<column-headers>
+						<col type="T">
+							Group
+						</col>
+						<col type="T">
+							Member
+						</col>
+						<col type="T">
+							Status
+						</col>
+						<col type="S">
+							Requests Out
+						</col>
+						<col type="S">
+							Requests In
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							AOPAOP1
+						</col>
+						<col>
+							CFGIBM00
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							ARCPLEX0
+						</col>
+						<col>
+							HOST#X
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							ATRRRS
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							COFVLFNO
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							DFHIR000
+						</col>
+						<col>
+							CICS56
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="6">
+						<col>
+							EZBTCPCS
+						</col>
+						<col>
+							RPRTTCPIP
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="7">
+						<col>
+							GSKSRVGP
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="8">
+						<col>
+							HSFIXC
+						</col>
+						<col>
+							HSF@RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="9">
+						<col>
+							IGG0CAS
+						</col>
+						<col>
+							IGG0CAS1RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="10">
+						<col>
+							ISTCFS01
+						</col>
+						<col>
+							VTAMSSCPVTAM
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="11">
+						<col>
+							ISTXCF
+						</col>
+						<col>
+							VTAMSSCPVTAM
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="12">
+						<col>
+							N1
+						</col>
+						<col>
+							N1$RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="13">
+						<col>
+							SYSDAE
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="14">
+						<col>
+							SYSENF
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="15">
+						<col>
+							SYSGRS
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="16">
+						<col>
+							SYSIEFTS
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="17">
+						<col>
+							SYSIGW00
+						</col>
+						<col>
+							IGWCLM01RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="18">
+						<col>
+							SYSIGW01
+						</col>
+						<col>
+							IGWCLM01RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="19">
+						<col>
+							SYSIKJBC
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="20">
+						<col>
+							SYSIOSPX
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="21">
+						<col>
+							SYSIOS01
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="22">
+						<col>
+							SYSJES
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="23">
+						<col>
+							SYSJ2$XD
+						</col>
+						<col>
+							N1$RPRT$$$$$$$$$
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="24">
+						<col>
+							SYSMCS
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							18
+						</col>
+						<col>
+							18
+						</col>
+					</row>
+					<row refno="25">
+						<col>
+							SYSMCS2
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="26">
+						<col>
+							SYSRMF
+						</col>
+						<col>
+							SYSRMF@@RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="27">
+						<col>
+							SYSTTRC
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="28">
+						<col>
+							SYSWLM
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="29">
+						<col>
+							SYSXCF
+						</col>
+						<col>
+							RPRT
+						</col>
+						<col>
+							Active
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>

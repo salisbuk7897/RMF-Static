@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="IOQ">
+			<description>
+				I/O Queuing Activity Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/02/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/02/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				29:59:995
+			</report-interval>
+			<cycle unit="milliseconds">
+				1000
+			</cycle>
+		</time-data>
+		<segment id="1">
+			<name>
+				System Information
+			</name>
+			<part id="2">
+				<var-list id="3">
+					<var>
+						<name>
+							Total Samples
+						</name>
+						<value>
+							1800
+						</value>
+					</var>
+					<var>
+						<name>
+							IODF Name Suffix
+						</name>
+						<value>
+							A3
+						</value>
+					</var>
+					<var>
+						<name>
+							IODF Creation Date
+						</name>
+						<value>
+							02/10/2022
+						</value>
+					</var>
+					<var>
+						<name>
+							IODF Creation Time
+						</name>
+						<value>
+							12.45.21
+						</value>
+					</var>
+					<var>
+						<name>
+							Configuration State
+						</name>
+						<value>
+							Activate
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="4">
+			<name>
+				I/O Processor (IOP) Data
+			</name>
+			<part id="5">
+				<table id="6">
+					<column-headers>
+						<col type="T">
+							IOP
+						</col>
+						<col type="S">
+							Initiative Queue Activity Rate
+						</col>
+						<col type="S">
+							Initiative Queue Average Length
+						</col>
+						<col type="N">
+							IOP Utilization %Busy
+						</col>
+						<col type="N">
+							IOP Utilization %Busy Compression
+						</col>
+						<col type="N">
+							IOP Utilization %Busy SCM
+						</col>
+						<col type="S">
+							IOP Utilization I/O Start Rate
+						</col>
+						<col type="S">
+							IOP Utilization Interrupt Rate
+						</col>
+						<col type="N">
+							%I/O Requests Retried All
+						</col>
+						<col type="N">
+							%I/O Requests Retried CP Busy
+						</col>
+						<col type="N">
+							%I/O Requests Retried DP Busy
+						</col>
+						<col type="N">
+							%I/O Requests Retried CU Busy
+						</col>
+						<col type="N">
+							%I/O Requests Retried DEV Busy
+						</col>
+						<col type="N">
+							Retries/SSCH All
+						</col>
+						<col type="N">
+							Retries/SSCH CP Busy
+						</col>
+						<col type="N">
+							Retries/SSCH DP Busy
+						</col>
+						<col type="N">
+							Retries/SSCH CU Busy
+						</col>
+						<col type="N">
+							Retries/SSCH DEV Busy
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							00
+						</col>
+						<col>
+							35.172
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.05
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							35.172
+						</col>
+						<col>
+							53.003
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							01
+						</col>
+						<col>
+							35.815
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.05
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							35.815
+						</col>
+						<col>
+							54.748
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.3
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							02
+						</col>
+						<col>
+							35.163
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.02
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							35.163
+						</col>
+						<col>
+							0.019
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							SYS
+						</col>
+						<col>
+							106.150
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.04
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							106.150
+						</col>
+						<col>
+							107.771
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.1
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="7">
+			<name>
+				Logical Control Unit (LCU) Data
+			</name>
+			<part id="8">
+				<table id="9">
+					<column-headers>
+						<col type="T">
+							System AMG
+						</col>
+						<col type="T">
+							LCU
+						</col>
+						<col type="T">
+							1st CU Attached
+						</col>
+						<col type="T">
+							2nd CU Attached
+						</col>
+						<col type="T">
+							3rd CU Attached
+						</col>
+						<col type="T">
+							4th CU Attached
+						</col>
+						<col type="N">
+							DCM Group Min
+						</col>
+						<col type="N">
+							DCM Group Max
+						</col>
+						<col type="N">
+							DCM Group Defined
+						</col>
+						<col type="T">
+							Channel Path
+						</col>
+						<col type="T">
+							Channel Attribute
+						</col>
+						<col type="T">
+							Status
+						</col>
+						<col type="N">
+							CHPID Taken
+						</col>
+						<col type="N">
+							%DP Busy
+						</col>
+						<col type="N">
+							%CU Busy
+						</col>
+						<col type="N">
+							Average CUB Delay
+						</col>
+						<col type="N">
+							Average CMR Delay
+						</col>
+						<col type="N">
+							Contention Rate
+						</col>
+						<col type="N">
+							Delay Queue Length
+						</col>
+						<col type="N">
+							Average CSS Delay
+						</col>
+						<col type="N">
+							HyperPAV Wait Ratio
+						</col>
+						<col type="N">
+							HyperPAV Maximum
+						</col>
+						<col type="N">
+							Average Open EXCH
+						</col>
+						<col type="N">
+							Data Transfer Concurrency
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col />
+						<col>
+							000E
+						</col>
+						<col>
+							5000
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							10
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							1.491
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="2">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							41
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							1.493
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="3">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							14
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							1.486
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="4">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							40
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							1.496
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="5" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							*
+						</col>
+						<col />
+						<col />
+						<col>
+							5.965
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.1
+						</col>
+						<col />
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+					</row>
+					<row refno="6">
+						<col />
+						<col>
+							000F
+						</col>
+						<col>
+							5100
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							10
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.624
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="7">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							41
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.623
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="8">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							14
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.626
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="9">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							40
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.623
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="10" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							*
+						</col>
+						<col />
+						<col />
+						<col>
+							2.496
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.1
+						</col>
+						<col />
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+					</row>
+					<row refno="11">
+						<col />
+						<col>
+							0010
+						</col>
+						<col>
+							5200
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							10
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.005
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="12">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							41
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.005
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="13">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							14
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.006
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="14">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							40
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.006
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="15" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							*
+						</col>
+						<col />
+						<col />
+						<col>
+							0.021
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.1
+						</col>
+						<col />
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+					</row>
+					<row refno="16">
+						<col />
+						<col>
+							0011
+						</col>
+						<col>
+							5300
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							10
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.006
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="17">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							41
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.005
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="18">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							14
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.005
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="19">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							40
+						</col>
+						<col />
+						<col>
+							Online
+						</col>
+						<col>
+							0.006
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="20" type="SUM">
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col />
+						<col>
+							*
+						</col>
+						<col />
+						<col />
+						<col>
+							0.021
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.0
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.1
+						</col>
+						<col />
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>

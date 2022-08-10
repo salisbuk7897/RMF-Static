@@ -1,0 +1,1677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="PAGING">
+			<description>
+				Paging Activity Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/02/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/02/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				29:59:995
+			</report-interval>
+			<cycle unit="milliseconds">
+				1000
+			</cycle>
+		</time-data>
+		<segment id="1">
+			<name>
+				Central Storage Paging Rates - in Pages Per Second
+			</name>
+			<part id="2">
+				<var-list id="3">
+					<var>
+						<name>
+							OPT
+						</name>
+						<value>
+							IEAOPT00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="4">
+				<name>
+					Pageable System Areas (non-VIO)
+				</name>
+				<table id="5">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="N">
+							Page-In Non-Swap Block
+						</col>
+						<col type="N">
+							Page-In Non-Swap Non-Block
+						</col>
+						<col type="N">
+							Page-In Total Rate
+						</col>
+						<col type="N">
+							Page-In Total %
+						</col>
+						<col type="N">
+							Page-Out Non-Swap
+						</col>
+						<col type="N">
+							Page-Out Total Rate
+						</col>
+						<col type="N">
+							Page-Out Total %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							LPA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col />
+						<col />
+					</row>
+					<row refno="2">
+						<col>
+							CSA
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3" type="SUM">
+						<col>
+							Sum
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="6">
+				<name>
+					Address Spaces
+				</name>
+				<table id="7">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="N">
+							Page-In Swap
+						</col>
+						<col type="N">
+							Page-In Non-Swap Block
+						</col>
+						<col type="N">
+							Page-In Non-Swap Non-Block
+						</col>
+						<col type="N">
+							Page-In Total Rate
+						</col>
+						<col type="N">
+							Page-In Total %
+						</col>
+						<col type="N">
+							Page-Out Swap
+						</col>
+						<col type="N">
+							Page-Out Non-Swap
+						</col>
+						<col type="N">
+							Page-Out Total Rate
+						</col>
+						<col type="N">
+							Page-Out Total %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Hiperspace
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							VIO
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Non-VIO
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="4" type="SUM">
+						<col>
+							Sum
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="8">
+				<name>
+					Total System
+				</name>
+				<table id="9">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="N">
+							Page-In Swap
+						</col>
+						<col type="N">
+							Page-In Non-Swap Block
+						</col>
+						<col type="N">
+							Page-In Non-Swap Non-Block
+						</col>
+						<col type="N">
+							Page-In Total Rate
+						</col>
+						<col type="N">
+							Page-In Total %
+						</col>
+						<col type="N">
+							Page-Out Swap
+						</col>
+						<col type="N">
+							Page-Out Non-Swap
+						</col>
+						<col type="N">
+							Page-Out Total Rate
+						</col>
+						<col type="N">
+							Page-Out Total %
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Hiperspace
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							VIO
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Non-VIO
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="4" type="SUM">
+						<col>
+							Sum
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							Shared
+						</col>
+						<col />
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col />
+						<col />
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col />
+					</row>
+				</table>
+			</part>
+			<part id="10">
+				<name>
+					Page Movement
+				</name>
+				<var-list id="11">
+					<var>
+						<name>
+							Page Movement Within Central Storage
+						</name>
+						<value>
+							0.85
+						</value>
+					</var>
+					<var>
+						<name>
+							Page Movement Time %
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Average Number of Pages Per Block
+						</name>
+						<value>
+							0.0
+						</value>
+					</var>
+					<var>
+						<name>
+							Blocks Per Second
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+					<var>
+						<name>
+							Page-In Events (Page Fault Rate)
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="12">
+			<name>
+				Central Storage Movement and Request Rates - in Pages Per Second
+			</name>
+			<part id="13">
+				<var-list id="14">
+					<var>
+						<name>
+							OPT
+						</name>
+						<value>
+							IEAOPT00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="15">
+				<name>
+					System UIC
+				</name>
+				<var-list id="16">
+					<var>
+						<name>
+							Min
+						</name>
+						<value>
+							65535
+						</value>
+					</var>
+					<var>
+						<name>
+							Max
+						</name>
+						<value>
+							65535
+						</value>
+					</var>
+					<var>
+						<name>
+							Avg
+						</name>
+						<value>
+							65535
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="17">
+				<name>
+					Central Storage
+				</name>
+				<table id="18">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="N">
+							Page Write Rate
+						</col>
+						<col type="N">
+							Page Read Rate
+						</col>
+						<col type="N">
+							Frame Count Min
+						</col>
+						<col type="N">
+							Frame Count Max
+						</col>
+						<col type="N">
+							Frame Count Avg
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Hiperspace
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							1
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							VIO
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0.00
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="19">
+				<name>
+					Storage Request Rates
+				</name>
+				<var-list id="20">
+					<var>
+						<name>
+							Getmain Request Rate
+						</name>
+						<value>
+							489.06
+						</value>
+					</var>
+					<var>
+						<name>
+							Getmain Frames Backed Rate
+						</name>
+						<value>
+							23.07
+						</value>
+					</var>
+					<var>
+						<name>
+							Fixed Request Below 2 GB Rate
+						</name>
+						<value>
+							2.96
+						</value>
+					</var>
+					<var>
+						<name>
+							Fixed Frames Below 2 GB Rate
+						</name>
+						<value>
+							45.77
+						</value>
+					</var>
+					<var>
+						<name>
+							Reference Faults (1st) Rate
+						</name>
+						<value>
+							465.75
+						</value>
+					</var>
+					<var>
+						<name>
+							Reference Faults (non-1st) Rate
+						</name>
+						<value>
+							0.00
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="21">
+			<name>
+				Frame and Slot Counts
+			</name>
+			<part id="22">
+				<var-list id="23">
+					<var>
+						<name>
+							Samples
+						</name>
+						<value>
+							181
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="24">
+				<name>
+					Central Storage Frames
+				</name>
+				<table id="25">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="S">
+							Total
+						</col>
+						<col type="N">
+							Available
+						</col>
+						<col type="M">
+							SQA
+						</col>
+						<col type="M">
+							LPA
+						</col>
+						<col type="M">
+							CSA
+						</col>
+						<col type="M">
+							LSQA
+						</col>
+						<col type="M">
+							Regions + SWA
+						</col>
+						<col type="N">
+							High Shared
+						</col>
+						<col type="N">
+							High Common
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							8388608
+						</col>
+						<col>
+							7595858
+						</col>
+						<col>
+							4504
+						</col>
+						<col>
+							7633
+						</col>
+						<col>
+							6084
+						</col>
+						<col>
+							25479
+						</col>
+						<col>
+							658022
+						</col>
+						<col>
+							13352
+						</col>
+						<col>
+							67818
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							8388608
+						</col>
+						<col>
+							7601700
+						</col>
+						<col>
+							4516
+						</col>
+						<col>
+							7633
+						</col>
+						<col>
+							6084
+						</col>
+						<col>
+							25654
+						</col>
+						<col>
+							663776
+						</col>
+						<col>
+							13352
+						</col>
+						<col>
+							67819
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							8388608
+						</col>
+						<col>
+							7599552
+						</col>
+						<col>
+							4508
+						</col>
+						<col>
+							7633
+						</col>
+						<col>
+							6084
+						</col>
+						<col>
+							25533
+						</col>
+						<col>
+							660124
+						</col>
+						<col>
+							13352
+						</col>
+						<col>
+							67819
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="26">
+				<name>
+					Fixed Frames
+				</name>
+				<table id="27">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="S">
+							Total
+						</col>
+						<col type="N">
+							Nucleus
+						</col>
+						<col type="M">
+							SQA
+						</col>
+						<col type="M">
+							LPA
+						</col>
+						<col type="M">
+							CSA
+						</col>
+						<col type="M">
+							LSQA
+						</col>
+						<col type="M">
+							Regions + SWA
+						</col>
+						<col type="N">
+							Below 16 MB
+						</col>
+						<col type="N">
+							Between 16MB and 2GB
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							84707
+						</col>
+						<col>
+							3620
+						</col>
+						<col>
+							4008
+						</col>
+						<col>
+							183
+						</col>
+						<col>
+							55134
+						</col>
+						<col>
+							11163
+						</col>
+						<col>
+							10595
+						</col>
+						<col>
+							53
+						</col>
+						<col>
+							4700
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							84874
+						</col>
+						<col>
+							3620
+						</col>
+						<col>
+							4020
+						</col>
+						<col>
+							183
+						</col>
+						<col>
+							55134
+						</col>
+						<col>
+							11296
+						</col>
+						<col>
+							10622
+						</col>
+						<col>
+							53
+						</col>
+						<col>
+							4709
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							84762
+						</col>
+						<col>
+							3620
+						</col>
+						<col>
+							4012
+						</col>
+						<col>
+							183
+						</col>
+						<col>
+							55134
+						</col>
+						<col>
+							11203
+						</col>
+						<col>
+							10609
+						</col>
+						<col>
+							53
+						</col>
+						<col>
+							4703
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="28">
+				<name>
+					Shared Frames / Slots
+				</name>
+				<table id="29">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="S">
+							Total
+						</col>
+						<col type="S">
+							Central Storage
+						</col>
+						<col type="N">
+							Fixed Total
+						</col>
+						<col type="N">
+							Fixed Below 16 MB
+						</col>
+						<col type="S">
+							High 1M
+						</col>
+						<col type="S">
+							High 4K
+						</col>
+						<col type="N">
+							Auxiliary DASD
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							255306
+						</col>
+						<col>
+							24628
+						</col>
+						<col>
+							77
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							13427
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							255306
+						</col>
+						<col>
+							24628
+						</col>
+						<col>
+							77
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							13427
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							255306
+						</col>
+						<col>
+							24628
+						</col>
+						<col>
+							77
+						</col>
+						<col>
+							1
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							13427
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="30">
+				<name>
+					Local Page Data Set Slots
+				</name>
+				<table id="31">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="S">
+							Total
+						</col>
+						<col type="N">
+							Available
+						</col>
+						<col type="N">
+							Bad
+						</col>
+						<col type="N">
+							Non-VIO
+						</col>
+						<col type="N">
+							VIO
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							899999
+						</col>
+						<col>
+							899989
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							899999
+						</col>
+						<col>
+							899989
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							899999
+						</col>
+						<col>
+							899989
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							10
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="32">
+			<name>
+				Memory Objects and High Virtual Storage Frames
+			</name>
+			<part id="33">
+				<var-list id="34">
+					<var>
+						<name>
+							OPT
+						</name>
+						<value>
+							IEAOPT00
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="35">
+				<name>
+					LFAREA Maximum
+				</name>
+				<var-list id="36">
+					<var>
+						<name>
+							1 MB Frames
+						</name>
+						<value>
+							200M
+						</value>
+					</var>
+					<var>
+						<name>
+							2 GB Frames
+						</name>
+						<value>
+							0
+						</value>
+					</var>
+				</var-list>
+			</part>
+			<part id="37">
+				<name>
+					Memory Objects
+				</name>
+				<table id="38">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="N">
+							Fixed 1M
+						</col>
+						<col type="N">
+							Fixed 2G
+						</col>
+						<col type="N">
+							Common
+						</col>
+						<col type="N">
+							Shared
+						</col>
+						<col type="N">
+							Shared 1M
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							131
+						</col>
+						<col>
+							20
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							131
+						</col>
+						<col>
+							20
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							131
+						</col>
+						<col>
+							20
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="39">
+				<name>
+					1 MB Frames
+				</name>
+				<table id="40">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="N">
+							Fixed Maximum
+						</col>
+						<col type="N">
+							Fixed Available
+						</col>
+						<col type="N">
+							Fixed In-Use
+						</col>
+						<col type="N">
+							Pageable
+						</col>
+						<col type="N">
+							Available
+						</col>
+						<col type="N">
+							Total
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							200
+						</col>
+						<col>
+							192
+						</col>
+						<col>
+							8
+						</col>
+						<col>
+							163
+						</col>
+						<col>
+							27647
+						</col>
+						<col>
+							29029
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							200
+						</col>
+						<col>
+							192
+						</col>
+						<col>
+							8
+						</col>
+						<col>
+							163
+						</col>
+						<col>
+							27647
+						</col>
+						<col>
+							29029
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							200
+						</col>
+						<col>
+							192
+						</col>
+						<col>
+							8
+						</col>
+						<col>
+							163
+						</col>
+						<col>
+							27647
+						</col>
+						<col>
+							29029
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="41">
+				<name>
+					2 GB Frames
+				</name>
+				<table id="42">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="N">
+							Fixed Maximum
+						</col>
+						<col type="N">
+							Fixed Available
+						</col>
+						<col type="N">
+							Fixed In-Use
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="43">
+				<name>
+					High Shared Frames
+				</name>
+				<table id="44">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="S">
+							Total
+						</col>
+						<col type="S">
+							Central Storage
+						</col>
+						<col type="N">
+							Backed 1M
+						</col>
+						<col type="N">
+							Auxiliary DASD
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							136902.1M
+						</col>
+						<col>
+							13352
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							136902.1M
+						</col>
+						<col>
+							13352
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							136902.1M
+						</col>
+						<col>
+							13352
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+			<part id="45">
+				<name>
+					High Common Frames
+				</name>
+				<table id="46">
+					<column-headers>
+						<col type="T">
+							Category
+						</col>
+						<col type="S">
+							Total
+						</col>
+						<col type="S">
+							Central Storage
+						</col>
+						<col type="N">
+							Backed 1M
+						</col>
+						<col type="N">
+							Fixed
+						</col>
+						<col type="N">
+							Fixed 1M
+						</col>
+						<col type="N">
+							Auxiliary DASD
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Min
+						</col>
+						<col>
+							17301504
+						</col>
+						<col>
+							67818
+						</col>
+						<col>
+							181
+						</col>
+						<col>
+							9393
+						</col>
+						<col>
+							8
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Max
+						</col>
+						<col>
+							17301504
+						</col>
+						<col>
+							67819
+						</col>
+						<col>
+							181
+						</col>
+						<col>
+							9393
+						</col>
+						<col>
+							8
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Avg
+						</col>
+						<col>
+							17301504
+						</col>
+						<col>
+							67819
+						</col>
+						<col>
+							181
+						</col>
+						<col>
+							9393
+						</col>
+						<col>
+							8
+						</col>
+						<col>
+							0
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>

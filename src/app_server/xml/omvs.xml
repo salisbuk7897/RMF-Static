@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-pp.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<postprocessor>
+		<metric id="OMVS">
+			<description>
+				OMVS Kernel Activity Report
+			</description>
+			<type>
+				Interval
+			</type>
+		</metric>
+		<version>
+			<smf-data>
+				z/OS V2R5
+			</smf-data>
+			<rmf-report>
+				z/OS V2R5
+			</rmf-report>
+		</version>
+		<resource>
+			<resname>
+				RPRT
+			</resname>
+			<restype>
+				SYSTEM
+			</restype>
+		</resource>
+		<time-data>
+			<display-start locale="en-us">
+				08/02/2022-00.00.00
+			</display-start>
+			<display-end locale="en-us">
+				08/02/2022-00.30.00
+			</display-end>
+			<report-interval unit="minutes">
+				30:00:000
+			</report-interval>
+			<cycle unit="milliseconds">
+				1000
+			</cycle>
+		</time-data>
+		<segment id="1">
+			<name>
+				General Information
+			</name>
+			<part id="2">
+				<var-list id="3">
+					<var>
+						<name>
+							Total Samples
+						</name>
+						<value>
+							1800
+						</value>
+					</var>
+				</var-list>
+			</part>
+		</segment>
+		<segment id="4">
+			<name>
+				OMVS System Call Activity
+			</name>
+			<part id="5">
+				<table id="6">
+					<column-headers>
+						<col type="T">
+						</col>
+						<col type="N">
+							Minimum
+						</col>
+						<col type="N">
+							Average
+						</col>
+						<col type="N">
+							Maximum
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Syscalls (Number per Second)
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							CPU Time (Hundredths of Seconds per Second)
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="7">
+			<name>
+				OMVS Process Activity
+			</name>
+			<part id="8">
+				<table id="9">
+					<column-headers>
+						<col type="T">
+						</col>
+						<col type="N">
+							Maximum (Total)
+						</col>
+						<col type="N">
+							Current Minimum (Total)
+						</col>
+						<col type="N">
+							Current Average (Total)
+						</col>
+						<col type="N">
+							Current Maximum (Total)
+						</col>
+						<col type="N">
+							Overruns Minimum (Number per Second)
+						</col>
+						<col type="N">
+							Overruns Average (Number per Second)
+						</col>
+						<col type="N">
+							Overruns Maximum (Number per Second)
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Processes
+						</col>
+						<col>
+							4000
+						</col>
+						<col>
+							58
+						</col>
+						<col>
+							58.00
+						</col>
+						<col>
+							58
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Users
+						</col>
+						<col>
+							200
+						</col>
+						<col>
+							9
+						</col>
+						<col>
+							9.000
+						</col>
+						<col>
+							9
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Processes per User
+						</col>
+						<col>
+							2000
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+		<segment id="10">
+			<name>
+				OMVS Inter-Process Communication
+			</name>
+			<part id="11">
+				<table id="12">
+					<column-headers>
+						<col type="T">
+						</col>
+						<col type="S">
+							Maximum (Total)
+						</col>
+						<col type="S">
+							Current Minimum (Total)
+						</col>
+						<col type="S">
+							Current Average (Total)
+						</col>
+						<col type="S">
+							Current Maximum (Total)
+						</col>
+						<col type="S">
+							Overruns Minimum (Number per Second)
+						</col>
+						<col type="S">
+							Overruns Average (Number per Second)
+						</col>
+						<col type="S">
+							Overruns Maximum (Number per Second)
+						</col>
+					</column-headers>
+					<row refno="1">
+						<col>
+							Message Queue IDs
+						</col>
+						<col>
+							500
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							4.000
+						</col>
+						<col>
+							4
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="2">
+						<col>
+							Semaphore IDs
+						</col>
+						<col>
+							500
+						</col>
+						<col>
+							2
+						</col>
+						<col>
+							2.000
+						</col>
+						<col>
+							2
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="3">
+						<col>
+							Shared Memory IDs
+						</col>
+						<col>
+							500
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							3.000
+						</col>
+						<col>
+							3
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="4">
+						<col>
+							Shared Memory Pages
+						</col>
+						<col>
+							262K
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="5">
+						<col>
+							Memory Map Storage Pages
+						</col>
+						<col>
+							40960
+						</col>
+						<col>
+							140
+						</col>
+						<col>
+							140.0
+						</col>
+						<col>
+							140
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="6">
+						<col>
+							Shared Storage Pages
+						</col>
+						<col>
+							131K
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="7">
+						<col>
+							Shared Library Region
+						</col>
+						<col>
+							64
+						</col>
+						<col>
+							43
+						</col>
+						<col>
+							43.00
+						</col>
+						<col>
+							43
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+					<row refno="8">
+						<col>
+							Queued Signals
+						</col>
+						<col>
+							1000
+						</col>
+						<col />
+						<col />
+						<col />
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+						<col>
+							0.000
+						</col>
+					</row>
+				</table>
+			</part>
+		</segment>
+	</postprocessor>
+</ddsml>
