@@ -27,6 +27,8 @@ import parsePAGING from './app_server/reports/pagingPostprocessorReport';
 import parseVSTOR from './app_server/reports/vstorPostprocessorReport';
 import parseSDELAY from './app_server/reports/sdelayPostprocessorReport';
 import parsePAGESP from './app_server/reports/pagespPostprocessorReport';
+import parseXCF from './app_server/reports/xcfPostprocessorReport';
+import parseWLMGL from './app_server/reports/wlmglPostrocessorReport';
 tls.DEFAULT_MIN_VERSION = "TLSv1.1";
 declare var process : {
   env: {
@@ -90,6 +92,12 @@ class App {
       }else if(req.query.report == "PAGESP"){
         let xml = fs.readFileSync('C:\\Users\\Administrator\\Desktop\\NEW_ZEBRA\\zebra\\src\\app_server\\xml\\pagesp.xml','utf8');
         jsonData = await parsePAGESP(xml)
+      }else if(req.query.report == "WLMGL"){
+        let xml = fs.readFileSync('C:\\Users\\Administrator\\Desktop\\NEW_ZEBRA\\zebra\\src\\app_server\\xml\\wlmgl.xml','utf8');
+        jsonData = await parseWLMGL(xml)
+      }else if(req.query.report == "XCF"){
+        let xml = fs.readFileSync('C:\\Users\\Administrator\\Desktop\\NEW_ZEBRA\\zebra\\src\\app_server\\xml\\xcf.xml','utf8');
+        jsonData = await parseXCF(xml)
       }else{
         /* let data = await RMFPPgetRequest(ddshttp, baseurl, baseport, rmfppfilename, 'WLMGL', '20220809,20220809', ddsid, ddspass, ddsauth);
         fs.writeFile( "wlmgl.xml", data, (err) => {

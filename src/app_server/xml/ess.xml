@@ -1,323 +1,39 @@
 <xml>
-    <segment id="32">
+    <segment id="4">
         <name>
-            Memory Objects and High Virtual Storage Frames
+            XCF Usage by Member
         </name>
-        <part id="33">
-            <var-list id="34">
-                <var>
-                    <name>
-                        OPT
-                    </name>
-                    <value>
-                        IEAOPT00
-                    </value>
-                </var>
-            </var-list>
-        </part>
-        <part id="35">
+        <part id="5">
             <name>
-                LFAREA Maximum
+                Members on System RPRT
             </name>
-            <var-list id="36">
-                <var>
-                    <name>
-                        1 MB Frames
-                    </name>
-                    <value>
-                        200M
-                    </value>
-                </var>
-                <var>
-                    <name>
-                        2 GB Frames
-                    </name>
-                    <value>
-                        0
-                    </value>
-                </var>
-            </var-list>
-        </part>
-        <part id="37">
-            <name>
-                Memory Objects
-            </name>
-            <table id="38">
+            <table id="6">
                 <column-headers>
                     <col type="T">
-                        Category
+                        Group
                     </col>
-                    <col type="N">
-                        Fixed 1M
-                    </col>
-                    <col type="N">
-                        Fixed 2G
-                    </col>
-                    <col type="N">
-                        Common
-                    </col>
-                    <col type="N">
-                        Shared
-                    </col>
-                    <col type="N">
-                        Shared 1M
-                    </col>
-                </column-headers>
-                <row refno="1">
-                    <col>
-                        Min
-                    </col>
-                    <col>
-                        4
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        131
-                    </col>
-                    <col>
-                        20
-                    </col>
-                    <col>
-                        0
-                    </col>
-                </row>
-                <row refno="2">
-                    <col>
-                        Max
-                    </col>
-                    <col>
-                        4
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        131
-                    </col>
-                    <col>
-                        20
-                    </col>
-                    <col>
-                        0
-                    </col>
-                </row>
-                <row refno="3">
-                    <col>
-                        Avg
-                    </col>
-                    <col>
-                        4
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        131
-                    </col>
-                    <col>
-                        20
-                    </col>
-                    <col>
-                        0
-                    </col>
-                </row>
-            </table>
-        </part>
-        <part id="39">
-            <name>
-                1 MB Frames
-            </name>
-            <table id="40">
-                <column-headers>
                     <col type="T">
-                        Category
+                        Member
                     </col>
-                    <col type="N">
-                        Fixed Maximum
-                    </col>
-                    <col type="N">
-                        Fixed Available
-                    </col>
-                    <col type="N">
-                        Fixed In-Use
-                    </col>
-                    <col type="N">
-                        Pageable
-                    </col>
-                    <col type="N">
-                        Available
-                    </col>
-                    <col type="N">
-                        Total
-                    </col>
-                </column-headers>
-                <row refno="1">
-                    <col>
-                        Min
-                    </col>
-                    <col>
-                        200
-                    </col>
-                    <col>
-                        192
-                    </col>
-                    <col>
-                        8
-                    </col>
-                    <col>
-                        163
-                    </col>
-                    <col>
-                        27647
-                    </col>
-                    <col>
-                        29029
-                    </col>
-                </row>
-                <row refno="2">
-                    <col>
-                        Max
-                    </col>
-                    <col>
-                        200
-                    </col>
-                    <col>
-                        192
-                    </col>
-                    <col>
-                        8
-                    </col>
-                    <col>
-                        163
-                    </col>
-                    <col>
-                        27647
-                    </col>
-                    <col>
-                        29029
-                    </col>
-                </row>
-                <row refno="3">
-                    <col>
-                        Avg
-                    </col>
-                    <col>
-                        200
-                    </col>
-                    <col>
-                        192
-                    </col>
-                    <col>
-                        8
-                    </col>
-                    <col>
-                        163
-                    </col>
-                    <col>
-                        27647
-                    </col>
-                    <col>
-                        29029
-                    </col>
-                </row>
-            </table>
-        </part>
-        <part id="41">
-            <name>
-                2 GB Frames
-            </name>
-            <table id="42">
-                <column-headers>
                     <col type="T">
-                        Category
-                    </col>
-                    <col type="N">
-                        Fixed Maximum
-                    </col>
-                    <col type="N">
-                        Fixed Available
-                    </col>
-                    <col type="N">
-                        Fixed In-Use
-                    </col>
-                </column-headers>
-                <row refno="1">
-                    <col>
-                        Min
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        0
-                    </col>
-                </row>
-                <row refno="2">
-                    <col>
-                        Max
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        0
-                    </col>
-                </row>
-                <row refno="3">
-                    <col>
-                        Avg
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        0
-                    </col>
-                    <col>
-                        0
-                    </col>
-                </row>
-            </table>
-        </part>
-        <part id="43">
-            <name>
-                High Shared Frames
-            </name>
-            <table id="44">
-                <column-headers>
-                    <col type="T">
-                        Category
+                        Status
                     </col>
                     <col type="S">
-                        Total
+                        Requests Out
                     </col>
                     <col type="S">
-                        Central Storage
-                    </col>
-                    <col type="N">
-                        Backed 1M
-                    </col>
-                    <col type="N">
-                        Auxiliary DASD
+                        Requests In
                     </col>
                 </column-headers>
                 <row refno="1">
                     <col>
-                        Min
+                        AOPAOP1
                     </col>
                     <col>
-                        136902.1M
+                        CFGIBM00
                     </col>
                     <col>
-                        13352
+                        Active
                     </col>
                     <col>
                         0
@@ -328,13 +44,13 @@
                 </row>
                 <row refno="2">
                     <col>
-                        Max
+                        ARCPLEX0
                     </col>
                     <col>
-                        136902.1M
+                        HOST#X
                     </col>
                     <col>
-                        13352
+                        Active
                     </col>
                     <col>
                         0
@@ -345,13 +61,30 @@
                 </row>
                 <row refno="3">
                     <col>
-                        Avg
+                        ATRRRS
                     </col>
                     <col>
-                        136902.1M
+                        RPRT
                     </col>
                     <col>
-                        13352
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="4">
+                    <col>
+                        COFVLFNO
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
                     </col>
                     <col>
                         0
@@ -360,100 +93,426 @@
                         0
                     </col>
                 </row>
-            </table>
-        </part>
-        <part id="45">
-            <name>
-                High Common Frames
-            </name>
-            <table id="46">
-                <column-headers>
-                    <col type="T">
-                        Category
-                    </col>
-                    <col type="S">
-                        Total
-                    </col>
-                    <col type="S">
-                        Central Storage
-                    </col>
-                    <col type="N">
-                        Backed 1M
-                    </col>
-                    <col type="N">
-                        Fixed
-                    </col>
-                    <col type="N">
-                        Fixed 1M
-                    </col>
-                    <col type="N">
-                        Auxiliary DASD
-                    </col>
-                </column-headers>
-                <row refno="1">
+                <row refno="5">
                     <col>
-                        Min
+                        DFHIR000
                     </col>
                     <col>
-                        17301504
+                        CICS56
                     </col>
                     <col>
-                        67818
+                        Active
                     </col>
                     <col>
-                        181
-                    </col>
-                    <col>
-                        9393
-                    </col>
-                    <col>
-                        8
+                        0
                     </col>
                     <col>
                         0
                     </col>
                 </row>
-                <row refno="2">
+                <row refno="6">
                     <col>
-                        Max
+                        EZBTCPCS
                     </col>
                     <col>
-                        17301504
+                        RPRTTCPIP
                     </col>
                     <col>
-                        67819
+                        Active
                     </col>
                     <col>
-                        181
-                    </col>
-                    <col>
-                        9393
-                    </col>
-                    <col>
-                        8
+                        0
                     </col>
                     <col>
                         0
                     </col>
                 </row>
-                <row refno="3">
+                <row refno="7">
                     <col>
-                        Avg
+                        GSKSRVGP
                     </col>
                     <col>
-                        17301504
+                        RPRT
                     </col>
                     <col>
-                        67819
+                        Active
                     </col>
                     <col>
-                        181
+                        0
                     </col>
                     <col>
-                        9393
+                        0
+                    </col>
+                </row>
+                <row refno="8">
+                    <col>
+                        HSFIXC
                     </col>
                     <col>
-                        8
+                        HSF@RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="9">
+                    <col>
+                        IGG0CAS
+                    </col>
+                    <col>
+                        IGG0CAS1RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="10">
+                    <col>
+                        ISTCFS01
+                    </col>
+                    <col>
+                        VTAMSSCPVTAM
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="11">
+                    <col>
+                        ISTXCF
+                    </col>
+                    <col>
+                        VTAMSSCPVTAM
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="12">
+                    <col>
+                        N1
+                    </col>
+                    <col>
+                        N1$RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="13">
+                    <col>
+                        SYSDAE
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="14">
+                    <col>
+                        SYSENF
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="15">
+                    <col>
+                        SYSGRS
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="16">
+                    <col>
+                        SYSIEFTS
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="17">
+                    <col>
+                        SYSIGW00
+                    </col>
+                    <col>
+                        IGWCLM01RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="18">
+                    <col>
+                        SYSIGW01
+                    </col>
+                    <col>
+                        IGWCLM01RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="19">
+                    <col>
+                        SYSIKJBC
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="20">
+                    <col>
+                        SYSIOSPX
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="21">
+                    <col>
+                        SYSIOS01
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="22">
+                    <col>
+                        SYSJES
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="23">
+                    <col>
+                        SYSJ2$XD
+                    </col>
+                    <col>
+                        N1$RPRT$$$$$$$$$
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="24">
+                    <col>
+                        SYSMCS
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        18
+                    </col>
+                    <col>
+                        18
+                    </col>
+                </row>
+                <row refno="25">
+                    <col>
+                        SYSMCS2
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="26">
+                    <col>
+                        SYSRMF
+                    </col>
+                    <col>
+                        SYSRMF@@RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="27">
+                    <col>
+                        SYSTTRC
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="28">
+                    <col>
+                        SYSWLM
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
+                    </col>
+                    <col>
+                        0
+                    </col>
+                </row>
+                <row refno="29">
+                    <col>
+                        SYSXCF
+                    </col>
+                    <col>
+                        RPRT
+                    </col>
+                    <col>
+                        Active
+                    </col>
+                    <col>
+                        0
                     </col>
                     <col>
                         0
