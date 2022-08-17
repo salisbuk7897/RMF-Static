@@ -1,6 +1,6 @@
 export interface WLMGL{
     policyActivation: Activation | Partial<Activation>
-    serviceClass: SClass[] | Partial<SClass[]>
+    classes: SClass[] | Partial<SClass[]>
     workload: Workload[] | Partial<Workload[]>
     servicePolicy: Policy | Partial<Policy>
 }

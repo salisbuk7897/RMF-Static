@@ -1094,7 +1094,7 @@ export default async function parseWLMGL(xml) {
 
             }
           }
-          singleReport.serviceClass = allSC
+          singleReport.classes = allSC
           singleReport.workload = allWorkload
           finalJSON[a] = singleReport;
         }
