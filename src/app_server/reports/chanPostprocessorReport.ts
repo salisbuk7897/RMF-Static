@@ -66,7 +66,7 @@ export default async function parseCHAN(xml) {
               for(const c in parts){
                 const { table } = parts[c];
                 const tableBody = table[0].row; //undefined 
-                const mappingCollection: Record<string, Partial<chanInterface.AllChannels>> = {};
+                const mappingCollection = [];
                 
                 for (var tb in tableBody) {
                   const allChannels: Partial<chanInterface.AllChannels> = {};
@@ -105,7 +105,7 @@ export default async function parseCHAN(xml) {
                   allChannels.ficonOperations = ficon
                   allChannels.ZHPFOperations = zhpf
                   allChannels.physicalNetworkIDS = ids
-                  mappingCollection[tableBody[tb].col[0]] = allChannels;
+                  mappingCollection[tb] = allChannels;
                   //mappingLogicalActivity.set(`${tableBody[tb].col[1]}`, logicalActivity);
                   
                 }
@@ -115,7 +115,7 @@ export default async function parseCHAN(xml) {
               for(const c in parts){
                 const { table } = parts[c];
                 const tableBody = table[0].row;
-                const mappingCollection: Record<string, Partial<chanInterface.HiperSocket>> = {};
+                const mappingCollection = [];
                 
                 for (var tb in tableBody) {
                   const hiperSocket: Partial<chanInterface.HiperSocket> = {};
@@ -144,7 +144,7 @@ export default async function parseCHAN(xml) {
                   hiperSocket.messageSize = size
                   hiperSocket.sendFail = sFail
                   hiperSocket.receiveFail = rFail
-                  mappingCollection[tableBody[tb].col[0]] = hiperSocket;
+                  mappingCollection[tb] = hiperSocket;
                   //mappingLogicalActivity.set(`${tableBody[tb].col[1]}`, logicalActivity);
                   
                 }

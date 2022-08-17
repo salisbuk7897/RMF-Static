@@ -58,7 +58,7 @@ export default async function parseIOQ(xml) {
               for(const c in parts){
                 const { table } = parts[c];
                 const tableBody = table[0].row; //undefined 
-                const mappingCollection: Record<string, Partial<ioqInterface.Processors>> = {};
+                const mappingCollection = [];
                 
                 for (var tb in tableBody) {
                   const initiative: Partial<ioqInterface.Initiative> = {}
@@ -98,7 +98,7 @@ export default async function parseIOQ(xml) {
               for(const c in parts){
                 const { table } = parts[c];
                 const tableBody = table[0].row;
-                const mappingCollection: Record<string, Partial<ioqInterface.LCU>> = {};
+                const mappingCollection = [];
                 
                 for (var tb in tableBody) {
                   const lcu: Partial<ioqInterface.LCU> = {};

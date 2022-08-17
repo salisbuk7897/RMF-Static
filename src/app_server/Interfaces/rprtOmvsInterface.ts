@@ -1,7 +1,7 @@
 export interface OMVS{
-    callActivity: Record<string, cActivity | Partial<cActivity>>
-    processActivity: Record<string, pActivity | Partial<pActivity>>
-    interProcess: Record<string, pActivity | Partial<pActivity>>
+    callActivity: cActivity | Partial<cActivity[]>
+    processActivity: pActivity[] | Partial<pActivity[]>
+    interProcess: pActivity | Partial<pActivity[]>
     generalInfo: Info | Partial<Info>
 
 }

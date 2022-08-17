@@ -1,3 +1,7 @@
+export interface CF{
+    cf: RPRTCF[] | Partial<RPRTCF[]>
+}
+
 export interface RPRTCF{
     name: string
     usageSummary: Usage | Partial<Usage>

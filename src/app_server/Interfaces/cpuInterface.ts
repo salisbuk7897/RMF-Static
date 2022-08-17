@@ -10,7 +10,7 @@ export interface CPUActivity{
     hiperdispatch: "YES" | "NO" | "N/A";
     boostType: "NONE" | "ZIIP" | "SPEED" | "ALL";
     boostClass: "NONE" | "IPL" | "SHUTDOWN" | "RECOVERY";
-    logical: Record<string, LogicalActivity | Partial<LogicalActivity>>;
+    logical: LogicalActivity[] | Partial<LogicalActivity[]>;
     addressSpace: SystemAddress | Partial<SystemAddress>;
     workUnit: WorkUnit | Partial<WorkUnit>;
     blockedWorkload: BlockWorkload | Partial<BlockWorkload>;
@@ -25,6 +25,7 @@ export interface CPUHardware{
 
 export interface LogicalActivity{
     cpuNumber: string;
+    type: string
     online?: number;
     lparBusy: number;
     mvsBusy?: number;

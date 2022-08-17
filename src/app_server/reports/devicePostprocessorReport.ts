@@ -55,7 +55,7 @@ export default async function parseDEVICE(xml) {
                             } case "1" : {
                                 const { table } = parts[c];
                                 const tableBody = table[0].row;
-                                const mappingCollection: Record<string, Partial<deviceInterface.SG>> = {};
+                                const mappingCollection = [];
                                 
                                 for (var tb in tableBody) {
                                 const sg: Partial<deviceInterface.SG> = {};

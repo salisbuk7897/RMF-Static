@@ -1,6 +1,6 @@
 export interface IOQ{
-    processors: Record<string, Processors | Partial<Processors>>
-    logicalControlUnits: Record<string, LCU | Partial<LCU>>
+    processors: Processors[] | Partial<Processors[]>
+    logicalControlUnits: LCU[] | Partial<LCU[]>
     systemInfo: Info | Partial<Info>
 }
 

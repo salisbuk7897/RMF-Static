@@ -15,7 +15,9 @@ export default async function parseCF(xml) {
         for (const a in postprocessors) {
           
           // Loop through postprocessor sections
-          let singleReport: Partial<cfInterface.RPRTCF> = {};//segment number (b) as key and detals as value
+          let singleReport: Partial<cfInterface.CF> = {};//segment number (b) as key and detals as value
+          let cf: Partial<cfInterface.RPRTCF> = {};
+          let allcf = []
           const segments = postprocessors[a].segment;
           
           for (const b in segments) {
@@ -106,9 +108,10 @@ export default async function parseCF(xml) {
             usage.couplingFacility = facility;
             usage.logicalProcessors = processor;
             rprtCF.usageSummary = usage;
-            singleReport[b] = rprtCF;
+            allcf[b] = rprtCF;
 
           }
+          singleReport.cf = allcf
           finalJSON[a] = singleReport;
           
         }

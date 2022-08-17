@@ -42,7 +42,7 @@ export default async function parseOMVS(xml) {
               for(const c in parts){
                 const { table } = parts[c];
                 const tableBody = table[0].row; //undefined 
-                const mappingCollection: Record<string, Partial<omvsInterface.cActivity>> = {};
+                const mappingCollection = [];
                 
                 for (var tb in tableBody) {
                   const cActivity: Partial<omvsInterface.cActivity> = {}
@@ -60,7 +60,7 @@ export default async function parseOMVS(xml) {
               for(const c in parts){
                 const { table } = parts[c];
                 const tableBody = table[0].row;
-                const mappingCollection: Record<string, Partial<omvsInterface.pActivity>> = {};
+                const mappingCollection = [];
                 
                 for (var tb in tableBody) {
                   const pActivity: Partial<omvsInterface.pActivity> = {};
@@ -87,7 +87,7 @@ export default async function parseOMVS(xml) {
                 for(const c in parts){
                   const { table } = parts[c];
                   const tableBody = table[0].row;
-                  const mappingCollection: Record<string, Partial<omvsInterface.pActivity>> = {};
+                  const mappingCollection = [];
                   
                   for (var tb in tableBody) {
                     const pActivity: Partial<omvsInterface.pActivity> = {};

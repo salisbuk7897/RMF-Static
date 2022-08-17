@@ -1,10 +1,10 @@
 export interface Chan{
     systemInfo: Info | Partial<Info>
-    allChannels: Record<string | number, AllChannels | Partial<AllChannels>>
-    hiperSocket: Record<string | number, HiperSocket | Partial<HiperSocket>>
+    allChannels: AllChannels[] | Partial<AllChannels[]>
+    hiperSocket: HiperSocket[] | Partial<HiperSocket[]>
 }
 
-export interface Info{
+export interface Info{ 
     iodfSuffix: string
     iodfDate: string
     iodfTime: string

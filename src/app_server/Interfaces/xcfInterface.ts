@@ -1,19 +1,23 @@
 export interface xcf{
-    usageBySystem: bySystem[] | Partial<bySystem[]>
-    usageByMember: byMember[] | Partial<byMember[]>
+    usageBySystem: bySystem | Partial<bySystem>
+    usageByMember: byMember | Partial<byMember>
 }
 
 export interface bySystem{
+    local: System[] | Partial<System[]>
+}
+
+export interface System{
     transportClass: string
     status: string
     requestsRejected: number
 }
 
 export interface byMember{
-    onSystem: System[] | Partial<System[]>
+    onSystem: Member[] | Partial<Member[]>
 }
 
-export interface System{
+export interface Member{
     group: string
     member: string
     status: string

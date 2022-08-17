@@ -8,71 +8,96 @@ const parser = new xml2js.Parser(); // Initialize xml2js parser
  * @param {string} xml - Workload XML data from RMF Monitor I
  */
 export default async function parseXCF(xml) {
-    try {
-        const result = await parser.parseStringPromise(xml);
-        const finalJSON = {}; // Collection for storing JSON of Parsed XML
-        const postprocessors = result.ddsml.postprocessor;
-        for (const a in postprocessors) {
-          // Loop through postprocessor sections
-          let singleReport: Partial<xcfInterface.xcf> = {};
-          const segments = postprocessors[a].segment;
-          
-          for (const b in segments) {
-            var segmentName = segments[b].name[0];
-            const parts = segments[b].part;
-            if (segmentName.trim() == "HFS Global Statistics") {
-                /* let global: Partial<hfsInterface.global> = {}
-                let virtual: Partial<hfsInterface.virtual> = {}
-                let storage: Partial<hfsInterface.storage> = {}
-                let fixed: Partial<hfsInterface.fixed> = {} */
-              
-              for (const c in parts) {
-                if(Object.keys(parts[c]).length > 1 ) { // The part has no childnodes
-                    var partName = parts[c]["name"][0].trim()
-                    /* switch (`${partName}`) {
-                        case "Storage Limits (MB)":{
-                            const varlist = parts[c]["var-list"];
-                
-                            for (var vr in varlist[0]["var"]) {
-                                switch (`${varlist[0]["var"][vr].name[0].trim()}`) {
-                                    case "Virtual Max": {
-                                        virtual.max = `${varlist[0]["var"][vr].value[0].trim()}` == "N/A" ? varlist[0]["var"][vr].value[0].trim() : parseFloat(varlist[0]["var"][vr].value[0].trim());
-                                        break;
-                                    }
-                                    case "Virtual Use": {
-                                        virtual.use = `${varlist[0]["var"][vr].value[0].trim()}` == "N/A" ? varlist[0]["var"][vr].value[0].trim() : parseFloat(varlist[0]["var"][vr].value[0].trim());
-                                        break;
-                                    }
-                                    case "Fixed Min": {
-                                        fixed.min = `${varlist[0]["var"][vr].value[0].trim()}` == "N/A" ? varlist[0]["var"][vr].value[0].trim() : parseFloat(varlist[0]["var"][vr].value[0].trim());
-                                        break;
-                                    }
-                                    case "Fixed Use": {
-                                        fixed.use = `${varlist[0]["var"][vr].value[0].trim()}` == "N/A" ? varlist[0]["var"][vr].value[0].trim() : parseFloat(varlist[0]["var"][vr].value[0].trim());
-                                        break;
-                                    }
-                                } 
-                            }
-                            break;
-                        }
+  try {
+    const result = await parser.parseStringPromise(xml);
+    const finalJSON = {}; // Collection for storing JSON of Parsed XML
+    const postprocessors = result.ddsml.postprocessor;
+    for (const a in postprocessors) {
+      // Loop through postprocessor sections
+      let singleReport: Partial<xcfInterface.xcf> = {};
+      const segments = postprocessors[a].segment;
 
-                    } */
-                }
-                
+      for (const b in segments) {
+        var segmentName = segments[b].name[0];
+        const parts = segments[b].part;
+        if (segmentName.trim() == "XCF Usage by System") {
+          let bysystem: Partial<xcfInterface.bySystem> = {};
+
+          let allSystem = [];
+
+          for (const c in parts) {
+            if (Object.keys(parts[c]).length > 1) {
+              var partName;
+              try {
+                partName = parts[c]["name"][0].trim();
+              } catch (e) {
+                partName = c;
               }
-              /* storage.virtual = virtual
-              storage.fixed = fixed
-              global.storage = storage
-              singleReport.global = global */
 
+              if (partName.includes("Local within System")) {
+                const { table } = parts[c];
+                const tableBody = table[0].row;
+                const systemList = [];
+                for (var tb in tableBody) {
+                  let system: Partial<xcfInterface.System> = {};
+
+                  system.transportClass = tableBody[tb].col[0].trim();
+                  system.status = tableBody[tb].col[1].trim();
+                  system.requestsRejected = parseFloat(
+                    tableBody[tb].col[2].trim()
+                  );
+                  systemList.push(system);
+                }
+                allSystem.push(systemList);
+              }
             }
           }
-          finalJSON[a] = singleReport;
+          bysystem.local = allSystem;
+          singleReport.usageBySystem = bysystem
+        } else if (segmentName.trim() == "XCF Usage by Member") {
+            let bymember: Partial<xcfInterface.byMember> = {};
+
+            let allMember = [];
+
+            for (const c in parts) {
+                if (Object.keys(parts[c]).length > 1) {
+                var partName;
+                try {
+                    partName = parts[c]["name"][0].trim();
+                } catch (e) {
+                    partName = c;
+                }
+
+                if (partName.includes("Members on System")) {
+                    const { table } = parts[c];
+                    const tableBody = table[0].row;
+                    const memberList = [];
+                    for (var tb in tableBody) {
+                    let member: Partial<xcfInterface.Member> = {};
+
+                    member.group = tableBody[tb].col[0].trim();
+                    member.member = tableBody[tb].col[1].trim();
+                    member.status = tableBody[tb].col[2].trim();
+                    member.requestOut = parseFloat(tableBody[tb].col[3].trim());
+                    member.requestIn = parseFloat(tableBody[tb].col[4].trim());
+                    
+                    memberList.push(member);
+                    }
+                    allMember.push(memberList);
+                }
+                }
+            }
+            bymember.onSystem = allMember;
+            singleReport.usageByMember = bymember
+
         }
-        //console.log(finalJSON);
-        return finalJSON;
-    }catch(e){
-        console.log(e);
-        return e;
+      }
+      finalJSON[a] = singleReport;
     }
+    //console.log(finalJSON);
+    return finalJSON;
+  } catch (e) {
+    console.log(e);
+    return e;
+  }
 }

@@ -4,7 +4,7 @@ export interface Device{
     iodfCreationDate: string
     iodfCreationTime: string
     configurationState: string
-    storageGroup: Record<string, SG | Partial<SG>>
+    storageGroup: SG[] | Partial<SG[]>
 }
 
 export interface SG{

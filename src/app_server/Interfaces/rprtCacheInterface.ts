@@ -1,6 +1,6 @@
 export interface Cache{
     cacheInterval: CacheInt | Partial<CacheInt>
-    cacheSubsystem: Record<number, CacheSub | Partial<CacheSub>>
+    cacheSubsystem: CacheSub[] | Partial<CacheSub[]>
 }
 
 export interface CacheInt{
@@ -48,7 +48,7 @@ export interface Overview{
     hitRatioCache: number
     cacheMiss: number
     cacheMissRate: number
-    ioRequestCategory: Record<number, RC | Partial<RC>>
+    ioRequestCategory: RC[] | Partial<RC[]>
 }
 
 export interface RC{
@@ -112,7 +112,7 @@ export interface Disk{
 }
 
 export interface Device{
-    volumeSerial: Record<number, VS | Partial<VS>>
+    volumeSerial: VS[] | Partial<VS[]>
 }
 
 export interface VS{

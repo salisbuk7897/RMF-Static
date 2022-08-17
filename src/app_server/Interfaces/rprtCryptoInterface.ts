@@ -1,6 +1,6 @@
 export interface crypto{
-    ccaCoProcessor: Record<string, type | Partial<type>> 
-    icsfServices: Record<string, icsf | Partial<icsf>>;
+    ccaCoProcessor: type[] | Partial<type[]>
+    icsfServices: icsf[] | Partial<icsf[]>
 }
 
 export interface type{
@@ -17,6 +17,7 @@ export interface cclparcpc{
 }
 
 export interface icsf{
+    type: string
     rate: number
     size: number
 }

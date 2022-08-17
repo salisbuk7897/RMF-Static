@@ -98,11 +98,12 @@ export default async function parseCPU(xml) {
                 }
                 cpuActivity.hardware = hardware;
                 const tableBody = table[0].row;
-                const mappingCollection: Record<string, Partial<cpuInterface.LogicalActivity>> = {};
+                const mappingCollection = [];
                 for (var tb in tableBody) {
                   // loop through tablebody to fill logicalactivity collection
                   const logicalActivity: Partial<cpuInterface.LogicalActivity> = {}; // the logical activity collection as specified in the interface
                   logicalActivity.cpuNumber = tableBody[tb].col[0];
+                  logicalActivity.type = tableBody[tb].col[1];
                   logicalActivity.online = parseInt(tableBody[tb].col[2]);
                   logicalActivity.lparBusy = parseInt(tableBody[tb].col[3]);
                   logicalActivity.mvsBusy = parseInt(tableBody[tb].col[4]);
@@ -111,7 +112,7 @@ export default async function parseCPU(xml) {
                   logicalActivity.hiperdispatchPriority = tableBody[tb].col[7];
                   logicalActivity.ioInterrupts = parseInt(tableBody[tb].col[8]);
                   logicalActivity.tpiInterrupts = parseInt(tableBody[tb].col[9]);
-                  mappingCollection[tableBody[tb].col[1]] = logicalActivity;
+                  mappingCollection[tb] = logicalActivity;
                   //mappingLogicalActivity.set(`${tableBody[tb].col[1]}`, logicalActivity);
                   
                 }
@@ -280,7 +281,6 @@ export default async function parseCPU(xml) {
                   statSummary.avg = parseInt(tableBody[tb].col[3]);
                   mappingCollection[tableBody[tb].col[0]] = statSummary;
                 }
-                console.log(mappingCollection);
                 workUnit.analysis = mappingCollection;
                 cpuActivity.workUnit = workUnit;
                 break;

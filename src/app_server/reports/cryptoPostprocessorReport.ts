@@ -25,7 +25,7 @@ export default async function parseCRYPTO(xml) {
                 for(const c in parts){
                     const { table } = parts[c];
                     const tableBody = table[0].row;
-                    const mappingCollection: Record<string, Partial<cryptoInterface.type>> = {};
+                    const mappingCollection = [];
                     
                     for (var tb in tableBody) {
                       const type: Partial<cryptoInterface.type> = {};
@@ -42,7 +42,7 @@ export default async function parseCRYPTO(xml) {
                       cpc.keyGenRate = parseInt(tableBody[tb].col[9]);
                       type.lpar = lpar
                       type.cpc = cpc
-                      mappingCollection[tableBody[tb].col[1]] = type;
+                      mappingCollection[tb] = type;
                       //mappingLogicalActivity.set(`${tableBody[tb].col[1]}`, logicalActivity);
                       
                     }
@@ -53,14 +53,15 @@ export default async function parseCRYPTO(xml) {
                 for(const c in parts){
                     const { table } = parts[c];
                     const tableBody = table[0].row;
-                    const mappingCollection: Record<string, Partial<cryptoInterface.icsf>> = {};
+                    const mappingCollection = [];
                     
                     for (var tb in tableBody) {
                       const icsf: Partial<cryptoInterface.icsf> = {};
+                      icsf.type = tableBody[tb].col[0]
                       icsf.rate = parseFloat(tableBody[tb].col[1]);
                       icsf.size = parseFloat(tableBody[tb].col[2]);
                       
-                      mappingCollection[tableBody[tb].col[0]] = icsf;
+                      mappingCollection[tb] = icsf;
                       //mappingLogicalActivity.set(`${tableBody[tb].col[1]}`, logicalActivity);
                       
                     }

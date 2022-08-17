@@ -17,13 +17,12 @@ export default async function parseCACHE(xml) {
           // Loop through postprocessor sections
           let singleReport: Partial<cacheInterface.Cache> = {};//segment number (b) as key and detals as value
           const segments = postprocessors[a].segment;
-          const csmappingCollection: Record<string, Partial<cacheInterface.CacheSub>> = {};
+          const csmappingCollection = [];
           for (const b in segments) {
             var segmentName = segments[b].name[0];
             //console.log(segmentName.trim())
             const parts = segments[b].part;
             if (segmentName.trim() == "Cache Interval") {
-                console.log("hi");
                 const cacheInt: Partial<cacheInterface.CacheInt> = {};
                 for (const c in parts) {
                     const varlist = parts[c]["var-list"];
@@ -164,7 +163,7 @@ export default async function parseCACHE(xml) {
                                 }
                                 const { table } = parts[c];
                                 const tableBody = table[0].row;
-                                const mappingCollection: Record<string, Partial<cacheInterface.RC>> = {};
+                                const mappingCollection = [];
                                 
                                 for (var tb in tableBody) {
                                 const rc: Partial<cacheInterface.RC> = {};
@@ -331,7 +330,7 @@ export default async function parseCACHE(xml) {
                             } case "Cache Subsystem Device Overview" : {
                                 const { table } = parts[c];
                                 const tableBody = table[0].row;
-                                const mappingCollection: Record<string, Partial<cacheInterface.VS>> = {};
+                                const mappingCollection = [];
                                 
                                 for (var tb in tableBody) {
                                 const vs: Partial<cacheInterface.VS> = {};
