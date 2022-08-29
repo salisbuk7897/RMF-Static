@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-m3.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<report>
+		<metric id="DSND">
+			<description>
+				DSND (Dataset Delays)
+			</description>
+			<format>
+				report
+			</format>
+			<numcols>
+				6
+			</numcols>
+		</metric>
+		<resource>
+			<reslabel>
+				,RPRT,MVS_IMAGE
+			</reslabel>
+			<restype>
+				MVS_IMAGE
+			</restype>
+			<reslabelurl>
+				%2CRPRT%2CMVS_IMAGE
+			</reslabelurl>
+		</resource>
+		<time-data>
+			<local-start>
+				20220824051640
+			</local-start>
+			<local-end>
+				20220824051820
+			</local-end>
+			<utc-start>
+				20220824091640
+			</utc-start>
+			<utc-end>
+				20220824091820
+			</utc-end>
+			<local-prev>
+				20220824051550
+			</local-prev>
+			<local-next>
+				20220824051910
+			</local-next>
+			<display-start locale="en-us">
+				08/24/2022 05:16:40
+			</display-start>
+			<display-end locale="en-us">
+				08/24/2022 05:18:20
+			</display-end>
+			<gatherer-interval unit="seconds">
+				100
+			</gatherer-interval>
+			<data-range unit="seconds">
+				100
+			</data-range>
+			<num-samples>
+				100
+			</num-samples>
+		</time-data>
+		<column-headers>
+			<col type="N">
+				DNDPDSN
+			</col>
+			<col type="N">
+				DNDPVOLU
+			</col>
+			<col type="N">
+				DNDPJOBN
+			</col>
+			<col type="N">
+				DNDPASID
+			</col>
+			<col type="N">
+				DNDPDUSG
+			</col>
+			<col type="N">
+				DNDPDDLY
+			</col>
+		</column-headers>
+	</report>
+</ddsml>

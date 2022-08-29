@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-m3.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<report>
+		<metric id="EADM">
+			<description>
+				EADM     (Extended Asynchronous Data Mover)
+			</description>
+			<format>
+				report
+			</format>
+			<numcols>
+				14
+			</numcols>
+		</metric>
+		<resource>
+			<reslabel>
+				,RPRT,MVS_IMAGE
+			</reslabel>
+			<restype>
+				MVS_IMAGE
+			</restype>
+			<reslabelurl>
+				%2CRPRT%2CMVS_IMAGE
+			</reslabelurl>
+		</resource>
+		<time-data>
+			<local-start>
+				20220824051640
+			</local-start>
+			<local-end>
+				20220824051820
+			</local-end>
+			<utc-start>
+				20220824091640
+			</utc-start>
+			<utc-end>
+				20220824091820
+			</utc-end>
+			<local-prev>
+				20220824051550
+			</local-prev>
+			<local-next>
+				20220824051910
+			</local-next>
+			<display-start locale="en-us">
+				08/24/2022 05:16:40
+			</display-start>
+			<display-end locale="en-us">
+				08/24/2022 05:18:20
+			</display-end>
+			<gatherer-interval unit="seconds">
+				100
+			</gatherer-interval>
+			<data-range unit="seconds">
+				100
+			</data-range>
+			<num-samples>
+				100
+			</num-samples>
+		</time-data>
+		<caption>
+			<var>
+				<name>
+					SCMHSCR
+				</name>
+				<value>
+					0.00
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHSCH
+				</name>
+				<value>
+					0
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHFPT
+				</name>
+				<value>
+					0.000
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHIQT
+				</name>
+				<value>
+					0.000
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHCRT
+				</name>
+				<value>
+					0.000
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHRRC
+				</name>
+				<value>
+					0.00
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHTPC
+				</name>
+				<value>
+					0
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHRCC
+				</name>
+				<value>
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHRRD
+				</name>
+				<value>
+					0.00
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHTPD
+				</name>
+				<value>
+					0
+				</value>
+			</var>
+			<var>
+				<name>
+					SCMHRCD
+				</name>
+				<value>
+				</value>
+			</var>
+		</caption>
+		<row refno="1">
+			<col>
+				VFM
+			</col>
+			<col>
+				0.00
+			</col>
+			<col>
+				0.00
+			</col>
+			<col>
+				0.00
+			</col>
+			<col>
+				0.00
+			</col>
+			<col>
+				0.00
+			</col>
+			<col>
+				0.00
+			</col>
+			<col>
+				0.00
+			</col>
+			<col>
+				0.00
+			</col>
+			<col>
+				0.000
+			</col>
+			<col>
+				0.000
+			</col>
+			<col>
+				0.000
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+		</row>
+		<column-headers>
+			<col type="T">
+				SCMRPID
+			</col>
+			<col type="N">
+				SCMUTL
+			</col>
+			<col type="N">
+				SCMUTLC
+			</col>
+			<col type="N">
+				SCMDRD
+			</col>
+			<col type="N">
+				SCMDRDC
+			</col>
+			<col type="N">
+				SCMDWR
+			</col>
+			<col type="N">
+				SCMDWRC
+			</col>
+			<col type="N">
+				SCMRQR
+			</col>
+			<col type="N">
+				SCMRQRC
+			</col>
+			<col type="N">
+				SCMART
+			</col>
+			<col type="N">
+				SCMARTC
+			</col>
+			<col type="N">
+				SCMAQTC
+			</col>
+			<col type="N">
+				SCMTRQ
+			</col>
+			<col type="N">
+				SCMTRQC
+			</col>
+		</column-headers>
+	</report>
+</ddsml>

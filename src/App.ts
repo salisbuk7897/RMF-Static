@@ -7,6 +7,8 @@ let Zconfig = require("./Config/Zconfig")
 let baseurl = Zconfig.dds['RPRT'].ddsbaseurl;
 let baseport = Zconfig.dds['RPRT'].ddsbaseport;
 let rmfppfilename = Zconfig.dds['RPRT'].rmfppfilename;
+let rmfiiifilename = Zconfig.dds['RPRT'].rmf3filename;
+let urlResource = Zconfig.dds['RPRT'].mvsResource;
 var minutesInterval = Zconfig.dds['RPRT'].ppminutesInterval;
 var ddshttp = Zconfig.dds['RPRT'].ddshhttptype;
 let ddsauth = Zconfig.dds['RPRT'].ddsauth;
@@ -29,6 +31,10 @@ import parseSDELAY from './app_server/reports/sdelayPostprocessorReport';
 import parsePAGESP from './app_server/reports/pagespPostprocessorReport';
 import parseXCF from './app_server/reports/xcfPostprocessorReport';
 import parseWLMGL from './app_server/reports/wlmglPostrocessorReport';
+import RMFIIIgetRequest from './app_server/Controller/rmfiii';
+import parseCPC from './app_server/reports/rmfIII/cpcMonitorIIIReport';
+import parseRMFIII from './app_server/reports/rmfIII/monitorIIIReport';
+import parseRMFI from './app_server/reports/monitorIParser';
 tls.DEFAULT_MIN_VERSION = "TLSv1.1";
 declare var process : {
   env: {
@@ -50,7 +56,13 @@ class App {
     const router = express.Router()
     router.get('/', async (req, res) => {
       let jsonData
-      if(req.query.report == "EADM"){
+      if(req.query.monitor == "RMF3"){
+        let data = await RMFIIIgetRequest(ddshttp, baseurl, baseport, rmfiiifilename, {report: req.query.report, resource: urlResource}, ddsid, ddspass, ddsauth);
+        jsonData = await parseRMFIII(data, req.query.report)
+      }else if(req.query.monitor == "RMF1"){
+        let data = await RMFPPgetRequest(ddshttp, baseurl, baseport, rmfppfilename, req.query.report, req.query.date, ddsid, ddspass, ddsauth);//fs.readFileSync('C:\\Users\\Administrator\\Desktop\\NEW_ZEBRA\\zebra\\src\\app_server\\xml\\wlmgl.xml','utf8'); 
+        jsonData = await parseRMFI(data)
+      }else if(req.query.report == "EADM"){ 
         let xml = fs.readFileSync('C:\\Users\\Administrator\\Desktop\\NEW_ZEBRA\\zebra\\src\\app_server\\xml\\eadm.xml','utf8');
         jsonData = await parseEADM(xml)//await parseCPU(data)
       }else if(req.query.report == "CRYPTO"){
@@ -98,8 +110,11 @@ class App {
       }else if(req.query.report == "XCF"){
         let xml = fs.readFileSync('C:\\Users\\Administrator\\Desktop\\NEW_ZEBRA\\zebra\\src\\app_server\\xml\\xcf.xml','utf8');
         jsonData = await parseXCF(xml)
+      }else if(req.query.report == "CPC"){
+        let xml = fs.readFileSync('C:\\Users\\Administrator\\Desktop\\NEW_ZEBRA\\zebra\\src\\app_server\\xml\\cpc.xml','utf8');
+        jsonData = await parseCPC(xml)
       }else{
-        /* let data = await RMFPPgetRequest(ddshttp, baseurl, baseport, rmfppfilename, 'WLMGL', '20220809,20220809', ddsid, ddspass, ddsauth);
+        /* let data = await RMFPPgetRequest(ddshttp, baseurl, baseport, rmfppfilename, 'WLMGL', '20220829,20220829', ddsid, ddspass, ddsauth);
         fs.writeFile( "wlmgl.xml", data, (err) => {
           if (err)
             console.log(err);
@@ -107,7 +122,16 @@ class App {
             console.log("File written successfully\n");
             jsonData = "Success";
           }
-        });  */ 
+        });   */
+        /* let data = await RMFIIIgetRequest(ddshttp, baseurl, baseport, rmfiiifilename, {report: "HSM", resource: urlResource}, ddsid, ddspass, ddsauth);
+        fs.writeFile( "hsm.xml", data, (err) => {
+          if (err)
+            console.log(err);
+          else {
+            console.log("File written successfully\n");
+            jsonData = "Success";
+          }
+        });  */
 
       }
       //let data = await RMFPPgetRequest(ddshttp, baseurl, baseport, rmfppfilename, 'CPU', '20220727,20220727', ddsid, ddspass, ddsauth);

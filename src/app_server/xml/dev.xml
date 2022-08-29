@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-m3.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<report>
+		<metric id="DEV">
+			<description>
+				DEV (Device delays)
+			</description>
+			<format>
+				report
+			</format>
+			<numcols>
+				15
+			</numcols>
+		</metric>
+		<resource>
+			<reslabel>
+				,RPRT,MVS_IMAGE
+			</reslabel>
+			<restype>
+				MVS_IMAGE
+			</restype>
+			<reslabelurl>
+				%2CRPRT%2CMVS_IMAGE
+			</reslabelurl>
+		</resource>
+		<time-data>
+			<local-start>
+				20220824051320
+			</local-start>
+			<local-end>
+				20220824051500
+			</local-end>
+			<utc-start>
+				20220824091320
+			</utc-start>
+			<utc-end>
+				20220824091500
+			</utc-end>
+			<local-prev>
+				20220824051230
+			</local-prev>
+			<local-next>
+				20220824051550
+			</local-next>
+			<display-start locale="en-us">
+				08/24/2022 05:13:20
+			</display-start>
+			<display-end locale="en-us">
+				08/24/2022 05:15:00
+			</display-end>
+			<gatherer-interval unit="seconds">
+				100
+			</gatherer-interval>
+			<data-range unit="seconds">
+				100
+			</data-range>
+			<num-samples>
+				100
+			</num-samples>
+		</time-data>
+		<column-headers>
+			<col type="N">
+				DEVPJOB
+			</col>
+			<col type="N">
+				DEVPASI
+			</col>
+			<col type="N">
+				DEVPCLA
+			</col>
+			<col type="N">
+				DEVPODEL
+			</col>
+			<col type="N">
+				DEVPOUSE
+			</col>
+			<col type="N">
+				DEVPCON
+			</col>
+			<col type="N">
+				DEVPSVCL
+			</col>
+			<col type="N">
+				DEV1SDEL
+			</col>
+			<col type="N">
+				DEV1VOLU
+			</col>
+			<col type="N">
+				DEV2SDEL
+			</col>
+			<col type="N">
+				DEV2VOLU
+			</col>
+			<col type="N">
+				DEV3SDEL
+			</col>
+			<col type="N">
+				DEV3VOLU
+			</col>
+			<col type="N">
+				DEV4SDEL
+			</col>
+			<col type="N">
+				DEV4VOLU
+			</col>
+		</column-headers>
+	</report>
+</ddsml>

@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-m3.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<report>
+		<metric id="CHANNEL">
+			<description>
+				CHANNEL (I/O Channels)
+			</description>
+			<format>
+				report
+			</format>
+			<numcols>
+				27
+			</numcols>
+		</metric>
+		<resource>
+			<reslabel>
+				,RPRT,MVS_IMAGE
+			</reslabel>
+			<restype>
+				MVS_IMAGE
+			</restype>
+			<reslabelurl>
+				%2CRPRT%2CMVS_IMAGE
+			</reslabelurl>
+		</resource>
+		<time-data>
+			<local-start>
+				20220823115500
+			</local-start>
+			<local-end>
+				20220823115640
+			</local-end>
+			<utc-start>
+				20220823155500
+			</utc-start>
+			<utc-end>
+				20220823155640
+			</utc-end>
+			<local-prev>
+				20220823115410
+			</local-prev>
+			<local-next>
+				20220823115730
+			</local-next>
+			<display-start locale="en-us">
+				08/23/2022 11:55:00
+			</display-start>
+			<display-end locale="en-us">
+				08/23/2022 11:56:40
+			</display-end>
+			<gatherer-interval unit="seconds">
+				100
+			</gatherer-interval>
+			<data-range unit="seconds">
+				100
+			</data-range>
+			<num-samples>
+				100
+			</num-samples>
+		</time-data>
+		<row refno="1">
+			<col>
+				00
+			</col>
+			<col>
+				OSC
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="2">
+			<col>
+				01
+			</col>
+			<col>
+				OSD
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				28000
+			</col>
+			<col>
+				28000
+			</col>
+			<col>
+				26000
+			</col>
+			<col>
+				26000
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="3">
+			<col>
+				02
+			</col>
+			<col>
+				OSD
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				98000
+			</col>
+			<col>
+				1000000
+			</col>
+			<col>
+				29000
+			</col>
+			<col>
+				115000
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="4">
+			<col>
+				08
+			</col>
+			<col>
+				FC
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="5">
+			<col>
+				10
+			</col>
+			<col>
+				FC
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.1
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				9000
+			</col>
+			<col>
+				31000
+			</col>
+			<col>
+				3000
+			</col>
+			<col>
+				34000
+			</col>
+			<col>
+				9
+			</col>
+			<col>
+				1
+			</col>
+			<col>
+				2
+			</col>
+			<col>
+				1
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="6">
+			<col>
+				11
+			</col>
+			<col>
+				FC
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="7">
+			<col>
+				12
+			</col>
+			<col>
+				FC
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="8">
+			<col>
+				14
+			</col>
+			<col>
+				FC
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.1
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				9000
+			</col>
+			<col>
+				50000
+			</col>
+			<col>
+				3000
+			</col>
+			<col>
+				36000
+			</col>
+			<col>
+				9
+			</col>
+			<col>
+				1
+			</col>
+			<col>
+				2
+			</col>
+			<col>
+				1
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="9">
+			<col>
+				40
+			</col>
+			<col>
+				FC
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.1
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				7000
+			</col>
+			<col>
+				19000
+			</col>
+			<col>
+				3000
+			</col>
+			<col>
+				33000
+			</col>
+			<col>
+				9
+			</col>
+			<col>
+				1
+			</col>
+			<col>
+				2
+			</col>
+			<col>
+				1
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="10">
+			<col>
+				41
+			</col>
+			<col>
+				FC
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				0.1
+			</col>
+			<col>
+				0.0
+			</col>
+			<col>
+				8000
+			</col>
+			<col>
+				42000
+			</col>
+			<col>
+				2000
+			</col>
+			<col>
+				32000
+			</col>
+			<col>
+				9
+			</col>
+			<col>
+				1
+			</col>
+			<col>
+				2
+			</col>
+			<col>
+				1
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				C
+			</col>
+			<col>
+				2
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="11">
+			<col>
+				ED
+			</col>
+			<col>
+				IQD
+			</col>
+			<col>
+				Y
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				----
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				----
+			</col>
+			<col>
+				0
+			</col>
+			<col>
+				0
+			</col>
+			<col />
+			<col />
+			<col>
+				C
+			</col>
+			<col>
+				3
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="12">
+			<col>
+				FC
+			</col>
+			<col>
+				ICP
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				----
+			</col>
+			<col>
+				----
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				C
+			</col>
+			<col>
+				1
+			</col>
+			<col />
+			<col />
+		</row>
+		<row refno="13">
+			<col>
+				FD
+			</col>
+			<col>
+				ICP
+			</col>
+			<col>
+				Y
+			</col>
+			<col>
+				----
+			</col>
+			<col>
+				----
+			</col>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col>
+				C
+			</col>
+			<col>
+				1
+			</col>
+			<col />
+			<col />
+		</row>
+		<column-headers>
+			<col type="T">
+				CHACPIVC
+			</col>
+			<col type="T">
+				CHACPTVC
+			</col>
+			<col type="T">
+				CHACSIVC
+			</col>
+			<col type="T">
+				CHACPUVC
+			</col>
+			<col type="T">
+				CHACTUVC
+			</col>
+			<col type="N">
+				CHACTBVC
+			</col>
+			<col type="N">
+				CHACPRVC
+			</col>
+			<col type="N">
+				CHACTRVC
+			</col>
+			<col type="N">
+				CHACPWVC
+			</col>
+			<col type="N">
+				CHACTWVC
+			</col>
+			<col type="N">
+				CHACFRTE
+			</col>
+			<col type="N">
+				CHACFACT
+			</col>
+			<col type="N">
+				CHACXRTE
+			</col>
+			<col type="N">
+				CHACXACT
+			</col>
+			<col type="N">
+				CHACTMVC
+			</col>
+			<col type="N">
+				CHACTFVC
+			</col>
+			<col type="T">
+				CHACTSVC
+			</col>
+			<col type="N">
+				CHACPMVC
+			</col>
+			<col type="T">
+				CHACPSVC
+			</col>
+			<col type="N">
+				CHACSFVC
+			</col>
+			<col type="N">
+				CHACPFVC
+			</col>
+			<col type="N">
+				CHACFDFR
+			</col>
+			<col type="N">
+				CHACXDFR
+			</col>
+			<col type="T">
+				CHACLTVC
+			</col>
+			<col type="N">
+				CHACMGVC
+			</col>
+			<col type="N">
+				CHACNET1
+			</col>
+			<col type="N">
+				CHACNET2
+			</col>
+		</column-headers>
+	</report>
+</ddsml>

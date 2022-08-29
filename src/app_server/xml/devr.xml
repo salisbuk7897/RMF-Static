@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-m3.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<report>
+		<metric id="DEVR">
+			<description>
+				DEVR (Device Resource Delays)
+			</description>
+			<format>
+				report
+			</format>
+			<numcols>
+				31
+			</numcols>
+		</metric>
+		<resource>
+			<reslabel>
+				,RPRT,MVS_IMAGE
+			</reslabel>
+			<restype>
+				MVS_IMAGE
+			</restype>
+			<reslabelurl>
+				%2CRPRT%2CMVS_IMAGE
+			</reslabelurl>
+		</resource>
+		<time-data>
+			<local-start>
+				20220824051500
+			</local-start>
+			<local-end>
+				20220824051640
+			</local-end>
+			<utc-start>
+				20220824091500
+			</utc-start>
+			<utc-end>
+				20220824091640
+			</utc-end>
+			<local-prev>
+				20220824051410
+			</local-prev>
+			<local-next>
+				20220824051730
+			</local-next>
+			<display-start locale="en-us">
+				08/24/2022 05:15:00
+			</display-start>
+			<display-end locale="en-us">
+				08/24/2022 05:16:40
+			</display-end>
+			<gatherer-interval unit="seconds">
+				100
+			</gatherer-interval>
+			<data-range unit="seconds">
+				100
+			</data-range>
+			<num-samples>
+				100
+			</num-samples>
+		</time-data>
+		<column-headers>
+			<col type="N">
+				DVRPVOLU
+			</col>
+			<col type="N">
+				DVRPDVN5
+			</col>
+			<col type="N">
+				DVRPIDEN
+			</col>
+			<col type="N">
+				DVRPSTAT
+			</col>
+			<col type="N">
+				DVRPKIND
+			</col>
+			<col type="N">
+				DVRPLCUN
+			</col>
+			<col type="N">
+				DVRPACTV
+			</col>
+			<col type="N">
+				DVRPCONN
+			</col>
+			<col type="N">
+				DVRPDISC
+			</col>
+			<col type="N">
+				DVRPPEND
+			</col>
+			<col type="N">
+				DVRPDLYR
+			</col>
+			<col type="N">
+				DVRPDLYP
+			</col>
+			<col type="N">
+				DVRACTRT
+			</col>
+			<col type="N">
+				DVRRESPT
+			</col>
+			<col type="N">
+				DVRIOSQT
+			</col>
+			<col type="N">
+				DVRPDVBT
+			</col>
+			<col type="N">
+				DVRPCMRT
+			</col>
+			<col type="N">
+				DVRPCUBT
+			</col>
+			<col type="N">
+				DVRPSPBT
+			</col>
+			<col type="N">
+				DVRRPTHP
+			</col>
+			<col type="N">
+				DVRIQTHP
+			</col>
+			<col type="N">
+				DVRIOINT
+			</col>
+			<col type="N">
+				DVRPJOBN
+			</col>
+			<col type="N">
+				DVRPASI
+			</col>
+			<col type="N">
+				DVRPCLA
+			</col>
+			<col type="N">
+				DVRPDMN
+			</col>
+			<col type="N">
+				DVRPPGN
+			</col>
+			<col type="N">
+				DVRPSUSE
+			</col>
+			<col type="N">
+				DVRPSDEL
+			</col>
+			<col type="N">
+				DVRPSVCL
+			</col>
+			<col type="N">
+				DVRPDEVN
+			</col>
+		</column-headers>
+	</report>
+</ddsml>

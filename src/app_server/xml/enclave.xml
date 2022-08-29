@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="include/ddsml-m3.xsl"?>
+<ddsml>
+	<server>
+		<name>
+			RMF-DDS-Server
+		</name>
+		<version>
+			ZOSV2R5
+		</version>
+		<functionality>
+			3500
+		</functionality>
+		<platform>
+			z/OS
+		</platform>
+	</server>
+	<report>
+		<metric id="ENCLAVE">
+			<description>
+				ENCLAVE (Enclaves)
+			</description>
+			<format>
+				report
+			</format>
+			<numcols>
+				80
+			</numcols>
+		</metric>
+		<resource>
+			<reslabel>
+				,RPRT,MVS_IMAGE
+			</reslabel>
+			<restype>
+				MVS_IMAGE
+			</restype>
+			<reslabelurl>
+				%2CRPRT%2CMVS_IMAGE
+			</reslabelurl>
+		</resource>
+		<time-data>
+			<local-start>
+				20220824051640
+			</local-start>
+			<local-end>
+				20220824051820
+			</local-end>
+			<utc-start>
+				20220824091640
+			</utc-start>
+			<utc-end>
+				20220824091820
+			</utc-end>
+			<local-prev>
+				20220824051550
+			</local-prev>
+			<local-next>
+				20220824051910
+			</local-next>
+			<display-start locale="en-us">
+				08/24/2022 05:16:40
+			</display-start>
+			<display-end locale="en-us">
+				08/24/2022 05:18:20
+			</display-end>
+			<gatherer-interval unit="seconds">
+				100
+			</gatherer-interval>
+			<data-range unit="seconds">
+				100
+			</data-range>
+			<num-samples>
+				100
+			</num-samples>
+		</time-data>
+		<caption>
+			<var>
+				<name>
+					ENCHSST
+				</name>
+				<value>
+					ALL
+				</value>
+			</var>
+			<var>
+				<name>
+					ENCHEON
+				</name>
+				<value>
+				</value>
+			</var>
+			<var>
+				<name>
+					ENCHCLS
+				</name>
+				<value>
+				</value>
+			</var>
+			<var>
+				<name>
+					ENCHAPP
+				</name>
+				<value>
+					0.1
+				</value>
+			</var>
+			<var>
+				<name>
+					ENCHEAP
+				</name>
+				<value>
+					0.2
+				</value>
+			</var>
+			<var>
+				<name>
+					ENCHAPI
+				</name>
+				<value>
+				</value>
+			</var>
+			<var>
+				<name>
+					ENCHAPO
+				</name>
+				<value>
+				</value>
+			</var>
+			<var>
+				<name>
+					ENCHAPS
+				</name>
+				<value>
+				</value>
+			</var>
+		</caption>
+		<column-headers>
+			<col type="N">
+				ENCENAME
+			</col>
+			<col type="N">
+				ENCCLASS
+			</col>
+			<col type="N">
+				ENCGOAL
+			</col>
+			<col type="N">
+				ENCGPERC
+			</col>
+			<col type="N">
+				ENCPER
+			</col>
+			<col type="N">
+				ENCDENC
+			</col>
+			<col type="N">
+				ENCXENC
+			</col>
+			<col type="N">
+				ENCTCPU
+			</col>
+			<col type="N">
+				ENCTIFA
+			</col>
+			<col type="N">
+				ENCTIFC
+			</col>
+			<col type="N">
+				ENCTCBP
+			</col>
+			<col type="N">
+				ENCTCBC
+			</col>
+			<col type="N">
+				ENCTSUP
+			</col>
+			<col type="N">
+				ENCTSUC
+			</col>
+			<col type="N">
+				ENCDCPU
+			</col>
+			<col type="N">
+				ENCDIFA
+			</col>
+			<col type="N">
+				ENCDIFC
+			</col>
+			<col type="N">
+				ENCDCBP
+			</col>
+			<col type="N">
+				ENCDCBC
+			</col>
+			<col type="N">
+				ENCDSUP
+			</col>
+			<col type="N">
+				ENCDSUC
+			</col>
+			<col type="N">
+				ENCDCPUP
+			</col>
+			<col type="N">
+				ENCDIFAP
+			</col>
+			<col type="N">
+				ENCDIFCP
+			</col>
+			<col type="N">
+				ENCDCBPP
+			</col>
+			<col type="N">
+				ENCDCBCP
+			</col>
+			<col type="N">
+				ENCDSUPP
+			</col>
+			<col type="N">
+				ENCDSUCP
+			</col>
+			<col type="N">
+				ENCSAMP
+			</col>
+			<col type="N">
+				ENCTUSG
+			</col>
+			<col type="N">
+				ENCTDLY
+			</col>
+			<col type="N">
+				ENCIDLE
+			</col>
+			<col type="N">
+				ENCCUSG
+			</col>
+			<col type="N">
+				ENCIFAU
+			</col>
+			<col type="N">
+				ENCIFCU
+			</col>
+			<col type="N">
+				ENCCBPU
+			</col>
+			<col type="N">
+				ENCCBCU
+			</col>
+			<col type="N">
+				ENCSUPU
+			</col>
+			<col type="N">
+				ENCSUCU
+			</col>
+			<col type="N">
+				ENCCDLY
+			</col>
+			<col type="N">
+				ENCIFAD
+			</col>
+			<col type="N">
+				ENCCBPD
+			</col>
+			<col type="N">
+				ENCSUPD
+			</col>
+			<col type="N">
+				ENCIUSG
+			</col>
+			<col type="N">
+				ENCIDLY
+			</col>
+			<col type="N">
+				ENCCCAP
+			</col>
+			<col type="N">
+				ENCSTOR
+			</col>
+			<col type="N">
+				ENCUNKN
+			</col>
+			<col type="N">
+				ENCQUED
+			</col>
+			<col type="N">
+				ENCESTYP
+			</col>
+			<col type="N">
+				ENCEOWNM
+			</col>
+			<col type="N">
+				ENCEOSYS
+			</col>
+			<col type="N">
+				ENCETOKN
+			</col>
+			<col type="N">
+				ENCXTOKN
+			</col>
+			<col type="N">
+				ENCATTN
+			</col>
+			<col type="N">
+				ENCATT00
+			</col>
+			<col type="N">
+				ENCATT01
+			</col>
+			<col type="N">
+				ENCATT02
+			</col>
+			<col type="N">
+				ENCATT03
+			</col>
+			<col type="N">
+				ENCATT04
+			</col>
+			<col type="N">
+				ENCATT05
+			</col>
+			<col type="N">
+				ENCATT06
+			</col>
+			<col type="N">
+				ENCATT07
+			</col>
+			<col type="N">
+				ENCATT08
+			</col>
+			<col type="N">
+				ENCATT09
+			</col>
+			<col type="N">
+				ENCATT10
+			</col>
+			<col type="N">
+				ENCATT11
+			</col>
+			<col type="N">
+				ENCATT12
+			</col>
+			<col type="N">
+				ENCATT13
+			</col>
+			<col type="N">
+				ENCATT14
+			</col>
+			<col type="N">
+				ENCATT15
+			</col>
+			<col type="N">
+				ENCATT16
+			</col>
+			<col type="N">
+				ENCATT17
+			</col>
+			<col type="N">
+				ENCATT18
+			</col>
+			<col type="N">
+				ENCATT19
+			</col>
+			<col type="N">
+				ENCATT20
+			</col>
+			<col type="N">
+				ENCATT21
+			</col>
+			<col type="N">
+				ENCATT22
+			</col>
+			<col type="N">
+				ENCATT23
+			</col>
+			<col type="N">
+				ENCATT24
+			</col>
+		</column-headers>
+	</report>
+</ddsml>
