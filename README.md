@@ -54,3 +54,6 @@
 
 # URL Endpoints
   for Monitor III, use ```/monitor=RMF3&report={report_name}```. E.g ```/monitor=RMF3&report=CPC```. for Monitor one, Use ```report={report_name}``` to use the static parser for that report or use ```/monitor=RMF1&report={report_name}&date=20220809,20220809``` to use the generic parser. Please remeber to use a recent date
+
+# Video
+The end of mentorship video can be found here: ```https://youtu.be/XOzGLiZ96aM```
